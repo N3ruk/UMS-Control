@@ -31,6 +31,8 @@ The build root needs `libcurl3-gnutls` and the usual X11/XCB/Wayland/fontconfig/
 
 Outputs in `dist/`: `ums-control_1.0.0-1_amd64.deb` and `ums-control-1.0.0-linux-x86_64.zip`. Debian configuration is an English debconf selection. ZIP installation uses the same seven language codes and an English terminal prompt; `./install.sh --language en` is the explicit unattended alternative. The selected default never overwrites saved preferences.
 
+Linux artwork is copied unchanged from `assets/`. The Windows builder overlays `assets/windows/` and does not use the Linux wallpapers. Source export copies both sets verbatim; `tools/render_assets.py` is only for explicitly regenerating Windows geometric artwork, never Linux assets.
+
 ## Windows EXE
 
 ```sh

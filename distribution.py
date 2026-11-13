@@ -52,11 +52,15 @@ def screenshots(output):
     with ExitStack() as stack:
         for item in [patch.object(c,'network_interfaces',return_value=[dict(name='demo-interface',kind='ethernet',number=1,up=True)]),patch.object(g.Window,'refresh'),patch.object(g.Window,'check_updates'),patch.object(c,'load_state',side_effect=lambda:copy.deepcopy(state)),patch.object(g.appearance,'load',return_value=dict(theme='current',language='en')),patch.object(g.appearance,'save')]:stack.enter_context(item)
         w=g.Window(preferences=dict(theme='current',language='en'));w.timer.stop();w.resize(1140,840);w.update_server_buttons(dict(present=False,kind='absent',repairable=True,status='inactive'));w.status.setText(g.tr('Servidor no instalado'));w.render_activity(dict(devices=[],activity=[],status='inactive'));w.dirty=False;w.message.setText(g.tr('Sin cambios pendientes'));w.show();app.processEvents()
-        for tab,name in [(0,'summary'),(1,'devices')]:
-            w.tabs.setCurrentIndex(tab);app.processEvents()
-            if not w.grab().save(str(output/(name+'.png'))):raise RuntimeError('Screenshot failed')
+        for theme in g.appearance.THEMES:
+            w.set_theme(theme);app.processEvents()
+            for tab,name in [(0,'summary'),(1,'devices')]:
+                w.tabs.setCurrentIndex(tab);app.processEvents()
+                image=w.grab()
+                if not image.save(str(output/(theme+'-'+name+'.png'))):raise RuntimeError('Screenshot failed')
+                if theme=='current' and not image.save(str(output/(name+'.png'))):raise RuntimeError('Screenshot failed')
         w.dirty=False;w.close()
-    (output/'capture.json').write_text(json.dumps(dict(platform=sys.platform,language='en',synthetic_data=True,version='1.0.0'),indent=2), encoding='utf-8')
+    (output/'capture.json').write_text(json.dumps(dict(platform=sys.platform,language='en',synthetic_data=True,version='1.0.0',themes=list(g.appearance.THEMES)),indent=2), encoding='utf-8')
     return 0
 
 def main():

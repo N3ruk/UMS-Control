@@ -13,7 +13,7 @@ La [release Linux v1.0.0](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0
 | Ciclo del ZIP | Instalación, sustitución y retirada en Ubuntu 22.04 aislado sin Python/Qt del sistema; selección y conservación de francés |
 | EXE bajo Wine | Instalación NSIS real, apertura normal, autoprueba, sustitución y desinstalación; preferencia japonesa conservada |
 | Integración Java | JAR oficiales Linux y Windows separados verificados; reconstrucción Windows idéntica con JDK 17 |
-| Capturas inglesas | Aplicación Linux instalada mediante DEB y Windows mediante EXE bajo Wine; perfiles sintéticos, sin medios privados |
+| Capturas inglesas | Linux: renderizados Qt reales de los seis temas del contenido del DEB en un entorno aislado. Windows: aplicación instalada mediante EXE bajo Wine; perfiles sintéticos, sin medios privados |
 
 ## Aceptación pendiente
 

@@ -11,6 +11,8 @@ def assemble(payload):
         shutil.copy2(ROOT/name,internal/name)
     for name in ['assets','docs/public','server-support','patches']:
         shutil.copytree(ROOT/name,internal/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__'))
+    # Windows retains its independent geometric icon and wallpaper set.
+    shutil.copytree(ROOT/'assets/windows',internal/'assets',dirs_exist_ok=True)
     vendor=internal/'vendor/7zip';vendor.mkdir(parents=True,exist_ok=True)
     for name in ['7z.exe','7z.dll','License.txt']:
         shutil.copy2(CACHE/'7zip-full'/name,vendor/name)

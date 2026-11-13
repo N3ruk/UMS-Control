@@ -19,6 +19,8 @@ python3 packaging/build_linux.py --base /ruta/absoluta/base-ubuntu22-preparada
 
 El DEB utiliza una pregunta debconf en inglés. El ZIP utiliza una pregunta de terminal en inglés con los mismos siete idiomas; `./install.sh --language en` permite instalación desatendida explícita. Se conservan las preferencias existentes.
 
+Los recursos Linux se copian sin cambios desde `assets/`. Windows utiliza `assets/windows/`, no los fondos Linux. La exportación conserva ambos conjuntos; `tools/render_assets.py` solo permite regenerar explícitamente el arte geométrico Windows.
+
 ## EXE Windows
 
 ```sh

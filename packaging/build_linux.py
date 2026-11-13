@@ -14,6 +14,7 @@ def copy_source(target):
         f=ROOT/name
         if f.is_file():
             out=target/name;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,out)
+    shutil.copy2(ROOT/'PUBLIC-MANIFEST.json',target/'PUBLIC-MANIFEST.json')
     (target/'distribution-marker.json').write_text(json.dumps(dict(version='1.0.0',format='linux',native_baseline='jammy')), encoding='utf-8')
 
 def build(args):

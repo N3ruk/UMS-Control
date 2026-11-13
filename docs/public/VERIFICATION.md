@@ -13,7 +13,7 @@ The [Linux v1.0.0 release](https://github.com/N3ruk/UMS-Control/releases/tag/v1.
 | ZIP package lifecycle | Install, same-version replacement and removal passed in isolated Ubuntu 22.04 without system Python/Qt; initial French selection and preservation verified |
 | Windows EXE under Wine | Actual NSIS install, normal executable startup, self-test, same-version replacement and uninstall passed; saved Japanese preference preserved |
 | Java integration | Separate official Linux/Windows input JARs verified; matching Windows bootstrap rebuilt identically with JDK 17 |
-| English screenshots | Captured from the DEB-installed Linux app and the EXE-installed Windows app under Wine; synthetic device profiles, no private media |
+| English screenshots | Linux: real Qt renders of all six themes from the DEB payload in an isolated userspace. Windows: EXE-installed app under Wine; synthetic device profiles, no private media |
 
 ## Acceptance still required
 

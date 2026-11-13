@@ -26,13 +26,27 @@ Windows uses the same Qt interface, profile rules and Java integration as Linux.
 
 ## Screenshots
 
-English interface with demonstration devices and no private library data. Linux images are captured from the DEB-installed application in an isolated desktop. Windows images show the packaged Windows executable running under Wine, not a native Windows desktop certification.
+English interface with demonstration devices and no private library data. Linux images are real Qt renders of all six themes from the DEB payload in an isolated Linux userspace. Windows images show the packaged Windows executable running under Wine, not a native Windows desktop certification.
 
 ### Linux · DEB
 
 ![Linux DEB — Overview](docs/screenshots/linux-deb-summary.png)
 
 ![Linux DEB — Devices](docs/screenshots/linux-deb-devices.png)
+
+#### Linux themes
+
+![Linux — Blue](docs/screenshots/linux-current-summary.png)
+
+![Linux — UGM](docs/screenshots/linux-ugm-summary.png)
+
+![Linux — Classic Windows](docs/screenshots/linux-classic-summary.png)
+
+![Linux — High contrast](docs/screenshots/linux-contrast-summary.png)
+
+![Linux — Green/yellow](docs/screenshots/linux-green-summary.png)
+
+![Linux — Anime](docs/screenshots/linux-anime-summary.png)
 
 ### Windows · EXE
 
@@ -46,7 +60,7 @@ English interface with demonstration devices and no private library data. Linux 
 - Original delivery, manual conversion and automatic delivery. Container, audio/subtitles, encoder, resolution and bitrate controls are shared across platforms.
 - Resolution changes suggest an editable bitrate: 480p 5, 720p 10, 1080p 25, 1440p 40 and 2160p 60 Mbps. Saved manual values are preserved when opening/switching profiles.
 - Overview: start/stop/restart, health/logs, install/repair/update/remove server, session autostart and catalogue refresh. Updates are explicit.
-- Seven languages, six themes and a built-in Instructions guide. Public artwork is original; private development wallpapers and logs are excluded.
+- Seven languages and six themes: Blue, UGM, Classic Windows, High contrast, Green/yellow and Anime. Linux includes the supplied icon and wallpapers; Windows uses its own geometric artwork. A built-in Instructions guide is included; private logs and settings are excluded.
 - Saving and applying playback settings restarts an active server and interrupts playback. A stopped server stays stopped. Appearance preferences never apply server settings.
 
 Some devices may not be **100% compatible**. Compatibility depends on the device, firmware and media formats, not simply on its manufacturer. No universal playback guarantee is made.

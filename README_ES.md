@@ -26,13 +26,27 @@ Windows utiliza la misma interfaz Qt, reglas por dispositivo e integración Java
 
 ## Capturas
 
-Interfaz inglesa y dispositivos de demostración, sin datos de bibliotecas privadas. Las imágenes Linux proceden de la aplicación instalada mediante DEB en un escritorio aislado. Las imágenes Windows muestran el ejecutable empaquetado bajo Wine; no representan una certificación de escritorio Windows nativo.
+Interfaz inglesa y dispositivos de demostración, sin datos de bibliotecas privadas. Las imágenes Linux son renderizados Qt reales del contenido del DEB en un entorno Linux aislado. Las imágenes Windows muestran el ejecutable empaquetado bajo Wine; no representan una certificación de escritorio Windows nativo.
 
 ### Linux · DEB
 
 ![Linux DEB — Resumen](docs/screenshots/linux-deb-summary.png)
 
 ![Linux DEB — Dispositivos](docs/screenshots/linux-deb-devices.png)
+
+#### Temas Linux
+
+![Linux — Azul](docs/screenshots/linux-current-summary.png)
+
+![Linux — UGM](docs/screenshots/linux-ugm-summary.png)
+
+![Linux — Windows clásico](docs/screenshots/linux-classic-summary.png)
+
+![Linux — Alto contraste](docs/screenshots/linux-contrast-summary.png)
+
+![Linux — Verde/amarillo](docs/screenshots/linux-green-summary.png)
+
+![Linux — Anime](docs/screenshots/linux-anime-summary.png)
 
 ### Windows · EXE
 
@@ -46,7 +60,7 @@ Interfaz inglesa y dispositivos de demostración, sin datos de bibliotecas priva
 - Entrega Original, conversión manual y automática. Mismos controles de contenedor, audio/subtítulos, codificador, resolución y bitrate en ambas plataformas.
 - Bitrate recomendado editable al cambiar resolución: 480p 5, 720p 10, 1080p 25, 1440p 40 y 2160p 60 Mbps. Abrir o cambiar de perfil conserva los valores manuales guardados.
 - Resumen: inicio/parada/reinicio, salud/registro, instalación/reparación/actualización/retirada del servidor, autoinicio de sesión y actualización del catálogo. Actualizaciones siempre explícitas.
-- Siete idiomas, seis temas y guía de Instrucciones. Arte público original; fondos personales y diagnósticos privados excluidos.
+- Siete idiomas y seis temas: Azul, UGM, Windows clásico, Alto contraste, Verde/amarillo y Anime. Linux incluye el icono y los fondos proporcionados; Windows utiliza su propio arte geométrico. Guía de Instrucciones incluida; ajustes y diagnósticos privados excluidos.
 - Guardar y aplicar reinicia un servidor activo e interrumpe la reproducción. Un servidor detenido permanece detenido. Las preferencias visuales no aplican ajustes del servidor.
 
 Algunos dispositivos pueden no ser **compatibles al 100 %**. La compatibilidad depende del dispositivo, su firmware y los formatos multimedia, no simplemente del fabricante. No se garantiza la reproducción universal.

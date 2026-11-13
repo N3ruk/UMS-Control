@@ -35,11 +35,9 @@ def main():
   target.mkdir(parents=True,exist_ok=True)
   for name in spec['files']:
    destination=target/name;destination.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,destination)
-  from tools.render_assets import render
-  render(target/'assets')
   paths=spec['files']+['assets/'+name for name in spec['generated_assets']]
   hashes={name:hashlib.sha256((target/name).read_bytes()).hexdigest() for name in sorted(paths)}
   (target/'PUBLIC-MANIFEST.json').write_text(json.dumps(hashes,indent=2)+'\n', encoding='utf-8')
   print('Public source directory ready:',target,'files:',len(hashes))
- else:print('Public source allowlist validated:',len(spec['files']),'files; private artwork excluded')
+ else:print('Public source allowlist validated:',len(spec['files']),'files; platform artwork preserved')
 if __name__=='__main__':main()
