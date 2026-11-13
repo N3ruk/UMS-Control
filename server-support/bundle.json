@@ -1,0 +1,9 @@
+{
+  "dependencies.json": "138a1d06b1b4a81bf9e2b5b2bec6ac9f2f8799c6d7f43eb40df35b623369db3c",
+  "dependencies-portable.json": "60c174260c654bdd66d481eb4afa1502221a507c5c7fac8d04b0ae6ac497912e",
+  "upstream.json": "f88a28c85970e4da8cf3cf99d5410bcf11ef30cdcb928986ffe8b09528d8311c",
+  "update.jar": "a1ad25933b777a39bd1a1cddf9b998d2629c7132549fa1849561d7f990d38212",
+  "update-windows.jar": "a1ad25933b777a39bd1a1cddf9b998d2629c7132549fa1849561d7f990d38212",
+  "runtime-manifest.json": "6cda23361418b0e63a6633a1b239a47213f6aa81ec90236ea69a71823d042034",
+  "native-manifest.json": "494e2d0e1da612c4aaf1933e1b73248bf1e7a6228aca6f76e444ad9100afe199"
+}

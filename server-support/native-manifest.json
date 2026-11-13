@@ -1,0 +1,26 @@
+{
+  "usr/lib/x86_64-linux-gnu/libzen.so": {
+    "link": "libzen.so.0"
+  },
+  "usr/lib/x86_64-linux-gnu/libmediainfo.so": {
+    "link": "libmediainfo.so.0"
+  },
+  "usr/lib/x86_64-linux-gnu/libtinyxml2.so.11": {
+    "link": "libtinyxml2.so.11.0.0"
+  },
+  "usr/lib/x86_64-linux-gnu/libtinyxml2.so.11.0.0": {
+    "sha256": "d9d4869d4cc0fe37f9922bdf66dac55cf08fd475aba249462d4da16cb31a74e4"
+  },
+  "usr/lib/x86_64-linux-gnu/libzen.so.0": {
+    "link": "libzen.so.0.4.41"
+  },
+  "usr/lib/x86_64-linux-gnu/libzen.so.0.4.41": {
+    "sha256": "b4fbda3a4eaba5ca7aefbf2092ce8b552285a2719085a2380bdfca07c54bf7d6"
+  },
+  "usr/lib/x86_64-linux-gnu/libmediainfo.so.0": {
+    "link": "libmediainfo.so.0.2601.0"
+  },
+  "usr/lib/x86_64-linux-gnu/libmediainfo.so.0.2601.0": {
+    "sha256": "79d5b97ee447db138924222e6b1de81329bb0bd789d0a487e25360437a987021"
+  }
+}

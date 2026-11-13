@@ -1,0 +1,147 @@
+{
+  "baseline": "Ubuntu 24.04 LTS amd64; Python 3.12+",
+  "packages": [
+    {
+      "name": "libmediainfo0v5",
+      "version": "24.01+dfsg-1build2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmediainfo/libmediainfo0v5_24.01+dfsg-1build2_amd64.deb",
+      "sha256": "c57d90a630e0845a51466421795a943a4d400fe66331d4819f9d6eb4fb5e018b",
+      "size": 2565376,
+      "license": "BSD-2-Clause",
+      "copyright_path": "usr/share/doc/libmediainfo0v5/copyright",
+      "license_notice_labels": [
+        "BSD-2-clause",
+        "Zlib",
+        "aes-gladman"
+      ]
+    },
+    {
+      "name": "libzen0t64",
+      "version": "0.4.41-2.1build1",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libz/libzen/libzen0t64_0.4.41-2.1build1_amd64.deb",
+      "sha256": "d504874dad44614a21c87b328f30f208610c2ac8454461c4c757e38f6af05776",
+      "size": 108692,
+      "license": "Zlib",
+      "copyright_path": "usr/share/doc/libzen0t64/copyright",
+      "license_notice_labels": [
+        "GPL-3+",
+        "LGPL-3+",
+        "Zlib",
+        "Zlib and rfc",
+        "public-domain",
+        "rfc"
+      ]
+    },
+    {
+      "name": "libtinyxml2-10",
+      "version": "10.0.0+dfsg-2",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/libtinyxml2-10_10.0.0+dfsg-2_amd64.deb",
+      "sha256": "7444576728d0886cc58cee1749dc2ab5a680c1756f0a8b49c973fa0cfb180973",
+      "size": 32524,
+      "license": "Zlib",
+      "copyright_path": "usr/share/doc/libtinyxml2-10/copyright",
+      "license_notice_labels": [
+        "GPL-2+",
+        "zlib/libpng"
+      ]
+    },
+    {
+      "name": "libmms0",
+      "version": "0.6.4-3build1",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmms/libmms0_0.6.4-3build1_amd64.deb",
+      "size": 26462,
+      "sha256": "4bb94b20fa9e601c15beeb6c9f62d7c4b59d81149634344f7f6e9a6c9c5a05f5",
+      "license": "LGPL-2.0-or-later",
+      "copyright_path": "usr/share/doc/libmms0/copyright",
+      "license_notice_labels": [
+        "LGPL-2+"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "libmediainfo",
+      "version": "24.01+dfsg-1build2",
+      "files": [
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmediainfo/libmediainfo_24.01+dfsg-1build2.dsc",
+          "sha256": "172e0eb67e628a4f03d2e5945615e3f428559e06f530c5d25988de5f037d16f3",
+          "size": 2610
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmediainfo/libmediainfo_24.01+dfsg.orig.tar.xz",
+          "sha256": "e66202e82ab32aea3f8f0849bbb572a7a8adc043d6e75ca59d7d87bb87605bff",
+          "size": 2068152
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmediainfo/libmediainfo_24.01+dfsg-1build2.debian.tar.xz",
+          "sha256": "e9f772ef9613afcc29abc44a4acb4113dbfc8d00436e5d58e20d2535cff2e6f3",
+          "size": 11568
+        }
+      ]
+    },
+    {
+      "name": "libzen",
+      "version": "0.4.41-2.1build1",
+      "files": [
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libz/libzen/libzen_0.4.41-2.1build1.dsc",
+          "sha256": "8c070489be9426f59826a71853c4936221d1677e6926eb7a2e4d79d56fb5faa0",
+          "size": 2236
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libz/libzen/libzen_0.4.41.orig.tar.gz",
+          "sha256": "aad6c25bffcc695828e4d36700243a19a0d9503fbe57d38a2fbfa302fb34df2f",
+          "size": 155378
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libz/libzen/libzen_0.4.41-2.1build1.debian.tar.xz",
+          "sha256": "8139b0157b6451d0f3f3d9ebe1a7904d356ebf5d28cf68efd5b7f91b3b927199",
+          "size": 9616
+        }
+      ]
+    },
+    {
+      "name": "tinyxml2",
+      "version": "10.0.0+dfsg-2",
+      "files": [
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_10.0.0+dfsg-2.dsc",
+          "sha256": "7da1a49790271cef279265365475ea814adc75276663abc09c3b30409c968d9f",
+          "size": 1997
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_10.0.0+dfsg.orig.tar.xz",
+          "sha256": "622de09bb7063841fb763e186240b5a95a0ed1d32b4543b6e6be3148f336fbf4",
+          "size": 335700
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_10.0.0+dfsg-2.debian.tar.xz",
+          "sha256": "aaa138a9d77a92c5f428f71fd25c16c24d6d8c4d65a3512b97e8c667417140d3",
+          "size": 8944
+        }
+      ]
+    },
+    {
+      "name": "libmms",
+      "version": "0.6.4-3build1",
+      "files": [
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmms/libmms_0.6.4-3build1.dsc",
+          "sha256": "99a2e536dedb3aab04c3c3c56acd67deff202c5062448a5aaa0de9adc5188795",
+          "size": 2083
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmms/libmms_0.6.4.orig.tar.gz",
+          "sha256": "3c05e05aebcbfcc044d9e8c2d4646cd8359be39a3f0ba8ce4e72a9094bee704f",
+          "size": 356217
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libm/libmms/libmms_0.6.4-3build1.debian.tar.xz",
+          "sha256": "dd83de9442e1b09d043bf8bd24f5ac1bb8565bb7b17d364cf4ac62287c6fc2a2",
+          "size": 6528
+        }
+      ]
+    }
+  ]
+}

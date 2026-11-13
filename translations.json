@@ -1,0 +1,2738 @@
+{
+  "\n  Reproduciendo: ": {
+    "de": "\n  Wiedergabe: ",
+    "en": "\n  Playing: ",
+    "fr": "\n  Lecture : ",
+    "it": "\n  Riproduzione: ",
+    "ja": "\n  再生中：",
+    "zh": "\n  正在播放："
+  },
+  " La compatibilidad final depende del contenedor, las pistas y el dispositivo; no es universal.": {
+    "de": " Die Kompatibilität hängt von Container, Spuren und Gerät ab; sie ist nicht universell.",
+    "en": " Final compatibility depends on the container, tracks and device; it is not universal.",
+    "fr": " La compatibilité dépend du conteneur, des pistes et de l'appareil ; elle n'est pas universelle.",
+    "it": " La compatibilità dipende da contenitore, tracce e dispositivo; non è universale.",
+    "ja": " 互換性はコンテナー・トラック・機器に依存し、すべてを保証するものではありません。",
+    "zh": " 最终兼容性取决于容器、轨道和设备，并非通用保证。"
+  },
+  " Mbps · valor guardado": {
+    "de": " Mbit/s · gespeicherter Wert",
+    "en": " Mbps · saved value",
+    "fr": " Mbit/s · valeur enregistrée",
+    "it": " Mbps · valore salvato",
+    "ja": " Mbps · 保存済みの値",
+    "zh": " Mbps · 已保存值"
+  },
+  " No se garantiza equivalencia HDR/SDR.": {
+    "de": " HDR/SDR-Gleichwertigkeit ist nicht garantiert.",
+    "en": " HDR/SDR equivalence is not guaranteed.",
+    "fr": " Équivalence HDR/SDR non garantie.",
+    "it": " Equivalenza HDR/SDR non garantita.",
+    "ja": " HDR/SDR の同等性は保証しません。",
+    "zh": " 不保证 HDR/SDR 等效。"
+  },
+  " · búfer: ": {
+    "de": " · Puffer: ",
+    "en": " · buffer: ",
+    "fr": " · tampon : ",
+    "it": " · buffer: ",
+    "ja": " · バッファー：",
+    "zh": " · 缓冲："
+  },
+  " · valor UMS habitual": {
+    "de": " · üblicher UMS-Wert",
+    "en": " · usual UMS value",
+    "fr": " · valeur UMS habituelle",
+    "it": " · valore UMS abituale",
+    "ja": " · UMS の標準値",
+    "zh": " · UMS 常用值"
+  },
+  "1080p · Full HD": {
+    "de": "1080p · Full HD",
+    "en": "1080p · Full HD",
+    "fr": "1080p · Full HD",
+    "it": "1080p · Full HD",
+    "ja": "1080p · フルHD",
+    "zh": "1080p · 全高清"
+  },
+  "1440p · QHD": {
+    "de": "1440p · QHD",
+    "en": "1440p · QHD",
+    "fr": "1440p · QHD",
+    "it": "1440p · QHD",
+    "ja": "1440p · QHD",
+    "zh": "1440p · QHD"
+  },
+  "2160p · 4K": {
+    "de": "2160p · 4K",
+    "en": "2160p · 4K",
+    "fr": "2160p · 4K",
+    "it": "2160p · 4K",
+    "ja": "2160p · 4K",
+    "zh": "2160p · 4K"
+  },
+  "4 · Qué aparece en el dispositivo": {
+    "de": "4 · Anzeige auf dem Gerät",
+    "en": "4 · What appears on the device",
+    "fr": "4 · Affichage sur l’appareil",
+    "it": "4 · Cosa appare sul dispositivo",
+    "ja": "4 · デバイスの表示内容",
+    "zh": "4 · 设备上的显示内容"
+  },
+  "480p · consumo mínimo": {
+    "de": "480p · geringster Bandbreitenbedarf",
+    "en": "480p · lowest bandwidth",
+    "fr": "480p · débit minimal",
+    "it": "480p · consumo minimo",
+    "ja": "480p · 帯域幅を節約",
+    "zh": "480p · 最低带宽"
+  },
+  "720p · conexión limitada": {
+    "de": "720p · begrenzte Verbindung",
+    "en": "720p · limited connection",
+    "fr": "720p · connexion limitée",
+    "it": "720p · connessione limitata",
+    "ja": "720p · 低速回線向け",
+    "zh": "720p · 有限带宽"
+  },
+  "A · Gestionados por el dispositivo": {
+    "de": "A · Vom Gerät verwaltet",
+    "en": "A · Managed by the device",
+    "fr": "A · Gérés par l’appareil",
+    "it": "A · Gestiti dal dispositivo",
+    "ja": "A · デバイスで選択",
+    "zh": "A · 由设备管理"
+  },
+  "Abrir UMS web ↗": {
+    "de": "UMS-Weboberfläche ↗",
+    "en": "Open UMS web ↗",
+    "fr": "Ouvrir UMS web ↗",
+    "it": "Apri UMS web ↗",
+    "ja": "UMS Web を開く ↗",
+    "zh": "打开 UMS 网页 ↗"
+  },
+  "Acción no válida.": {
+    "de": "Ungültige Aktion.",
+    "en": "Invalid action.",
+    "fr": "Action non valide.",
+    "it": "Azione non valida.",
+    "ja": "無効な操作です。",
+    "zh": "无效操作。"
+  },
+  "Acerca de": {
+    "de": "Über",
+    "en": "About",
+    "fr": "À propos",
+    "it": "Informazioni",
+    "ja": "このアプリについて",
+    "zh": "关于"
+  },
+  "Acerca de UMS Control": {
+    "de": "Über UMS Control",
+    "en": "About UMS Control",
+    "fr": "À propos de UMS Control",
+    "it": "Informazioni su UMS Control",
+    "ja": "UMS Control について",
+    "zh": "关于 UMS Control"
+  },
+  "Actualización del catálogo solicitada a UMS": {
+    "de": "Aktualisierung des Medienkatalogs angefordert",
+    "en": "Media library refresh requested",
+    "fr": "Actualisation du catalogue demandée",
+    "it": "Aggiornamento catalogo richiesto",
+    "ja": "カタログ更新を要求しました",
+    "zh": "已请求更新媒体库"
+  },
+  "Actualización del catálogo: tras añadir contenido, Actualizar catálogo multimedia en la pestaña Resumen renueva la biblioteca. Las carpetas nuevas deben guardarse antes de esta operación. Si el reproductor conserva la lista anterior, es necesario volver a abrir el servidor desde el dispositivo. Actualizar el catálogo no convierte los vídeos.": {
+    "de": "Katalogaktualisierung: Nach dem Hinzufügen von Inhalten erneuert Medienkatalog aktualisieren auf der Registerkarte Übersicht die Bibliothek. Neue Ordner müssen vorher gespeichert werden. Zeigt das Wiedergabegerät weiterhin die alte Liste, muss der Server dort erneut geöffnet werden. Eine Katalogaktualisierung konvertiert keine Videos.",
+    "en": "Library refresh: after content is added, Refresh media library on the Overview tab refreshes the library. New folders must be saved before this operation. If the player retains the previous list, the server must be reopened from the device. Refreshing the library does not convert videos.",
+    "fr": "Actualisation du catalogue: après l’ajout de contenu, Actualiser le catalogue dans l’onglet Résumé renouvelle la bibliothèque. Les nouveaux dossiers doivent être enregistrés avant cette opération. Si le lecteur conserve l’ancienne liste, le serveur doit être rouvert depuis l’appareil. L’actualisation du catalogue ne convertit pas les vidéos.",
+    "it": "Aggiornamento del catalogo: dopo l’aggiunta di contenuti, Aggiorna catalogo multimediale nella scheda Riepilogo rinnova la libreria. Le nuove cartelle devono essere salvate prima dell’operazione. Se il lettore conserva l’elenco precedente, è necessario riaprire il server dal dispositivo. L’aggiornamento del catalogo non converte i video.",
+    "ja": "カタログの更新: 内容を追加した後、「概要」タブの「メディアカタログを更新」でライブラリーを更新できます。新しいフォルダーは、この操作の前に保存する必要があります。再生機器に以前の一覧が残る場合は、機器側でサーバーを開き直す必要があります。カタログの更新では動画は変換されません。",
+    "zh": "媒体库刷新: 添加内容后，“概览”选项卡中的“更新媒体库”可刷新媒体库。新文件夹必须先保存，再执行此操作。如果播放器仍显示旧列表，需要从设备重新打开服务器。刷新媒体库不会转换视频。"
+  },
+  "Actualización del servidor: Actualizar servidor UMS solo aparece en la pestaña Resumen cuando se detecta una versión posterior a la instalada. La comprobación se realiza al abrir el panel; la instalación requiere confirmación y conserva carpetas, perfiles y ajustes. Si el servidor está activo, se reinicia y se interrumpe la reproducción. Si está detenido, permanece detenido. Esta operación es distinta de Actualizar catálogo multimedia, que renueva la lista de contenidos.": {
+    "de": "Serveraktualisierung: UMS-Server aktualisieren erscheint auf der Registerkarte Übersicht nur, wenn eine neuere als die installierte Version erkannt wird. Die Prüfung erfolgt beim Öffnen des Bedienfelds. Die Installation erfordert eine Bestätigung und erhält Ordner, Profile und Einstellungen. Ein aktiver Server wird neu gestartet; die Wiedergabe wird unterbrochen. Ein gestoppter Server bleibt gestoppt. Medienkatalog aktualisieren erneuert dagegen nur die Inhaltsliste.",
+    "en": "Server updates: Update UMS server appears on the Overview tab only when a version newer than the installed version is detected. The check runs when the panel opens; installation requires confirmation and preserves folders, profiles and settings. An active server restarts, interrupting playback. A stopped server remains stopped. This operation differs from Refresh media library, which refreshes the content list.",
+    "fr": "Mise à jour du serveur: Mettre à jour le serveur UMS apparaît dans l’onglet Résumé uniquement si une version plus récente que la version installée est détectée. La vérification a lieu à l’ouverture du panneau ; l’installation nécessite une confirmation et conserve dossiers, profils et réglages. Un serveur actif redémarre, interrompant la lecture. Un serveur arrêté le reste. Cette opération diffère d’Actualiser le catalogue, qui renouvelle la liste des contenus.",
+    "it": "Aggiornamento del server: Aggiorna server UMS compare nella scheda Riepilogo solo quando viene rilevata una versione successiva a quella installata. Il controllo avviene all’apertura del pannello; l’installazione richiede conferma e conserva cartelle, profili e impostazioni. Un server attivo viene riavviato, interrompendo la riproduzione. Un server arrestato rimane arrestato. L’operazione è distinta da Aggiorna catalogo multimediale, che rinnova l’elenco dei contenuti.",
+    "ja": "サーバーの更新: インストール済みのバージョンより新しいバージョンが検出された場合のみ、「概要」タブに「UMSサーバーを更新」が表示されます。確認はパネルを開いたときに行われます。更新の実行には承認が必要で、フォルダー、プロファイル、設定は保持されます。稼働中のサーバーは再起動され、再生が中断します。停止中の場合は停止状態を維持します。「メディアカタログを更新」は内容の一覧を更新する別の操作です。",
+    "zh": "服务器更新: 仅在检测到比已安装版本更新的版本时，“概览”选项卡才会显示“更新 UMS 服务器”。检查在面板打开时进行；安装需要确认，并保留文件夹、配置及设置。运行中的服务器会重新启动并中断播放；已停止的服务器保持停止状态。此操作不同于“更新媒体库”，后者仅刷新内容列表。"
+  },
+  "Actualizar catálogo multimedia": {
+    "de": "Medienkatalog aktualisieren",
+    "en": "Refresh media library",
+    "fr": "Actualiser le catalogue",
+    "it": "Aggiorna catalogo multimediale",
+    "ja": "メディアカタログを更新",
+    "zh": "更新媒体库"
+  },
+  "Actualizar servidor UMS": {
+    "de": "UMS-Server aktualisieren",
+    "en": "Update UMS server",
+    "fr": "Mettre à jour le serveur UMS",
+    "it": "Aggiorna server UMS",
+    "ja": "UMSサーバーを更新",
+    "zh": "更新 UMS 服务器"
+  },
+  "Ajustar calidad y audio": {
+    "de": "Qualität und Ton einstellen",
+    "en": "Adjust quality and audio",
+    "fr": "Régler qualité et audio",
+    "it": "Regolare qualità e audio",
+    "ja": "画質と音質を調整する",
+    "zh": "调整画质和音频"
+  },
+  "Ajuste de conversión no válido.": {
+    "de": "Ungültige Konvertierungseinstellung.",
+    "en": "Invalid conversion setting.",
+    "fr": "Réglage de conversion non valide.",
+    "it": "Impostazione di conversione non valida.",
+    "ja": "変換設定が無効です。",
+    "zh": "无效的转换设置。"
+  },
+  "Ajustes por dispositivo: se aplican a las carpetas seleccionadas o a los archivos que necesiten adaptación en modo automático. Original no modifica el archivo.": {
+    "de": "Geräteeinstellungen gelten für ausgewählte Ordner oder im Automatikmodus anzupassende Dateien. Original verändert keine Dateien.",
+    "en": "Per-device settings apply to selected folders or files that need adaptation in automatic mode. Original leaves files unchanged.",
+    "fr": "Les réglages par appareil concernent les dossiers sélectionnés ou les fichiers à adapter en mode automatique. Original ne modifie pas les fichiers.",
+    "it": "Le impostazioni per dispositivo si applicano alle cartelle selezionate o ai file da adattare in modalità automatica. Originale non modifica i file.",
+    "ja": "デバイス別設定は選択したフォルダー、または自動モードで変換が必要なファイルに適用します。オリジナルでは変更しません。",
+    "zh": "每台设备的设置适用于所选文件夹或自动模式下需要调整的文件。“原始”不会修改文件。"
+  },
+  "Al cambiar la resolución se preselecciona un bitrate recomendado, que puede modificarse después.": {
+    "de": "Beim Ändern der Auflösung wird eine empfohlene Bitrate vorausgewählt, die anschließend angepasst werden kann.",
+    "en": "Changing the resolution preselects a recommended bitrate, which can be adjusted afterwards.",
+    "fr": "Le changement de résolution présélectionne un débit recommandé, qui peut ensuite être modifié.",
+    "it": "La modifica della risoluzione preseleziona un bitrate consigliato, che può essere modificato in seguito.",
+    "ja": "解像度を変更すると推奨ビットレートが自動選択されます。選択後も変更できます。",
+    "zh": "更改分辨率时会预选推荐码率，之后仍可手动修改。"
+  },
+  "Alto contraste": {
+    "de": "Hoher Kontrast",
+    "en": "High contrast",
+    "fr": "Contraste élevé",
+    "it": "Contrasto elevato",
+    "ja": "ハイコントラスト",
+    "zh": "高对比度"
+  },
+  "Anime": {
+    "de": "Anime",
+    "en": "Anime",
+    "fr": "Anime",
+    "it": "Anime",
+    "ja": "アニメ",
+    "zh": "动漫"
+  },
+  "Apariencia e idioma: Tema modifica el aspecto del panel; UGM incluye un fondo ilustrado. Idioma cambia los textos de la aplicación, no los títulos de los vídeos. Ambas preferencias se guardan al seleccionarlas y no reinician el servidor. La consulta de esta guía tampoco modifica la configuración.": {
+    "de": "Darstellung und Sprache: Design ändert die Darstellung des Bedienfelds; UGM enthält einen illustrierten Hintergrund. Sprache ändert die Anwendungstexte, nicht die Videotitel. Beide Einstellungen werden bei der Auswahl gespeichert und starten den Server nicht neu. Auch das Lesen dieser Anleitung ändert die Konfiguration nicht.",
+    "en": "Appearance and language: Theme changes the panel’s appearance; UGM includes an illustrated background. Language changes application text, not video titles. Both preferences are saved when selected and do not restart the server. Consulting this guide does not modify the configuration either.",
+    "fr": "Apparence et langue: Thème modifie l’apparence du panneau ; UGM inclut un fond illustré. Langue change les textes de l’application, pas les titres des vidéos. Les deux préférences sont enregistrées lors de leur sélection sans redémarrer le serveur. La consultation de ce guide ne modifie pas non plus la configuration.",
+    "it": "Aspetto e lingua: Tema modifica l’aspetto del pannello; UGM include uno sfondo illustrato. Lingua cambia i testi dell’applicazione, non i titoli dei video. Entrambe le preferenze vengono salvate alla selezione e non riavviano il server. Anche la consultazione della guida non modifica la configurazione.",
+    "ja": "外観と言語: テーマはパネルの外観を変更します。UGM にはイラスト背景が含まれます。言語はアプリケーションの表示文言を変更し、動画のタイトルは変更しません。どちらの設定も選択時に保存され、サーバーは再起動しません。このガイドを参照しても設定は変更されません。",
+    "zh": "外观与语言: 主题用于更改面板外观；UGM 包含插画背景。语言仅更改应用文字，不更改视频标题。这两项偏好在选择时保存，不会重新启动服务器。查阅本指南也不会修改配置。"
+  },
+  "Aplicación creada por N3ruk.": {
+    "de": "Anwendung von N3ruk.",
+    "en": "Application created by N3ruk.",
+    "fr": "Application créée par N3ruk.",
+    "it": "Applicazione creata da N3ruk.",
+    "ja": "N3ruk が作成したアプリです。",
+    "zh": "由 N3ruk 创建的应用程序。"
+  },
+  "Aplicación de cambios: Guardar y aplicar activa los cambios de carpetas y reproducción. Si UMS está activo, se reinicia y se interrumpe la reproducción en curso. Si está detenido, no se inicia. Descartar cambios recupera la última configuración guardada.": {
+    "de": "Änderungen anwenden: Speichern und anwenden aktiviert Änderungen an Ordnern und Wiedergabe. Ein aktiver UMS wird neu gestartet und die laufende Wiedergabe unterbrochen. Ein gestoppter UMS wird nicht gestartet. Änderungen verwerfen stellt die zuletzt gespeicherte Konfiguration wieder her.",
+    "en": "Applying changes: Save and apply activates folder and playback changes. If UMS is active, it restarts and interrupts current playback. If stopped, it does not start. Discard changes restores the last saved configuration.",
+    "fr": "Application des modifications: Enregistrer et appliquer active les modifications des dossiers et de la lecture. Si UMS est actif, il redémarre et interrompt la lecture en cours. S’il est arrêté, il ne démarre pas. Annuler les modifications restaure la dernière configuration enregistrée.",
+    "it": "Applicazione delle modifiche: Salva e applica attiva le modifiche alle cartelle e alla riproduzione. Se UMS è attivo, viene riavviato e interrompe la riproduzione in corso. Se è arrestato, non viene avviato. Scarta modifiche ripristina l’ultima configurazione salvata.",
+    "ja": "変更の適用: 「保存して適用」でフォルダーと再生に関する変更が有効になります。UMS が稼働中の場合は再起動され、再生が中断します。停止中の場合は起動しません。「変更を破棄」で最後に保存した設定に戻ります。",
+    "zh": "应用更改: “保存并应用”使文件夹及播放设置的更改生效。UMS 正在运行时会重新启动，并中断当前播放；已停止时不会启动。“放弃更改”恢复上次保存的配置。"
+  },
+  "Archivo del servidor ausente o modificado: {value}": {
+    "de": "Serverdatei fehlt oder wurde geändert: {value}",
+    "en": "Server file missing or modified: {value}",
+    "fr": "Fichier serveur absent ou modifié : {value}",
+    "it": "File server mancante o modificato: {value}",
+    "ja": "サーバーファイルがないか変更されています：{value}",
+    "zh": "服务器文件缺失或已修改：{value}"
+  },
+  "Audio y procesamiento: Estéreo ofrece una salida de dos canales; hasta 5.1 requiere pistas y equipos compatibles. CPU utiliza el procesador del ordenador. NVIDIA NVENC requiere una tarjeta gráfica compatible. Estos ajustes se aplican únicamente al dispositivo seleccionado y no modifican el archivo original.": {
+    "de": "Audio und Verarbeitung: Stereo bietet eine Zweikanalausgabe; bis zu 5.1 erfordert kompatible Spuren und Geräte. CPU nutzt den Prozessor des Computers. NVIDIA NVENC erfordert eine kompatible Grafikkarte. Diese Einstellungen gelten nur für das ausgewählte Gerät und ändern die Originaldatei nicht.",
+    "en": "Audio and processing: Stereo provides two-channel output; up to 5.1 requires compatible tracks and equipment. CPU uses the computer’s processor. NVIDIA NVENC requires a compatible graphics card. These settings apply only to the selected device and do not modify the original file.",
+    "fr": "Audio et traitement: Stéréo fournit une sortie à deux canaux ; jusqu’à 5.1 nécessite des pistes et des équipements compatibles. CPU utilise le processeur de l’ordinateur. NVIDIA NVENC nécessite une carte graphique compatible. Ces réglages concernent uniquement l’appareil sélectionné et ne modifient pas le fichier original.",
+    "it": "Audio ed elaborazione: Stereo offre un’uscita a due canali; fino a 5.1 richiede tracce e apparecchiature compatibili. CPU utilizza il processore del computer. NVIDIA NVENC richiede una scheda grafica compatibile. Queste impostazioni si applicano solo al dispositivo selezionato e non modificano il file originale.",
+    "ja": "音声と処理方式: ステレオは 2 チャンネル出力です。最大 5.1 チャンネルの使用には対応するトラックと機器が必要です。CPU はコンピューターのプロセッサーを使用します。NVIDIA NVENC には対応するグラフィックスカードが必要です。これらの設定は選択中の機器にのみ適用され、元のファイルは変更しません。",
+    "zh": "音频与处理: 立体声提供双声道输出；最高 5.1 声道需要兼容的音轨及设备。CPU 使用计算机处理器。NVIDIA NVENC 需要兼容的显卡。这些设置仅适用于所选设备，不会修改原始文件。"
+  },
+  "Audio y subtítulos": {
+    "de": "Audio und Untertitel",
+    "en": "Audio and subtitles",
+    "fr": "Audio et sous-titres",
+    "it": "Audio e sottotitoli",
+    "ja": "音声と字幕",
+    "zh": "音频和字幕"
+  },
+  "Audio · pistas y calidad al convertir": {
+    "de": "Audio · Spuren und Konvertierungsqualität",
+    "en": "Audio · tracks and conversion quality",
+    "fr": "Audio · pistes et qualité de conversion",
+    "it": "Audio · tracce e qualità di conversione",
+    "ja": "音声 · トラックと変換品質",
+    "zh": "音频 · 音轨和转换质量"
+  },
+  "Automático": {
+    "de": "Automatisch",
+    "en": "Automatic",
+    "fr": "Automatique",
+    "it": "Automatico",
+    "ja": "自動",
+    "zh": "自动"
+  },
+  "Automático conserva los audios compatibles y convierte los demás. Los límites de canales se aplican al adaptar; la calidad de audio solo cambia al recodificar.": {
+    "de": "Automatik behält kompatiblen Ton bei und konvertiert den Rest. Kanalgrenzen gelten beim Anpassen; die Tonqualität ändert sich nur beim Neukodieren.",
+    "en": "Automatic preserves compatible audio and converts the rest. Channel limits apply during adaptation; audio quality changes only when re-encoding.",
+    "fr": "Automatique conserve les pistes compatibles et convertit les autres. Les limites de canaux s’appliquent lors de l’adaptation ; la qualité audio ne change qu’au réencodage.",
+    "it": "Automatico conserva l’audio compatibile e converte il resto. I limiti dei canali si applicano durante l’adattamento; la qualità cambia solo ricodificando.",
+    "ja": "自動モードは対応音声を保持し、非対応音声を変換します。変換時にチャンネル数を制限し、再エンコード時のみ音質設定を適用します。",
+    "zh": "自动模式保留兼容音轨并转换其他音轨。调整时应用声道限制；音质仅在重新编码时改变。"
+  },
+  "Automático en todas las carpetas compartidas. Las casillas del apartado 3 solo se usan en conversión manual. En B, Transcodificar permite elegir audio y subtítulos.": {
+    "de": "Automatik gilt für alle Freigaben. Die Auswahl in Abschnitt 3 gilt nur für manuelle Konvertierung. Bei B lassen sich unter Transkodieren Ton und Untertitel wählen.",
+    "en": "Automatic applies to all shared folders. Section 3 checkboxes are for manual conversion only. In B, Transcode lets you choose audio and subtitles.",
+    "fr": "Automatique sur tous les dossiers partagés. Les cases de la section 3 servent uniquement à la conversion manuelle. En B, Transcoder permet de choisir audio et sous-titres.",
+    "it": "Automatico su tutte le cartelle condivise. Le caselle della sezione 3 servono solo per la conversione manuale. In B, Transcodifica permette di scegliere audio e sottotitoli.",
+    "ja": "自動モードは全共有フォルダーに適用します。項目3のチェックは手動変換専用です。Bではトランスコードで音声と字幕を選べます。",
+    "zh": "自动模式适用于所有共享文件夹。第3节复选框仅用于手动转换。B模式可在转码目录中选择音轨和字幕。"
+  },
+  "Automático · original si es compatible · adaptación cuando sea necesaria": {
+    "de": "Automatisch · Original wenn kompatibel · Anpassung bei Bedarf",
+    "en": "Automatic · original when compatible · adapt when needed",
+    "fr": "Automatique · original si compatible · adaptation si nécessaire",
+    "it": "Automatico · originale se compatibile · adattamento se necessario",
+    "ja": "自動 · 対応時はオリジナル · 必要な場合のみ変換",
+    "zh": "自动 · 兼容时发送原文件 · 必要时调整"
+  },
+  "Azul": {
+    "de": "Blau",
+    "en": "Blue",
+    "fr": "Bleu",
+    "it": "Blu",
+    "ja": "ブルー",
+    "zh": "蓝色"
+  },
+  "Añade carpetas en Carpetas compartidas para elegir cuáles convertir.": {
+    "de": "Fügen Sie unter Freigegebene Ordner Ordner hinzu, um die Konvertierung auszuwählen.",
+    "en": "Add folders under Shared folders to choose which ones to convert.",
+    "fr": "Ajoutez des dossiers dans Dossiers partagés pour choisir ceux à convertir.",
+    "it": "Aggiungi cartelle in Cartelle condivise per scegliere quali convertire.",
+    "ja": "「共有フォルダー」でフォルダーを追加して、変換対象を選択してください。",
+    "zh": "在“共享文件夹”中添加文件夹，然后选择要转换的文件夹。"
+  },
+  "Añade los archivos encontrados a las combinaciones de Transcodificar. No descarga ni fuerza un subtítulo externo.": {
+    "de": "Fügt gefundene Dateien den Transkodieren-Kombinationen hinzu. Kein Download oder Erzwingen externer Untertitel.",
+    "en": "Add matching files to Transcode combinations. Does not download or force external subtitles.",
+    "fr": "Ajoute les fichiers trouvés aux combinaisons Transcoder, sans téléchargement ni sélection forcée.",
+    "it": "Aggiunge i file alle combinazioni Transcodifica, senza scaricare o forzare sottotitoli esterni.",
+    "ja": "見つかったファイルをトランスコードの組み合わせに追加します。外部字幕のダウンロードや強制はしません。",
+    "zh": "将匹配文件加入转码组合，不下载或强制选择外部字幕。"
+  },
+  "Añade otro dispositivo para poder copiar sus ajustes.": {
+    "de": "Fügen Sie zum Kopieren ein weiteres Gerät hinzu.",
+    "en": "Add another device to copy its settings.",
+    "fr": "Ajoutez un autre appareil pour copier ses réglages.",
+    "it": "Aggiungi un altro dispositivo per copiarne le impostazioni.",
+    "ja": "設定をコピーするには別のデバイスを追加してください。",
+    "zh": "请添加另一个设备以复制设置。"
+  },
+  "Añade un dispositivo para configurar su reproducción": {
+    "de": "Ein Gerät hinzufügen, um die Wiedergabe einzurichten",
+    "en": "Add a device to configure playback",
+    "fr": "Ajoutez un appareil pour régler la lecture",
+    "it": "Aggiungi un dispositivo per configurare la riproduzione",
+    "ja": "デバイスを追加して再生を設定",
+    "zh": "添加设备以配置播放"
+  },
+  "Añadir carpeta…": {
+    "de": "Ordner hinzufügen…",
+    "en": "Add folder…",
+    "fr": "Ajouter un dossier…",
+    "it": "Aggiungi cartella…",
+    "ja": "フォルダーを追加…",
+    "zh": "添加文件夹…"
+  },
+  "Añadir por IP": {
+    "de": "Per IP hinzufügen",
+    "en": "Add by IP",
+    "fr": "Ajouter par IP",
+    "it": "Aggiungi tramite IP",
+    "ja": "IP アドレスで追加",
+    "zh": "通过 IP 添加"
+  },
+  "B · Preseleccionados e incrustados": {
+    "de": "B · Vorauswahl und Einbrennen",
+    "en": "B · Preselected and burned in",
+    "fr": "B · Présélection et incrustation",
+    "it": "B · Preselezionati e impressi",
+    "ja": "B · 事前選択と字幕焼き込み",
+    "zh": "B · 预选音轨并烧录字幕"
+  },
+  "Bitrate de audio": {
+    "de": "Audio-Bitrate",
+    "en": "Audio bitrate",
+    "fr": "Débit audio",
+    "it": "Bitrate audio",
+    "ja": "音声ビットレート",
+    "zh": "音频码率"
+  },
+  "Bitrate máximo": {
+    "de": "Maximale Bitrate",
+    "en": "Maximum bitrate",
+    "fr": "Débit maximal",
+    "it": "Bitrate massimo",
+    "ja": "最大ビットレート",
+    "zh": "最大码率"
+  },
+  "Bitrate o canales fuera de rango.": {
+    "de": "Bitrate oder Kanäle außerhalb des Bereichs.",
+    "en": "Bitrate or channels out of range.",
+    "fr": "Débit ou canaux hors limites.",
+    "it": "Bitrate o canali fuori intervallo.",
+    "ja": "ビットレートまたはチャンネル数が範囲外です。",
+    "zh": "码率或声道超出范围。"
+  },
+  "Buscando dispositivos y clientes UMS… En PS3, abre Vídeo → Buscar servidores multimedia durante la búsqueda.": {
+    "de": "Geräte und UMS-Clients werden gesucht… Auf der PS3 währenddessen Video → Medienserver suchen öffnen.",
+    "en": "Searching for devices and UMS clients… On PS3, open Video → Search for Media Servers during the scan.",
+    "fr": "Recherche des appareils et clients UMS… Sur PS3, ouvrez Vidéo → Rechercher des serveurs multimédia pendant la recherche.",
+    "it": "Ricerca dispositivi e client UMS… Su PS3, apri Video → Cerca server multimediali durante la ricerca.",
+    "ja": "デバイスとUMSクライアントを検索中…PS3では検索中に「ビデオ → メディアサーバー検索」を開いてください。",
+    "zh": "正在搜索设备和UMS客户端…请在PS3上同时打开“视频 → 搜索媒体服务器”。"
+  },
+  "Buscar dispositivos": {
+    "de": "Geräte suchen",
+    "en": "Find devices",
+    "fr": "Rechercher des appareils",
+    "it": "Cercare dispositivi",
+    "ja": "機器を探す",
+    "zh": "查找设备"
+  },
+  "Buscar en la red…": {
+    "de": "Netzwerk durchsuchen…",
+    "en": "Search network…",
+    "fr": "Rechercher sur le réseau…",
+    "it": "Cerca in rete…",
+    "ja": "ネットワークを検索…",
+    "zh": "搜索网络…"
+  },
+  "Buscar subtítulos junto al vídeo": {
+    "de": "Untertitel neben der Videodatei suchen",
+    "en": "Find subtitles next to the video",
+    "fr": "Chercher les sous-titres près de la vidéo",
+    "it": "Cerca sottotitoli accanto al video",
+    "ja": "動画と同じ場所の字幕を検索",
+    "zh": "查找视频旁的字幕文件"
+  },
+  "Búsqueda en la red: el botón Buscar en la red de la pestaña Dispositivos detecta reproductores disponibles. El reproductor debe estar encendido y tener abierta la búsqueda de servidores multimedia. En PS3, esta función se encuentra en Vídeo → Buscar servidores multimedia. La selección de un resultado permite añadir el dispositivo.": {
+    "de": "Netzwerksuche: Netzwerk durchsuchen auf der Registerkarte Geräte erkennt verfügbare Wiedergabegeräte. Das Gerät muss eingeschaltet und seine Medienserversuche geöffnet sein. Auf der PS3 befindet sich die Funktion unter Video → Medienserver suchen. Durch Auswahl eines Ergebnisses lässt sich das Gerät hinzufügen.",
+    "en": "Network discovery: Search network on the Devices tab detects available playback devices. The device must be powered on with its media server search open. On PS3, this function is under Video → Search for Media Servers. Selecting a result allows the device to be added.",
+    "fr": "Recherche sur le réseau: Rechercher sur le réseau dans l’onglet Appareils détecte les lecteurs disponibles. L’appareil doit être allumé et sa recherche de serveurs multimédias ouverte. Sur PS3, cette fonction se trouve dans Vidéo → Rechercher des serveurs multimédias. La sélection d’un résultat permet d’ajouter l’appareil.",
+    "it": "Ricerca in rete: Cerca in rete nella scheda Dispositivi rileva i lettori disponibili. Il dispositivo deve essere acceso e avere aperta la ricerca dei server multimediali. Su PS3 la funzione si trova in Video → Cerca server multimediali. La selezione di un risultato consente di aggiungere il dispositivo.",
+    "ja": "ネットワーク検索: 「デバイス」タブのネットワーク検索ボタンで、利用可能な再生機器を検出できます。機器の電源を入れ、メディアサーバー検索を開いておく必要があります。PS3 では「ビデオ → メディアサーバー検索」にあります。検索結果を選択すると機器を追加できます。",
+    "zh": "网络搜索: “设备”选项卡中的网络搜索按钮用于检测可用的播放设备。播放设备必须已开机，并打开媒体服务器搜索功能。PS3 上的路径为“视频 → 搜索媒体服务器”。选择搜索结果即可添加设备。"
+  },
+  "CPU · procesador del PC": {
+    "de": "CPU · PC-Prozessor",
+    "en": "CPU · PC processor",
+    "fr": "CPU · processeur du PC",
+    "it": "CPU · processore del PC",
+    "ja": "CPU · PC プロセッサー",
+    "zh": "CPU · 电脑处理器"
+  },
+  "Cada dispositivo necesita una IP local o un UUID detectado.": {
+    "de": "Jedes Gerät benötigt eine lokale IP oder erkannte UUID.",
+    "en": "Each device needs a local IP or detected UUID.",
+    "fr": "Chaque appareil nécessite une IP locale ou un UUID détecté.",
+    "it": "Ogni dispositivo richiede un IP locale o un UUID rilevato.",
+    "ja": "各デバイスにローカル IP または検出された UUID が必要です。",
+    "zh": "每个设备需要本地 IP 或检测到的 UUID。"
+  },
+  "Cada dispositivo tiene sus propios ajustes. Selecciona uno para ver cómo recibirá los vídeos.": {
+    "de": "Jedes Gerät hat eigene Einstellungen. Wählen Sie eines aus, um die Videoübertragung einzurichten.",
+    "en": "Each device has its own settings. Select one to see how it receives videos.",
+    "fr": "Chaque appareil a ses réglages. Sélectionnez-en un pour voir comment il reçoit les vidéos.",
+    "it": "Ogni dispositivo ha impostazioni proprie. Selezionane uno per vedere come riceve i video.",
+    "ja": "デバイスごとに設定できます。デバイスを選ぶと動画の受信方法を確認できます。",
+    "zh": "每个设备都有独立设置。选择设备以查看视频接收方式。"
+  },
+  "Calidad de audio no válida.": {
+    "de": "Ungültige Audioqualität.",
+    "en": "Invalid audio quality.",
+    "fr": "Qualité audio non valide.",
+    "it": "Qualità audio non valida.",
+    "ja": "音声品質が無効です。",
+    "zh": "无效的音频质量。"
+  },
+  "Calidad y audio": {
+    "de": "Qualität und Audio",
+    "en": "Quality and audio",
+    "fr": "Qualité et audio",
+    "it": "Qualità e audio",
+    "ja": "画質と音声",
+    "zh": "质量和音频"
+  },
+  "Cambios sin aplicar": {
+    "de": "Nicht angewendete Änderungen",
+    "en": "Unapplied changes",
+    "fr": "Modifications non appliquées",
+    "it": "Modifiche non applicate",
+    "ja": "未適用の変更",
+    "zh": "未应用的更改"
+  },
+  "Canales": {
+    "de": "Kanäle",
+    "en": "Channels",
+    "fr": "Canaux",
+    "it": "Canali",
+    "ja": "チャンネル",
+    "zh": "声道"
+  },
+  "Carpetas compartidas": {
+    "de": "Freigegebene Ordner",
+    "en": "Shared folders",
+    "fr": "Dossiers partagés",
+    "it": "Cartelle condivise",
+    "ja": "共有フォルダー",
+    "zh": "共享文件夹"
+  },
+  "Carpetas con nombres compatibles": {
+    "de": "Ordner mit kompatiblen Namen",
+    "en": "Folders with compatible names",
+    "fr": "Dossiers avec noms compatibles",
+    "it": "Cartelle con nomi compatibili",
+    "ja": "互換名を使用するフォルダー",
+    "zh": "使用兼容名称的文件夹"
+  },
+  "Carpetas marcadas: vídeo convertido en MKV, sin Transcodificar; el dispositivo elige las pistas si lo admite. Carpetas sin marcar: archivos originales.": {
+    "de": "Ausgewählte Ordner: konvertiertes MKV ohne Transkodieren; das Gerät wählt die Spuren, falls unterstützt. Nicht ausgewählte Ordner: Originale.",
+    "en": "Checked folders: converted MKV, without Transcode; the device selects tracks if supported. Unchecked folders: originals.",
+    "fr": "Dossiers cochés : MKV converti, sans Transcoder ; l’appareil choisit les pistes s’il le permet. Non cochés : originaux.",
+    "it": "Cartelle selezionate: MKV convertito, senza Transcodifica; il dispositivo sceglie le tracce se supportato. Non selezionate: originali.",
+    "ja": "チェックしたフォルダー：変換済みMKV、トランスコードなし。対応機器でトラックを選択できます。未チェック：オリジナル。",
+    "zh": "勾选的文件夹：转换为MKV，无转码目录；设备支持时可选择音轨和字幕。未勾选：原文件。"
+  },
+  "Carpetas marcadas: vídeo convertido y carpeta Transcodificar para elegir audio y subtítulos. Carpetas sin marcar: solo archivos originales, sin alternativas de conversión.": {
+    "de": "Ausgewählte Ordner: konvertiertes Video und Transkodieren zur Ton-/Untertitelwahl. Nicht ausgewählte Ordner: nur Originaldateien, ohne Konvertierungsvarianten.",
+    "en": "Checked folders: converted video and Transcode for audio/subtitle choices. Unchecked folders: originals only, without conversion alternatives.",
+    "fr": "Dossiers cochés : vidéo convertie et Transcoder pour choisir audio et sous-titres. Non cochés : originaux seuls, sans variantes de conversion.",
+    "it": "Cartelle selezionate: video convertito e Transcodifica per scegliere audio e sottotitoli. Non selezionate: solo originali, senza alternative di conversione.",
+    "ja": "チェックしたフォルダー：変換動画と音声・字幕を選ぶトランスコード。未チェック：オリジナルのみで、変換の選択肢はありません。",
+    "zh": "勾选的文件夹：转换的视频及用于选择音轨、字幕的转码目录。未勾选：仅原文件，无转换选项。"
+  },
+  "Carpetas que se convierten": {
+    "de": "Zu konvertierende Ordner",
+    "en": "Folders to convert",
+    "fr": "Dossiers à convertir",
+    "it": "Cartelle da convertire",
+    "ja": "変換するフォルダー",
+    "zh": "转换的文件夹"
+  },
+  "Categorías de ayuda": {
+    "de": "Hilfekategorien",
+    "en": "Help categories",
+    "fr": "Catégories d’aide",
+    "it": "Categorie di aiuto",
+    "ja": "ヘルプのカテゴリー",
+    "zh": "帮助类别"
+  },
+  "Compartir carpetas": {
+    "de": "Ordner freigeben",
+    "en": "Share folders",
+    "fr": "Partager des dossiers",
+    "it": "Condividere cartelle",
+    "ja": "フォルダーを共有する",
+    "zh": "共享文件夹"
+  },
+  "Comprobando servidor…": {
+    "de": "Server wird geprüft…",
+    "en": "Checking server…",
+    "fr": "Vérification du serveur…",
+    "it": "Controllo del server…",
+    "ja": "サーバーを確認中…",
+    "zh": "正在检查服务器…"
+  },
+  "Comprueba cada archivo de todas las carpetas compartidas con el perfil del dispositivo y los límites elegidos. Envía original lo compatible; adapta contenedor, audio o vídeo cuando hace falta. Si UMS no reconoce el modelo, usa reglas conservadoras.": {
+    "de": "Prüft jede freigegebene Datei anhand des Geräteprofils und der Grenzwerte. Kompatibles bleibt unverändert; Container, Ton oder Video werden bei Bedarf angepasst. Für unbekannte Modelle gelten konservative Regeln.",
+    "en": "Check every shared file against the device profile and chosen limits. Send compatible files unchanged; adapt the container, audio or video as needed. Unknown models use conservative rules.",
+    "fr": "Vérifie chaque fichier partagé selon le profil de l’appareil et les limites choisies. Envoie les fichiers compatibles intacts ; adapte conteneur, audio ou vidéo si nécessaire. Règles prudentes pour les modèles inconnus.",
+    "it": "Controlla ogni file condiviso in base al profilo e ai limiti scelti. Invia i file compatibili intatti; adatta contenitore, audio o video se necessario. Usa regole conservative per modelli sconosciuti.",
+    "ja": "共有する各ファイルをデバイスのプロファイルと指定上限で確認します。対応ファイルはそのまま送信し、必要なコンテナ・音声・動画のみ変換します。不明な機種には保守的な規則を使います。",
+    "zh": "根据设备配置和所选限制检查所有共享文件。兼容文件保持原样，必要时调整封装、音频或视频。未识别的型号使用保守规则。"
+  },
+  "Conecta el PC y el reproductor a la misma red. En Resumen pulsa Iniciar si el servidor está detenido; el PC debe permanecer encendido mientras reproduces.": {
+    "de": "Verbinde PC und Player mit demselben Netzwerk. Klicke in Übersicht auf Starten, falls der Server gestoppt ist. Der PC muss bei der Wiedergabe eingeschaltet bleiben.",
+    "en": "Connect the PC and player to the same network. In Overview, click Start if the server is stopped; keep the PC on during playback.",
+    "fr": "Connectez le PC et le lecteur au même réseau. Dans Vue d’ensemble, cliquez sur Démarrer si le serveur est arrêté ; gardez le PC allumé pendant la lecture.",
+    "it": "Collega PC e lettore alla stessa rete. In Riepilogo premi Avvia se il server è fermo; lascia acceso il PC durante la riproduzione.",
+    "ja": "PCとプレーヤーを同じネットワークにつなぎます。概要でサーバーが停止中なら開始を押してください。再生中はPCの電源を入れたままにします。",
+    "zh": "将电脑和播放器连接到同一网络。在概览中，若服务器已停止，请点击启动。播放期间电脑必须保持开机。"
+  },
+  "Configuración aplicada y confirmada por UMS": {
+    "de": "Konfiguration angewendet und von UMS bestätigt",
+    "en": "Configuration applied and confirmed by UMS",
+    "fr": "Configuration appliquée et confirmée par UMS",
+    "it": "Configurazione applicata e confermata da UMS",
+    "ja": "設定を適用し、UMS が確認しました",
+    "zh": "配置已应用并经 UMS 确认"
+  },
+  "Configuración de dispositivos no válida.": {
+    "de": "Ungültige Gerätekonfiguration.",
+    "en": "Invalid device configuration.",
+    "fr": "Configuration des appareils non valide.",
+    "it": "Configurazione dispositivi non valida.",
+    "ja": "デバイス設定が無効です。",
+    "zh": "设备配置无效。"
+  },
+  "Configuración guardada recuperada · Sin reiniciar UMS": {
+    "de": "Gespeicherte Konfiguration geladen · UMS nicht neu gestartet",
+    "en": "Saved configuration restored · UMS not restarted",
+    "fr": "Configuration enregistrée récupérée · UMS non redémarré",
+    "it": "Configurazione salvata ripristinata · UMS non riavviato",
+    "ja": "保存済み設定を復元 · UMS の再起動なし",
+    "zh": "已恢复保存的配置 · 未重启 UMS"
+  },
+  "Configuración guardada · Servidor detenido": {
+    "de": "Konfiguration gespeichert · Server gestoppt",
+    "en": "Configuration saved · Server stopped",
+    "fr": "Configuration enregistrée · Serveur arrêté",
+    "it": "Configurazione salvata · Server arrestato",
+    "ja": "設定を保存 · サーバー停止中",
+    "zh": "配置已保存 · 服务器已停止"
+  },
+  "Configuración inicial: tras añadir un dispositivo y seleccionar sus carpetas compartidas, Guardar y aplicar activa la configuración. La biblioteca se selecciona desde la sección de servidores multimedia del televisor o la consola. Cerrar UMS Control no detiene el servidor.": {
+    "de": "Ersteinrichtung: Nach dem Hinzufügen eines Geräts und der Auswahl seiner freigegebenen Ordner aktiviert Speichern und anwenden die Konfiguration. Die Bibliothek wird im Medienserverbereich des Fernsehers oder der Konsole ausgewählt. Das Schließen von UMS Control beendet den Server nicht.",
+    "en": "Initial setup: after adding a device and selecting its shared folders, Save and apply activates the configuration. The library is selected from the media server section on the TV or console. Closing UMS Control does not stop the server.",
+    "fr": "Configuration initiale: après l’ajout d’un appareil et la sélection de ses dossiers partagés, Enregistrer et appliquer active la configuration. La bibliothèque se sélectionne dans la rubrique des serveurs multimédias du téléviseur ou de la console. Fermer UMS Control n’arrête pas le serveur.",
+    "it": "Configurazione iniziale: dopo l’aggiunta di un dispositivo e la selezione delle cartelle condivise, Salva e applica attiva la configurazione. La libreria si seleziona nella sezione dei server multimediali del televisore o della console. La chiusura di UMS Control non arresta il server.",
+    "ja": "初期設定: 機器の追加と共有フォルダーの選択後、「保存して適用」で設定が有効になります。テレビまたはゲーム機のメディアサーバー一覧からライブラリーを選択します。UMS Control を閉じてもサーバーは停止しません。",
+    "zh": "初始配置: 添加设备并选择共享文件夹后，“保存并应用”可使配置生效。媒体库可在电视或游戏机的媒体服务器区域中选择。关闭 UMS Control 不会停止服务器。"
+  },
+  "Conserva las pistas de audio para elegirlas en el dispositivo. MKV mantiene los subtítulos integrados; MP4 conserva los de texto; MPEG-TS y MPEG-PS no conservan subtítulos seleccionables. Usa B para incrustarlos. No incorpora subtítulos externos.": {
+    "de": "Tonspuren bleiben am Gerät wählbar. MKV behält eingebettete, MP4 textbasierte Untertitel; MPEG-TS/PS behält keine wählbaren Untertitel. Zum Einbrennen B verwenden. Externe Untertitel werden nicht eingebunden.",
+    "en": "Keep audio tracks selectable on the device. MKV keeps embedded subtitles; MP4 keeps text subtitles; MPEG-TS/PS do not keep selectable subtitles. Use B to burn them in. External subtitles are not included.",
+    "fr": "Conserve les pistes audio sélectionnables sur l’appareil. MKV conserve les sous-titres intégrés ; MP4 garde le texte ; MPEG-TS/PS ne garde pas de sous-titres sélectionnables. Utilisez B pour les incruster. Aucun sous-titre externe.",
+    "it": "Mantiene le tracce audio selezionabili sul dispositivo. MKV conserva i sottotitoli integrati; MP4 quelli testuali; MPEG-TS/PS non conserva sottotitoli selezionabili. Usa B per incorporarli. Non include sottotitoli esterni.",
+    "ja": "音声をデバイスで選択できます。MKVは内蔵字幕、MP4はテキスト字幕を保持します。MPEG-TS/PSは選択式字幕を保持しません。焼き込みにはBを使用します。外部字幕は含みません。",
+    "zh": "保留可由设备选择的音轨。MKV保留内嵌字幕，MP4保留文本字幕，MPEG-TS/PS不保留可选字幕。使用B模式烧录字幕。不包含外挂字幕。"
+  },
+  "Contenedor": {
+    "de": "Container",
+    "en": "Container",
+    "fr": "Conteneur",
+    "it": "Contenitore",
+    "ja": "コンテナ",
+    "zh": "封装格式"
+  },
+  "Contenedor automático: en conversión manual usa MKV en A y MPEG-TS/PS en B; en modo automático consulta el perfil del dispositivo. Elegir un contenedor fuerza esa entrega al adaptar; Original permanece intacto.": {
+    "de": "Automatischer Container: manuell MKV bei A, MPEG-TS/PS bei B; im Automatikmodus entscheidet das Geräteprofil. Ein expliziter Container erzwingt diese Ausgabe beim Anpassen. Original bleibt unverändert.",
+    "en": "Automatic container: manual conversion uses MKV in A and MPEG-TS/PS in B; automatic mode checks the device profile. An explicit container forces that output when adapting; Original remains untouched.",
+    "fr": "Conteneur automatique : conversion manuelle en MKV pour A et MPEG-TS/PS pour B ; le mode automatique consulte le profil de l’appareil. Un conteneur explicite impose cette sortie lors de l’adaptation ; Original reste intact.",
+    "it": "Contenitore automatico: conversione manuale in MKV per A e MPEG-TS/PS per B; la modalità automatica consulta il profilo del dispositivo. Un contenitore esplicito impone tale uscita durante l’adattamento; Originale resta intatto.",
+    "ja": "自動コンテナ：手動変換ではAはMKV、BはMPEG-TS/PS。自動モードはデバイスのプロファイルを参照します。指定したコンテナは変換時に適用し、オリジナルは変更しません。",
+    "zh": "自动封装：手动转换时A使用MKV，B使用MPEG-TS/PS；自动模式参考设备配置。指定封装会在调整时强制使用该输出；“原始”保持不变。"
+  },
+  "Contenedor de salida: MKV, necesario para conservar los subtítulos seleccionables. Se mantienen los códecs de vídeo/audio elegidos arriba.": {
+    "de": "Ausgabecontainer: MKV für auswählbare Untertitel. Die oben gewählten Codecs bleiben erhalten.",
+    "en": "Output container: MKV, required for selectable subtitles. Keeps the video/audio codecs selected above.",
+    "fr": "Conteneur : MKV, nécessaire aux sous-titres sélectionnables. Les codecs choisis sont conservés.",
+    "it": "Contenitore: MKV, necessario per sottotitoli selezionabili. Mantiene i codec scelti sopra.",
+    "ja": "出力コンテナーは選択可能な字幕に必要な MKV です。上で選んだ映像・音声コーデックを維持します。",
+    "zh": "输出容器：MKV，用于保留可选字幕。保持上方选择的视频和音频编码。"
+  },
+  "Contenedor de salida: MPEG-PS para MPEG-2; MPEG-TS para H.264. Los subtítulos elegidos quedan incrustados en la imagen.": {
+    "de": "Ausgabecontainer: MPEG-PS für MPEG-2, MPEG-TS für H.264. Untertitel werden ins Bild eingebrannt.",
+    "en": "Output container: MPEG-PS for MPEG-2; MPEG-TS for H.264. Selected subtitles are burned into the picture.",
+    "fr": "Conteneur : MPEG-PS pour MPEG-2 ; MPEG-TS pour H.264. Les sous-titres choisis sont incrustés.",
+    "it": "Contenitore: MPEG-PS per MPEG-2; MPEG-TS per H.264. I sottotitoli scelti sono impressi nell'immagine.",
+    "ja": "MPEG-2 は MPEG-PS、H.264 は MPEG-TS で出力し、字幕を映像に焼き込みます。",
+    "zh": "输出容器：MPEG-2 使用 MPEG-PS，H.264 使用 MPEG-TS。所选字幕烧录到画面中。"
+  },
+  "Contenedor no válido.": {
+    "de": "Ungültiger Container.",
+    "en": "Invalid container.",
+    "fr": "Conteneur non valide.",
+    "it": "Contenitore non valido.",
+    "ja": "コンテナが無効です。",
+    "zh": "封装格式无效。"
+  },
+  "Conversión activa · ": {
+    "de": "Aktive Konvertierung · ",
+    "en": "Active conversion · ",
+    "fr": "Conversion active · ",
+    "it": "Conversione attiva · ",
+    "ja": "変換中 · ",
+    "zh": "正在转换 · "
+  },
+  "Conversión por carpeta · ": {
+    "de": "Konvertierung pro Ordner · ",
+    "en": "Per-folder conversion · ",
+    "fr": "Conversion par dossier · ",
+    "it": "Conversione per cartella · ",
+    "ja": "フォルダー別変換 · ",
+    "zh": "按文件夹转换 · "
+  },
+  "Conversión por carpeta · audio seleccionable · contenedor configurable": {
+    "de": "Konvertierung pro Ordner · wählbare Tonspuren · einstellbarer Container",
+    "en": "Per-folder conversion · selectable audio · configurable container",
+    "fr": "Conversion par dossier · audio sélectionnable · conteneur configurable",
+    "it": "Conversione per cartella · audio selezionabile · contenitore configurabile",
+    "ja": "フォルダー別変換 · 音声選択 · コンテナ設定可能",
+    "zh": "按文件夹转换 · 可选音轨 · 可配置封装"
+  },
+  "Convertir incompatibles automáticamente": {
+    "de": "Inkompatible Dateien automatisch konvertieren",
+    "en": "Automatically convert incompatible files",
+    "fr": "Convertir automatiquement les fichiers incompatibles",
+    "it": "Converti automaticamente i file incompatibili",
+    "ja": "非対応ファイルを自動変換",
+    "zh": "自动转换不兼容文件"
+  },
+  "Convertir las carpetas seleccionadas": {
+    "de": "Ausgewählte Ordner konvertieren",
+    "en": "Convert selected folders",
+    "fr": "Convertir les dossiers sélectionnés",
+    "it": "Converti le cartelle selezionate",
+    "ja": "選択したフォルダーを変換",
+    "zh": "转换所选文件夹"
+  },
+  "Convierte solo los vídeos de las carpetas marcadas en el apartado 3. El resto se envía en original. La conversión consume recursos y no modifica los archivos.": {
+    "de": "Konvertiert nur Videos aus den in Abschnitt 3 ausgewählten Ordnern. Der Rest wird im Original gesendet. Die Konvertierung benötigt Ressourcen, verändert aber keine Dateien.",
+    "en": "Convert only videos in the folders checked in section 3. Send the rest as originals. Conversion uses resources but does not modify files.",
+    "fr": "Convertit uniquement les vidéos des dossiers cochés à la section 3. Le reste est envoyé en original. La conversion consomme des ressources sans modifier les fichiers.",
+    "it": "Converte solo i video delle cartelle selezionate nella sezione 3. Il resto viene inviato in originale. La conversione usa risorse senza modificare i file.",
+    "ja": "項目3でチェックしたフォルダーの動画のみ変換します。それ以外はオリジナルを送信します。変換はリソースを使いますが、ファイルは変更しません。",
+    "zh": "仅转换第3节中勾选文件夹的视频，其余发送原文件。转换会占用资源，但不会修改文件。"
+  },
+  "Copia reproducción, calidad y audio. Mantiene la identificación, las carpetas compartidas y su selección de conversión.": {
+    "de": "Kopiert Wiedergabe, Qualität und Audio. Identifikation, Freigaben und Ordnerauswahl bleiben erhalten.",
+    "en": "Copy playback, quality and audio. Keep identity, shared folders and folder conversion choices.",
+    "fr": "Copie lecture, qualité et audio. Conserve l’identification, les dossiers partagés et leur sélection de conversion.",
+    "it": "Copia riproduzione, qualità e audio. Mantiene identificazione, cartelle condivise e selezione di conversione.",
+    "ja": "再生、品質、音声をコピーします。識別情報、共有フォルダー、変換対象は保持します。",
+    "zh": "复制播放、质量和音频设置。保留标识、共享文件夹和转换选择。"
+  },
+  "Copiar ajustes": {
+    "de": "Einstellungen kopieren",
+    "en": "Copy settings",
+    "fr": "Copier les réglages",
+    "it": "Copia impostazioni",
+    "ja": "設定をコピー",
+    "zh": "复制设置"
+  },
+  "Copiar ajustes a ": {
+    "de": "Einstellungen kopieren nach ",
+    "en": "Copy settings to ",
+    "fr": "Copier les réglages vers ",
+    "it": "Copia impostazioni in ",
+    "ja": "設定のコピー先：",
+    "zh": "复制设置到 "
+  },
+  "Copiar ajustes de otro dispositivo…": {
+    "de": "Einstellungen von anderem Gerät kopieren…",
+    "en": "Copy settings from another device…",
+    "fr": "Copier les réglages d’un autre appareil…",
+    "it": "Copia impostazioni da un altro dispositivo…",
+    "ja": "別のデバイスから設定をコピー…",
+    "zh": "从其他设备复制设置…"
+  },
+  "Cómo enviar los vídeos": {
+    "de": "Videoübertragung",
+    "en": "How to send videos",
+    "fr": "Envoi des vidéos",
+    "it": "Come inviare i video",
+    "ja": "動画の送信方法",
+    "zh": "视频发送方式"
+  },
+  "Cómo identificar este dispositivo": {
+    "de": "Dieses Gerät identifizieren",
+    "en": "Identify this device",
+    "fr": "Identifier cet appareil",
+    "it": "Identifica questo dispositivo",
+    "ja": "デバイスの識別",
+    "zh": "识别此设备"
+  },
+  "DISPOSITIVOS": {
+    "de": "GERÄTE",
+    "en": "DEVICES",
+    "fr": "DISPOSITIFS",
+    "it": "DISPOSITIVI",
+    "ja": "デバイス",
+    "zh": "设备"
+  },
+  "Deja de compartir carpetas con este dispositivo al guardar. No borra archivos.": {
+    "de": "Beendet beim Speichern die Freigabe für dieses Gerät. Dateien werden nicht gelöscht.",
+    "en": "Stop sharing folders with this device when saved. Files are not deleted.",
+    "fr": "Cesse de partager les dossiers avec cet appareil après enregistrement. Aucun fichier supprimé.",
+    "it": "Interrompe la condivisione con questo dispositivo al salvataggio. Non elimina file.",
+    "ja": "保存するとこのデバイスへの共有を停止します。ファイルは削除しません。",
+    "zh": "保存后停止向此设备共享文件夹，不会删除文件。"
+  },
+  "Dejar de compartir selección": {
+    "de": "Auswahl nicht mehr freigeben",
+    "en": "Stop sharing selection",
+    "fr": "Ne plus partager la sélection",
+    "it": "Interrompi condivisione selezione",
+    "ja": "選択項目の共有を解除",
+    "zh": "停止共享所选项"
+  },
+  "Dependencia privada ausente: {value}": {
+    "de": "Private Abhängigkeit fehlt: {value}",
+    "en": "Private dependency missing: {value}",
+    "fr": "Dépendance privée absente : {value}",
+    "it": "Dipendenza privata mancante: {value}",
+    "ja": "専用依存ファイルがありません：{value}",
+    "zh": "专用依赖项缺失：{value}"
+  },
+  "Dependencias del sistema incompatibles: {value}": {
+    "de": "Inkompatible Systemabhängigkeiten: {value}",
+    "en": "Incompatible system dependencies: {value}",
+    "fr": "Dépendances système incompatibles : {value}",
+    "it": "Dipendenze di sistema incompatibili: {value}",
+    "ja": "システム依存関係が非互換です：{value}",
+    "zh": "不兼容的系统依赖：{value}"
+  },
+  "Descartar cambios": {
+    "de": "Änderungen verwerfen",
+    "en": "Discard changes",
+    "fr": "Annuler les modifications",
+    "it": "Scarta modifiche",
+    "ja": "変更を破棄",
+    "zh": "放弃更改"
+  },
+  "Desinstalación: Desinstalar servidor UMS solicita confirmación, detiene el servidor gestionado, desactiva su inicio automático y envía sus archivos a la papelera. UMS Control, los ajustes, los perfiles y los archivos multimedia se conservan. No se desinstalan otros servidores. Instalar servidor UMS permite instalarlo de nuevo.": {
+    "de": "Deinstallation: UMS-Server deinstallieren fordert eine Bestätigung an, stoppt den verwalteten Server, deaktiviert dessen automatischen Start und verschiebt dessen Dateien in den Papierkorb. UMS Control, Einstellungen, Profile und Mediendateien bleiben erhalten. Andere Server werden nicht deinstalliert. UMS-Server installieren ermöglicht eine erneute Installation.",
+    "en": "Uninstallation: Uninstall UMS server requests confirmation, stops the managed server, disables its automatic startup and moves its files to the trash. UMS Control, settings, profiles and media files are preserved. Other servers are not uninstalled. Install UMS server allows a new installation.",
+    "fr": "Désinstallation: Désinstaller le serveur UMS demande confirmation, arrête le serveur géré, désactive son démarrage automatique et place ses fichiers dans la corbeille. UMS Control, les réglages, les profils et les fichiers multimédias sont conservés. Les autres serveurs ne sont pas désinstallés. Installer le serveur UMS permet une nouvelle installation.",
+    "it": "Disinstallazione: Disinstalla server UMS richiede conferma, arresta il server gestito, disabilita l’avvio automatico e ne sposta i file nel cestino. UMS Control, impostazioni, profili e file multimediali vengono conservati. Gli altri server non vengono disinstallati. Installa server UMS consente una nuova installazione.",
+    "ja": "アンインストール: 「UMS サーバーを削除」は確認後、管理対象のサーバーを停止し、自動起動を無効にして、そのファイルをごみ箱へ移動します。UMS Control、設定、プロファイル、メディアファイルは保持されます。他のサーバーは削除されません。「UMS サーバーをインストール」で再インストールできます。",
+    "zh": "卸载: “卸载 UMS 服务器”会请求确认，停止受管理的服务器，禁用其自动启动，并将服务器文件移至回收站。UMS Control、设置、配置及媒体文件会保留。其他服务器不会被卸载。通过“安装 UMS 服务器”可再次安装。"
+  },
+  "Desinstalar servidor UMS": {
+    "de": "UMS-Server deinstallieren",
+    "en": "Uninstall UMS server",
+    "fr": "Désinstaller le serveur UMS",
+    "it": "Disinstalla server UMS",
+    "ja": "UMS サーバーを削除",
+    "zh": "卸载 UMS 服务器"
+  },
+  "Despliega las carpetas para elegir subcarpetas. Una selección parcial indica excepciones; marcar o desmarcar una carpeta aplica la regla a toda su rama.": {
+    "de": "Ordner aufklappen, um Unterordner auszuwählen. Eine teilweise Auswahl zeigt Ausnahmen an. An- oder Abwählen gilt für den gesamten Zweig.",
+    "en": "Expand folders to choose subfolders. A partial selection indicates exceptions; checking or unchecking a folder applies the rule to its entire branch.",
+    "fr": "Dépliez les dossiers pour choisir les sous-dossiers. Une sélection partielle indique des exceptions ; cocher ou décocher un dossier applique la règle à toute sa branche.",
+    "it": "Espandi le cartelle per scegliere le sottocartelle. Una selezione parziale indica eccezioni; selezionare o deselezionare una cartella applica la regola a tutto il ramo.",
+    "ja": "展開してサブフォルダーを選択します。一部選択は例外を示します。フォルダーをオン・オフにすると配下全体に適用されます。",
+    "zh": "展开文件夹以选择子文件夹。部分选中表示存在例外；勾选或取消文件夹将对整个分支应用规则。"
+  },
+  "Detener": {
+    "de": "Stoppen",
+    "en": "Stop",
+    "fr": "Arrêter",
+    "it": "Arresta",
+    "ja": "停止",
+    "zh": "停止"
+  },
+  "Detenido (no es una avería)": {
+    "de": "Gestoppt (kein Fehler)",
+    "en": "Stopped (not a fault)",
+    "fr": "Arrêté (ce n'est pas une panne)",
+    "it": "Arrestato (non è un guasto)",
+    "ja": "停止中（故障ではありません）",
+    "zh": "已停止（并非故障）"
+  },
+  "Deteniéndose": {
+    "de": "Wird gestoppt",
+    "en": "Stopping",
+    "fr": "Arrêt en cours",
+    "it": "Arresto in corso",
+    "ja": "停止処理中",
+    "zh": "正在停止"
+  },
+  "Dirección IPv4": {
+    "de": "IPv4-Adresse",
+    "en": "IPv4 address",
+    "fr": "Adresse IPv4",
+    "it": "Indirizzo IPv4",
+    "ja": "IPv4 アドレス",
+    "zh": "IPv4 地址"
+  },
+  "Disponibilidad y retirada: los discos compartidos deben estar conectados durante la reproducción. Dejar de compartir selección y Retirar perfil eliminan el acceso al guardar, sin borrar los archivos multimedia. Los dispositivos nuevos no tienen carpetas compartidas hasta que se les asignan.": {
+    "de": "Verfügbarkeit und Freigabeentzug: Freigegebene Laufwerke müssen während der Wiedergabe angeschlossen sein. Auswahl nicht mehr freigeben und Profil entfernen entziehen den Zugriff beim Speichern, ohne Mediendateien zu löschen. Neue Geräte haben bis zur Zuweisung keine freigegebenen Ordner.",
+    "en": "Availability and removal: shared drives must be connected during playback. Stop sharing selection and Remove profile revoke access when saved, without deleting media files. New devices have no shared folders until folders are assigned.",
+    "fr": "Disponibilité et retrait: les disques partagés doivent être connectés pendant la lecture. Ne plus partager la sélection et Retirer le profil suppriment l’accès lors de l’enregistrement, sans effacer les fichiers multimédias. Les nouveaux appareils ne disposent d’aucun dossier partagé avant leur attribution.",
+    "it": "Disponibilità e rimozione: i dischi condivisi devono essere collegati durante la riproduzione. Interrompi condivisione selezione e Rimuovi profilo revocano l’accesso al salvataggio, senza eliminare i file multimediali. I nuovi dispositivi non hanno cartelle condivise fino alla loro assegnazione.",
+    "ja": "利用条件と共有の解除: 再生中は共有ディスクを接続しておく必要があります。「選択項目の共有を解除」と「プロファイルを解除」は、保存時にアクセスを取り消しますが、メディアファイルは削除しません。新しい機器には、割り当てるまで共有フォルダーはありません。",
+    "zh": "可用性与移除: 播放期间，共享磁盘必须保持连接。“停止共享所选项”和“移除配置”会在保存后取消访问权限，但不会删除媒体文件。新设备在分配文件夹前不共享任何文件夹。"
+  },
+  "Disponible": {
+    "de": "Verfügbar",
+    "en": "Available",
+    "fr": "Disponible",
+    "it": "Disponibile",
+    "ja": "利用可能",
+    "zh": "可用"
+  },
+  "Dispositivo": {
+    "de": "Gerät",
+    "en": "Device",
+    "fr": "Appareil",
+    "it": "Dispositivo",
+    "ja": "デバイス",
+    "zh": "设备"
+  },
+  "Dispositivo DLNA": {
+    "de": "DLNA-Gerät",
+    "en": "DLNA device",
+    "fr": "Appareil DLNA",
+    "it": "Dispositivo DLNA",
+    "ja": "DLNA デバイス",
+    "zh": "DLNA 设备"
+  },
+  "Dispositivo de origen": {
+    "de": "Quellgerät",
+    "en": "Source device",
+    "fr": "Appareil source",
+    "it": "Dispositivo di origine",
+    "ja": "コピー元のデバイス",
+    "zh": "来源设备"
+  },
+  "Dispositivo sin nombre": {
+    "de": "Unbenanntes Gerät",
+    "en": "Unnamed device",
+    "fr": "Appareil sans nom",
+    "it": "Dispositivo senza nome",
+    "ja": "名前のないデバイス",
+    "zh": "未命名设备"
+  },
+  "Dispositivos": {
+    "de": "Geräte",
+    "en": "Devices",
+    "fr": "Appareils",
+    "it": "Dispositivi",
+    "ja": "デバイス",
+    "zh": "设备"
+  },
+  "Dispositivos configurados": {
+    "de": "Konfigurierte Geräte",
+    "en": "Configured devices",
+    "fr": "Appareils configurés",
+    "it": "Dispositivi configurati",
+    "ja": "設定済みデバイス",
+    "zh": "已配置设备"
+  },
+  "Dispositivos detectados": {
+    "de": "Erkannte Geräte",
+    "en": "Detected devices",
+    "fr": "Appareils détectés",
+    "it": "Dispositivi rilevati",
+    "ja": "検出されたデバイス",
+    "zh": "检测到的设备"
+  },
+  "Dispositivos detectados por UMS. Se actualiza cada 10 segundos; la disponibilidad y la reproducción dependen de la información que envía cada dispositivo.": {
+    "de": "Von UMS erkannte Geräte. Aktualisierung alle 10 Sekunden; Verfügbarkeit und Wiedergabe hängen von den Meldungen der einzelnen Geräte ab.",
+    "en": "Devices detected by UMS. Updated every 10 seconds; availability and playback depend on the information reported by each device.",
+    "fr": "Appareils détectés par UMS. Actualisation toutes les 10 secondes ; la disponibilité et la lecture dépendent des informations envoyées par chaque appareil.",
+    "it": "Dispositivi rilevati da UMS. Aggiornamento ogni 10 secondi; disponibilità e riproduzione dipendono dalle informazioni inviate da ogni dispositivo.",
+    "ja": "UMS が検出したデバイスです。10秒ごとに更新されます。利用状況や再生情報は、各デバイスからの通知によって異なります。",
+    "zh": "UMS 检测到的设备。每 10 秒更新一次；可用状态和播放信息取决于各设备上报的数据。"
+  },
+  "Dispositivos y reproducción": {
+    "de": "Geräte und Wiedergabe",
+    "en": "Devices and playback",
+    "fr": "Appareils et lecture",
+    "it": "Dispositivi e riproduzione",
+    "ja": "デバイスと再生",
+    "zh": "设备与播放"
+  },
+  "Dos perfiles no pueden tener el mismo UUID.": {
+    "de": "Zwei Profile dürfen nicht dieselbe UUID haben.",
+    "en": "Two profiles cannot share a UUID.",
+    "fr": "Deux profils ne peuvent pas avoir le même UUID.",
+    "it": "Due profili non possono avere lo stesso UUID.",
+    "ja": "2 つのプロファイルに同じ UUID は使えません。",
+    "zh": "两个配置不能使用同一 UUID。"
+  },
+  "Dos perfiles no pueden tener la misma IP.": {
+    "de": "Zwei Profile dürfen nicht dieselbe IP haben.",
+    "en": "Two profiles cannot share an IP.",
+    "fr": "Deux profils ne peuvent pas avoir la même IP.",
+    "it": "Due profili non possono avere lo stesso IP.",
+    "ja": "2 つのプロファイルに同じ IP は使えません。",
+    "zh": "两个配置不能使用同一 IP。"
+  },
+  "Efectos y selección: solo se modifica el nombre anunciado al reproductor, sin renombrar los archivos ni convertir el vídeo. La opción también está disponible en Original. El árbol permite seleccionar subcarpetas; una casilla parcialmente marcada indica que existen excepciones dentro de esa carpeta.": {
+    "de": "Auswirkungen und Auswahl: Nur der an das Wiedergabegerät übermittelte Name ändert sich. Dateien werden nicht umbenannt und Videos nicht konvertiert. Die Option ist auch im Originalmodus verfügbar. Die Baumansicht ermöglicht die Auswahl von Unterordnern; ein teilweise markiertes Kontrollkästchen weist auf Ausnahmen innerhalb des Ordners hin.",
+    "en": "Effects and selection: only the name announced to the player changes; files are not renamed and video is not converted. The option is also available in Original. The tree allows subfolder selection; a partially checked box indicates exceptions within that folder.",
+    "fr": "Effets et sélection: seul le nom annoncé au lecteur est modifié ; les fichiers ne sont pas renommés et la vidéo n’est pas convertie. L’option est également disponible en mode Original. L’arborescence permet de sélectionner les sous-dossiers ; une case partiellement cochée indique des exceptions dans le dossier.",
+    "it": "Effetti e selezione: cambia solo il nome comunicato al lettore, senza rinominare i file né convertire il video. L’opzione è disponibile anche in Originale. L’albero consente di selezionare le sottocartelle; una casella parzialmente selezionata indica eccezioni nella cartella.",
+    "ja": "変更内容と選択: 再生機器に通知する名前だけを変更し、ファイル名の変更や動画の変換は行いません。オリジナルモードでも利用できます。ツリーでサブフォルダーを選択でき、一部選択のチェックボックスは、そのフォルダー内に例外があることを示します。",
+    "zh": "效果与选择: 仅更改向播放器显示的名称，不会重命名文件或转换视频。此选项在原始模式下也可用。树状列表可选择子文件夹；部分勾选的复选框表示该文件夹内存在例外。"
+  },
+  "Ej. 192.168.1.20": {
+    "de": "Z. B. 192.168.1.20",
+    "en": "E.g. 192.168.1.20",
+    "fr": "Ex. 192.168.1.20",
+    "it": "Es. 192.168.1.20",
+    "ja": "例：192.168.1.20",
+    "zh": "例如 192.168.1.20"
+  },
+  "Ej. Dispositivo del salón": {
+    "de": "Z. B. Gerät im Wohnzimmer",
+    "en": "E.g. Living room device",
+    "fr": "Ex. Appareil du salon",
+    "it": "Es. Dispositivo del salotto",
+    "ja": "例：リビングのデバイス",
+    "zh": "例如：客厅设备"
+  },
+  "Ejemplo: 001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv": {
+    "de": "Beispiel: 001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv",
+    "en": "Example: 001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv",
+    "fr": "Exemple : 001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv",
+    "it": "Esempio: 001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv",
+    "ja": "例：001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv",
+    "zh": "示例：001 - Una nueva esperanza? España.mkv → 001unanuevaesperanzaespana.mkv"
+  },
+  "El nombre es una etiqueta local. El UUID permite reconocer el dispositivo aunque cambie de IP; si usas solo IP, resérvala en el router. Es necesaria al menos una de las dos identificaciones.": {
+    "de": "Der Name ist lokal. Die UUID erkennt das Gerät bei IP-Wechsel. Bei reiner IP-Nutzung im Router reservieren. Eine Kennung ist erforderlich.",
+    "en": "The name is a local label. UUID identifies the device after an IP change. With IP only, reserve it in your router. At least one identifier is required.",
+    "fr": "Le nom est local. L'UUID identifie l’appareil si son IP change. Avec l'IP seule, réservez-la dans le routeur. Un identifiant est requis.",
+    "it": "Il nome è locale. L'UUID riconosce il dispositivo se cambia IP. Con solo IP, riservalo nel router. Serve almeno un identificativo.",
+    "ja": "名前はローカルのラベルです。UUID は IP が変わってもデバイスを識別できます。IP のみならルーターで固定してください。識別情報が最低 1 つ必要です。",
+    "zh": "名称仅在本地使用。UUID 可在 IP 变化后识别设备。仅用 IP 时请在路由器中保留地址，至少需要一种标识。"
+  },
+  "El proceso está activo, pero la administración local no responde; puede estar iniciándose.": {
+    "de": "Der Prozess läuft, die lokale Verwaltung antwortet aber nicht; möglicherweise startet sie noch.",
+    "en": "The process is running but local administration is not responding; it may still be starting.",
+    "fr": "Le processus tourne mais l'administration locale ne répond pas ; il démarre peut-être.",
+    "it": "Il processo è attivo ma la gestione locale non risponde; potrebbe essere in avvio.",
+    "ja": "プロセスは動作中ですがローカル管理が応答しません。起動中の可能性があります。",
+    "zh": "进程正在运行，但本地管理页面未响应，可能仍在启动。"
+  },
+  "El servicio ha fallado. Revisa el registro; no se recomienda reinstalar si los archivos están íntegros.": {
+    "de": "Der Dienst ist fehlgeschlagen. Prüfen Sie das Protokoll; bei intakten Dateien wird keine Neuinstallation empfohlen.",
+    "en": "The service failed. Check its log; reinstalling is not recommended if files are intact.",
+    "fr": "Le service a échoué. Consultez le journal ; inutile de réinstaller si les fichiers sont intacts.",
+    "it": "Il servizio è fallito. Controlla il registro; non reinstallare se i file sono integri.",
+    "ja": "サービスでエラーが発生しました。ログを確認してください。ファイルが正常なら再インストールは推奨しません。",
+    "zh": "服务启动失败。请查看日志；文件完整时不建议重装。"
+  },
+  "El servidor es Universal Media Server (GPL-2.0), basado en PS3 Media Server. Incluye correcciones locales de integración con sus fuentes y licencia; no se presenta como código propio ni como una versión oficial. FFmpeg, Java y MediaInfo conservan sus respectivos créditos y licencias.": {
+    "de": "Installiert wird Universal Media Server (GPL-2.0), basierend auf PS3 Media Server. Lokale Integrationskorrekturen enthalten Quellen und Lizenz; sie sind weder eigener Servercode noch eine offizielle Version. FFmpeg, Java und MediaInfo behalten ihre Urheberangaben und Lizenzen.",
+    "en": "The installed server is Universal Media Server (GPL-2.0), based on PS3 Media Server. Local integration fixes include their sources and license; they are not claimed as original server code or an official release. FFmpeg, Java and MediaInfo retain their own credits and licenses.",
+    "fr": "Le serveur est Universal Media Server (GPL-2.0), basé sur PS3 Media Server. Les corrections locales sont fournies avec sources et licence, sans revendiquer le code du serveur ni une version officielle. FFmpeg, Java et MediaInfo conservent leurs crédits et licences.",
+    "it": "Il server è Universal Media Server (GPL-2.0), basato su PS3 Media Server. Le correzioni locali includono sorgenti e licenza, senza rivendicare il codice del server o una versione ufficiale. FFmpeg, Java e MediaInfo mantengono crediti e licenze propri.",
+    "ja": "サーバーは PS3 Media Server を基にした Universal Media Server（GPL-2.0）です。統合用の修正にはソースとライセンスを付属し、独自のサーバーコードや公式版とは称しません。FFmpeg・Java・MediaInfo の権利とライセンスは各開発元に帰属します。",
+    "zh": "服务器为基于 PS3 Media Server 的 Universal Media Server（GPL-2.0）。本地集成修复附带源码及许可，不宣称拥有服务器代码或属于官方版本。FFmpeg、Java 和 MediaInfo 保留各自署名和许可。"
+  },
+  "El servidor ya está actualizado.": {
+    "de": "Der Server ist bereits aktuell.",
+    "en": "The server is already up to date.",
+    "fr": "Le serveur est déjà à jour.",
+    "it": "Il server è già aggiornato.",
+    "ja": "サーバーは最新です。",
+    "zh": "服务器已是最新版本。"
+  },
+  "El soporte de instalación está dañado. Reinstala UMS Control.": {
+    "de": "Die Installationsdateien sind beschädigt. Installieren Sie UMS Control neu.",
+    "en": "Installation support is damaged. Reinstall UMS Control.",
+    "fr": "Le support d'installation est endommagé. Réinstallez UMS Control.",
+    "it": "I file di supporto sono danneggiati. Reinstalla UMS Control.",
+    "ja": "インストール用ファイルが破損しています。UMS Control を再インストールしてください。",
+    "zh": "安装支持文件已损坏，请重新安装 UMS Control。"
+  },
+  "Elegir audio y subtítulos": {
+    "de": "Ton und Untertitel wählen",
+    "en": "Choose audio and subtitles",
+    "fr": "Choisir audio et sous-titres",
+    "it": "Scegliere audio e sottotitoli",
+    "ja": "音声と字幕を選ぶ",
+    "zh": "选择音轨和字幕"
+  },
+  "Elige las carpetas que verá este dispositivo. La selección no afecta a otros dispositivos y no crea copias de los archivos.": {
+    "de": "Wählen Sie die für dieses Gerät sichtbaren Ordner. Andere Geräte bleiben unverändert; Dateien werden nicht kopiert.",
+    "en": "Choose the folders this device can see. Other devices are unaffected and files are not copied.",
+    "fr": "Choisissez les dossiers visibles sur cet appareil. Les autres appareils ne sont pas affectés et aucun fichier n’est copié.",
+    "it": "Scegli le cartelle visibili su questo dispositivo. Gli altri dispositivi restano invariati e i file non vengono copiati.",
+    "ja": "このデバイスに表示するフォルダーを選択します。他のデバイスには影響せず、ファイルも複製しません。",
+    "zh": "选择此设备可见的文件夹。不会影响其他设备，也不会复制文件。"
+  },
+  "Elige un límite del catálogo o Sin límite: bitrate variable según el contenido y la calidad de conversión, sin máximo impuesto por el panel. No se adapta a la velocidad de la red. Un límite bajo puede reducir la calidad.": {
+    "de": "Wählen Sie eine Grenze oder Unbegrenzt: variable Bitrate je nach Inhalt und Qualität, ohne Obergrenze des Panels. Keine Anpassung an die Netzgeschwindigkeit. Niedrige Grenzen können die Qualität senken.",
+    "en": "Choose a bitrate limit or Unlimited: variable bitrate follows content and encoding quality, without a panel-imposed maximum. It does not adapt to network speed. Low limits may reduce quality.",
+    "fr": "Choisissez un débit ou Sans limite : débit variable selon le contenu et la qualité, sans plafond du panneau. Pas d'adaptation au réseau. Une limite basse peut réduire la qualité.",
+    "it": "Scegli un limite o Senza limite: bitrate variabile secondo contenuto e qualità, senza tetto imposto dal pannello. Non si adatta alla rete. Limiti bassi possono ridurre la qualità.",
+    "ja": "上限または無制限を選択します。無制限では内容と品質に応じた可変ビットレートとなり、パネルは上限を設定しません。回線速度には自動適応しません。低い上限では画質が低下します。",
+    "zh": "选择码率限制或无限制。无限制按内容和编码质量使用可变码率，面板不设上限；不会根据网速自动调整。低限制可能降低画质。"
+  },
+  "En Transcodificar, elige el audio y el subtítulo antes de reproducir, o Sin subtítulos. Se envía un único audio y se incrusta el subtítulo elegido. La entrada principal conserva la selección automática del servidor.": {
+    "de": "Unter Transkodieren vor der Wiedergabe Audio und Untertitel oder Keine Untertitel wählen. Eine Audiospur wird gesendet und der gewählte Untertitel eingebrannt. Der Haupteintrag behält die automatische Serverauswahl.",
+    "en": "In Transcode, choose audio and subtitles before playback, or No subtitles. One audio track is sent and the chosen subtitle is burned in. The main entry keeps the server’s automatic selection.",
+    "fr": "Dans Transcoder, choisissez l’audio et les sous-titres avant la lecture, ou Sans sous-titres. Une seule piste audio est envoyée et le sous-titre choisi est incrusté. L’entrée principale conserve la sélection automatique du serveur.",
+    "it": "In Transcodifica, scegli audio e sottotitoli prima della riproduzione, oppure Nessun sottotitolo. Viene inviata una sola traccia audio e il sottotitolo scelto viene impresso. La voce principale mantiene la selezione automatica del server.",
+    "ja": "再生前に「トランスコード」で音声と字幕、または字幕なしを選択します。音声は1トラックを送信し、選んだ字幕を映像に焼き込みます。通常の項目ではサーバーの自動選択を維持します。",
+    "zh": "播放前在“转码”中选择音轨和字幕，或选择“无字幕”。仅发送所选音轨，并将所选字幕烧录到画面。主条目仍由服务器自动选择。"
+  },
+  "En ejecución": {
+    "de": "In Betrieb",
+    "en": "Running",
+    "fr": "En cours d'exécution",
+    "it": "In esecuzione",
+    "ja": "実行中",
+    "zh": "运行中"
+  },
+  "Envolvente · hasta 5.1": {
+    "de": "Surround · bis 5.1",
+    "en": "Surround · up to 5.1",
+    "fr": "Surround · jusqu'à 5.1",
+    "it": "Surround · fino a 5.1",
+    "ja": "サラウンド · 最大 5.1",
+    "zh": "环绕声 · 最高 5.1"
+  },
+  "Envía el archivo intacto: vídeo, audio y subtítulos originales. Sin límite artificial de bitrate; la velocidad necesaria depende de los picos del archivo y de la red, no solo de su tamaño (p. ej. 50 GB). No muestra Transcodificar ni alternativas.": {
+    "de": "Sendet Video, Audio und Untertitel unverändert. Keine künstliche Bitratengrenze; Bedarf hängt von Spitzen und Netzwerk ab, nicht nur von der Dateigröße (z. B. 50 GB). Kein Transkodieren oder Varianten.",
+    "en": "Sends the original video, audio and subtitles unchanged. No artificial bitrate limit; bandwidth depends on peaks and the network, not just file size (e.g. 50 GB). No Transcode folder or alternatives.",
+    "fr": "Envoie vidéo, audio et sous-titres intacts. Pas de limite artificielle ; le débit dépend des pics et du réseau, pas seulement de la taille (ex. 50 Go). Sans dossier Transcoder ni variantes.",
+    "it": "Invia video, audio e sottotitoli originali. Nessun limite artificiale; la banda dipende da picchi e rete, non solo dalla dimensione (es. 50 GB). Senza Transcodifica o varianti.",
+    "ja": "映像・音声・字幕を変更せず送信します。人工的なビットレート制限はなく、必要帯域は容量（例：50 GB）だけでなくピークと回線に依存します。トランスコードや代替項目は表示しません。",
+    "zh": "原样发送视频、音频和字幕，不人为限制码率。带宽需求取决于峰值和网络，而非仅文件大小（如 50 GB）。不显示转码或替代条目。"
+  },
+  "Envía un MKV con todas las pistas integradas de audio y subtítulos, conservando idiomas y títulos. El dispositivo elige el audio y activa o cambia los subtítulos si lo admite. Cada audio se convierte con Calidad y audio. No incorpora subtítulos externos.": {
+    "de": "Sendet MKV mit allen eingebetteten Audio- und Untertitelspuren samt Sprachen und Titeln. Das Gerät wählt Audio und Untertitel, sofern unterstützt. Jede Audiospur nutzt Qualität und Audio. Externe Untertitel werden nicht übernommen.",
+    "en": "Sends an MKV with all embedded audio and subtitle tracks, retaining languages and titles. The device selects audio and enables or changes subtitles if supported. Each audio track uses Quality and audio settings. External subtitles are not included.",
+    "fr": "Envoie un MKV avec toutes les pistes audio et de sous-titres intégrées, en conservant langues et titres. L’appareil choisit l’audio et active ou change les sous-titres s’il le permet. Chaque piste audio utilise les réglages Qualité et audio. Les sous-titres externes ne sont pas inclus.",
+    "it": "Invia un MKV con tutte le tracce audio e sottotitoli integrate, conservando lingue e titoli. Il dispositivo sceglie audio e sottotitoli se supportato. Ogni audio usa Qualità e audio. I sottotitoli esterni non sono inclusi.",
+    "ja": "言語とタイトルを保持し、すべての内蔵音声・字幕トラックをMKVで送信します。対応デバイス側で音声や字幕を選択できます。各音声は「品質と音声」の設定で変換します。外部字幕は含みません。",
+    "zh": "发送包含全部内嵌音轨和字幕的 MKV，保留语言和标题。设备可在支持时选择音轨、开启或切换字幕。每条音轨均按“质量和音频”设置转换。不包含外挂字幕。"
+  },
+  "Error ": {
+    "de": "Fehler ",
+    "en": "Error ",
+    "fr": "Erreur ",
+    "it": "Errore ",
+    "ja": "エラー ",
+    "zh": "错误 "
+  },
+  "Espera a que termine la operación.": {
+    "de": "Warten Sie, bis der Vorgang abgeschlossen ist.",
+    "en": "Wait for the operation to finish.",
+    "fr": "Attendez la fin de l'opération.",
+    "it": "Attendi il completamento dell'operazione.",
+    "ja": "操作が完了するまでお待ちください。",
+    "zh": "请等待操作完成。"
+  },
+  "Esta versión del servidor requiere Linux x86_64.": {
+    "de": "Diese Serverversion benötigt Linux x86_64.",
+    "en": "This server version requires Linux x86_64.",
+    "fr": "Cette version du serveur nécessite Linux x86_64.",
+    "it": "Questa versione del server richiede Linux x86_64.",
+    "ja": "このサーバー版には Linux x86_64 が必要です。",
+    "zh": "此服务器版本需要 Linux x86_64。"
+  },
+  "Estado y diagnóstico: tras la instalación, el botón Instalar servidor UMS de la pestaña Resumen se sustituye por Salud del servidor. Esta ventana muestra el estado y los avisos, permite Ver registro del servidor y ofrece la reinstalación cuando se detecta una instalación dañada, conservando los ajustes. El estado Detenido no indica una avería; el botón Iniciar permite activar el servidor.": {
+    "de": "Status und Diagnose: Nach der Installation wird UMS-Server installieren auf der Registerkarte Übersicht durch Serverzustand ersetzt. Dieses Fenster zeigt Status und Hinweise, bietet Serverprotokoll anzeigen und ermöglicht bei einer beschädigten Installation eine Neuinstallation unter Beibehaltung der Einstellungen. Der Status Gestoppt bedeutet keinen Defekt; Starten aktiviert den Server.",
+    "en": "Status and diagnostics: after installation, Install UMS server on the Overview tab is replaced by Server health. This window displays status and notices, provides View server log, and offers reinstallation when a damaged installation is detected, preserving settings. A stopped server does not indicate a fault; Start activates the server.",
+    "fr": "État et diagnostic: après l’installation, Installer le serveur UMS dans l’onglet Résumé est remplacé par État du serveur. Cette fenêtre affiche l’état et les avertissements, propose Voir le journal du serveur et permet une réinstallation lorsqu’une installation endommagée est détectée, en conservant les réglages. L’état Arrêté ne signale pas une panne ; Démarrer permet d’activer le serveur.",
+    "it": "Stato e diagnostica: dopo l’installazione, Installa server UMS nella scheda Riepilogo viene sostituito da Stato del server. Questa finestra mostra stato e avvisi, offre Visualizza registro server e consente la reinstallazione se viene rilevata un’installazione danneggiata, conservando le impostazioni. Lo stato Arrestato non indica un guasto; Avvia attiva il server.",
+    "ja": "状態と診断: インストール後、「概要」タブの「UMS サーバーをインストール」は「サーバーの状態」に変わります。この画面には状態と通知が表示され、「サーバーログを表示」を利用できます。インストールの破損が検出された場合は、設定を保持した再インストールが可能です。停止状態は故障を意味しません。「起動」でサーバーを実行できます。",
+    "zh": "状态与诊断: 安装完成后，“概览”选项卡中的“安装 UMS 服务器”会变为“服务器健康状态”。该窗口显示状态与提示，提供“查看服务器日志”，并在检测到安装损坏时提供保留设置的重新安装功能。“已停止”并不表示故障；“启动”可运行服务器。"
+  },
+  "Estos ajustes se aplican a las carpetas marcadas para convertir de este dispositivo, tanto en la lista principal como en Transcodificar. No afectan a las carpetas enviadas en original.": {
+    "de": "Diese Einstellungen gelten für die zur Konvertierung ausgewählten Ordner dieses Geräts, in der Hauptliste und unter Transkodieren. Originalordner bleiben unverändert.",
+    "en": "These settings apply to this device’s selected conversion folders, in both the main list and Transcode. Original folders are unaffected.",
+    "fr": "Ces réglages concernent les dossiers à convertir pour cet appareil, dans la liste principale et Transcoder. Les dossiers originaux ne sont pas affectés.",
+    "it": "Queste impostazioni si applicano alle cartelle da convertire di questo dispositivo, sia nella lista principale sia in Transcodifica. Non influiscono sulle cartelle originali.",
+    "ja": "この設定は、このデバイスで変換するフォルダーのメイン一覧とトランスコードに適用されます。オリジナルのフォルダーには影響しません。",
+    "zh": "这些设置适用于此设备选中的转换文件夹，包括主列表和转码选项。不影响按原文件发送的文件夹。"
+  },
+  "Estructura de descarga no válida.": {
+    "de": "Ungültige Downloadstruktur.",
+    "en": "Invalid download structure.",
+    "fr": "Structure du téléchargement non valide.",
+    "it": "Struttura del download non valida.",
+    "ja": "ダウンロードの構造が無効です。",
+    "zh": "下载文件结构无效。"
+  },
+  "Estéreo · 2 canales": {
+    "de": "Stereo · 2 Kanäle",
+    "en": "Stereo · 2 channels",
+    "fr": "Stéréo · 2 canaux",
+    "it": "Stereo · 2 canali",
+    "ja": "ステレオ · 2 チャンネル",
+    "zh": "立体声 · 2 声道"
+  },
+  "Fallos e interrupciones de reproducción: ante un fallo en Original, la conversión automática permite comprobar una alternativa. Si falla una variante convertida, puede seleccionarse otra variante o Sin transcodificación. Tras cambiar el modo, es necesario volver a abrir el servidor desde el reproductor. Una conexión Ethernet o una calidad inferior pueden reducir interrupciones. Los errores de UMS deben consultarse en Salud del servidor; el estado Detenido, por sí solo, no requiere reinstalación.": {
+    "de": "Wiedergabefehler und Unterbrechungen: Bei Fehlern im Originalmodus bietet die automatische Konvertierung eine prüfbare Alternative. Scheitert eine konvertierte Variante, kann eine andere Variante oder Ohne Transkodierung gewählt werden. Nach einem Moduswechsel muss der Server am Wiedergabegerät erneut geöffnet werden. Ethernet oder eine niedrigere Qualität können Unterbrechungen verringern. UMS-Fehler sind unter Serverzustand zu prüfen; ein gestoppter Zustand allein erfordert keine Neuinstallation.",
+    "en": "Playback failures and interruptions: if Original fails, automatic conversion provides an alternative to check. If a converted variant fails, another variant or No transcoding may be selected. After changing mode, the server must be reopened from the player. Ethernet or lower quality may reduce interruptions. UMS errors should be reviewed in Server health; a stopped state alone does not require reinstallation.",
+    "fr": "Échecs et interruptions de lecture: en cas d’échec en mode Original, la conversion automatique permet de vérifier une alternative. Si une variante convertie échoue, une autre variante ou Sans transcodage peut être sélectionné. Après un changement de mode, le serveur doit être rouvert depuis le lecteur. Ethernet ou une qualité inférieure peuvent réduire les interruptions. Les erreurs UMS sont à consulter dans État du serveur ; l’état Arrêté ne nécessite pas à lui seul une réinstallation.",
+    "it": "Errori e interruzioni di riproduzione: in caso di errore in Originale, la conversione automatica permette di verificare un’alternativa. Se una variante convertita non funziona, è possibile selezionarne un’altra o Senza transcodifica. Dopo il cambio di modalità, è necessario riaprire il server dal lettore. Ethernet o una qualità inferiore possono ridurre le interruzioni. Gli errori UMS devono essere consultati in Stato del server; il solo stato Arrestato non richiede una reinstallazione.",
+    "ja": "再生エラーと中断: オリジナルで再生できない場合は、自動変換で別の方法を確認できます。変換候補が再生できない場合は、別の候補または「トランスコードなし」を選択できます。モードを変更した後は、再生機器でサーバーを開き直す必要があります。有線 LAN や低い画質によって中断を軽減できる場合があります。UMS のエラーは「サーバーの状態」で確認します。停止状態だけを理由に再インストールする必要はありません。",
+    "zh": "播放错误与中断: 原始模式播放失败时，可使用自动转换验证替代方式。某个转换版本失败时，可选择其他版本或“不转码”。更改模式后，需要从播放器重新打开服务器。以太网连接或较低画质可能减少播放中断。UMS 错误应在“服务器健康状态”中查看；仅处于停止状态并不需要重新安装。"
+  },
+  "Falta el servicio de usuario del servidor.": {
+    "de": "Der Benutzerdienst des Servers fehlt.",
+    "en": "The server's user service is missing.",
+    "fr": "Le service utilisateur du serveur est absent.",
+    "it": "Manca il servizio utente del server.",
+    "ja": "サーバーのユーザーサービスがありません。",
+    "zh": "服务器的用户服务缺失。"
+  },
+  "Faltan las correcciones compatibles de UMS Control o están modificadas.": {
+    "de": "Kompatible UMS-Control-Korrekturen fehlen oder wurden geändert.",
+    "en": "Compatible UMS Control fixes are missing or modified.",
+    "fr": "Les corrections compatibles UMS Control sont absentes ou modifiées.",
+    "it": "Le correzioni compatibili di UMS Control mancano o sono modificate.",
+    "ja": "UMS Control 用の互換修正がないか変更されています。",
+    "zh": "UMS Control 兼容修复缺失或已修改。"
+  },
+  "Formato convertido": {
+    "de": "Konvertiertes Format",
+    "en": "Converted format",
+    "fr": "Format converti",
+    "it": "Formato convertito",
+    "ja": "変換後の形式",
+    "zh": "转换格式"
+  },
+  "Gestionar el servidor": {
+    "de": "Server verwalten",
+    "en": "Manage the server",
+    "fr": "Gérer le serveur",
+    "it": "Gestire il server",
+    "ja": "サーバーの管理",
+    "zh": "管理服务器"
+  },
+  "Guarda y aplica los ajustes para crear la configuración del servidor.": {
+    "de": "Speichern und anwenden, um die Serverkonfiguration zu erstellen.",
+    "en": "Save and apply settings to create the server configuration.",
+    "fr": "Enregistrez et appliquez pour créer la configuration du serveur.",
+    "it": "Salva e applica per creare la configurazione del server.",
+    "ja": "設定を保存・適用してサーバー設定を作成してください。",
+    "zh": "保存并应用设置以创建服务器配置。"
+  },
+  "Guardar ajustes y reiniciar UMS si está activo · Ctrl+S": {
+    "de": "Speichern und laufenden UMS neu starten · Strg+S",
+    "en": "Save settings and restart UMS if running · Ctrl+S",
+    "fr": "Enregistrer et redémarrer UMS s'il tourne · Ctrl+S",
+    "it": "Salva e riavvia UMS se attivo · Ctrl+S",
+    "ja": "保存し、稼働中の UMS を再起動 · Ctrl+S",
+    "zh": "保存设置并重启运行中的 UMS · Ctrl+S"
+  },
+  "Guardar y actualizar catálogo": {
+    "de": "Speichern und Katalog erneuern",
+    "en": "Save and refresh library",
+    "fr": "Enregistrer et actualiser",
+    "it": "Salvare e aggiornare il catalogo",
+    "ja": "保存と一覧の更新",
+    "zh": "保存和更新媒体库"
+  },
+  "Guardar y aplicar": {
+    "de": "Speichern und anwenden",
+    "en": "Save and apply",
+    "fr": "Enregistrer et appliquer",
+    "it": "Salva e applica",
+    "ja": "保存して適用",
+    "zh": "保存并应用"
+  },
+  "Guía de uso · UMS Control": {
+    "de": "Benutzerhandbuch · UMS Control",
+    "en": "User guide · UMS Control",
+    "fr": "Guide d’utilisation · UMS Control",
+    "it": "Guida all’uso · UMS Control",
+    "ja": "ユーザーガイド · UMS Control",
+    "zh": "使用指南 · UMS Control"
+  },
+  "H.264 + AAC · compatibilidad alta en equipos modernos": {
+    "de": "H.264 + AAC · hohe Kompatibilität mit modernen Geräten",
+    "en": "H.264 + AAC · high compatibility on modern devices",
+    "fr": "H.264 + AAC · compatible avec les appareils récents",
+    "it": "H.264 + AAC · ampia compatibilità con dispositivi moderni",
+    "ja": "H.264 + AAC · 最新機器との互換性が高い",
+    "zh": "H.264 + AAC · 现代设备兼容性高"
+  },
+  "H.264 + AAC: vídeo eficiente y audio habitual en dispositivos modernos. Compatibilidad general alta; algunos dispositivos antiguos tienen limitaciones con AAC multicanal.": {
+    "de": "H.264 + AAC: effizientes Video und verbreitetes modernes Audio. Hohe Kompatibilität; ältere Geräte können Mehrkanal-AAC einschränken.",
+    "en": "H.264 + AAC: efficient video and common modern audio. Generally high compatibility; some older devices have multichannel AAC limitations.",
+    "fr": "H.264 + AAC : vidéo efficace et audio courant sur les appareils récents. Compatibilité élevée ; certains appareils anciens limitent l'AAC multicanal.",
+    "it": "H.264 + AAC: video efficiente e audio comune sui dispositivi moderni. Compatibilità alta; alcuni dispositivi vecchi limitano AAC multicanale.",
+    "ja": "H.264 + AAC：効率的な映像と最近の機器で一般的な音声です。互換性は高めですが、古いデバイスではマルチチャンネル AAC に制限があります。",
+    "zh": "H.264 + AAC：高效视频与现代设备常用音频。通常兼容性高；部分旧设备对多声道 AAC 支持有限。"
+  },
+  "H.264 + AC3 · compatibilidad amplia": {
+    "de": "H.264 + AC3 · hohe Gerätekompatibilität",
+    "en": "H.264 + AC3 · broad compatibility",
+    "fr": "H.264 + AC3 · compatible avec de nombreux appareils",
+    "it": "H.264 + AC3 · ampia compatibilità dispositivi",
+    "ja": "H.264 + AC3 · デバイスとの互換性が高い",
+    "zh": "H.264 + AC3 · 设备兼容性高"
+  },
+  "H.264 + AC3: vídeo eficiente y audio Dolby Digital, frecuente en dispositivos y receptores. Compatibilidad general amplia; algunos móviles o navegadores no admiten AC3.": {
+    "de": "H.264 + AC3: effizientes Video und Dolby-Digital-Audio, auf Geräten und Receivern verbreitet. Hohe Gerätekompatibilität; manche Mobilgeräte oder Browser unterstützen AC3 nicht.",
+    "en": "H.264 + AC3: efficient video with Dolby Digital audio, common on devices and receivers. Generally broad compatibility; some phones or browsers lack AC3 support.",
+    "fr": "H.264 + AC3 : vidéo efficace et audio Dolby Digital, courant sur appareils et amplis. Compatibilité générale élevée ; certains mobiles ou navigateurs ne lisent pas AC3.",
+    "it": "H.264 + AC3: video efficiente e audio Dolby Digital, diffuso su dispositivi e ricevitori. Compatibilità generale alta; alcuni telefoni o browser non supportano AC3.",
+    "ja": "H.264 + AC3：効率的な映像とデバイス・AV 機器で一般的な Dolby Digital 音声です。デバイスでの互換性は高めですが、一部のスマホやブラウザーは AC3 非対応です。",
+    "zh": "H.264 + AC3：高效视频和 Dolby Digital 音频，常见于设备和接收器。设备兼容性通常较高，但部分手机或浏览器不支持 AC3。"
+  },
+  "Hay ajustes pendientes de guardar": {
+    "de": "Es gibt noch nicht gespeicherte Einstellungen",
+    "en": "There are settings waiting to be saved",
+    "fr": "Des réglages restent à enregistrer",
+    "it": "Ci sono impostazioni da salvare",
+    "ja": "未保存の設定があります",
+    "zh": "有设置尚未保存"
+  },
+  "Hay cambios pendientes. ¿Cerrar sin aplicarlos?": {
+    "de": "Es gibt ausstehende Änderungen. Ohne Anwenden schließen?",
+    "en": "There are pending changes. Close without applying them?",
+    "fr": "Des modifications sont en attente. Fermer sans les appliquer ?",
+    "it": "Ci sono modifiche in sospeso. Chiudere senza applicarle?",
+    "ja": "未適用の変更があります。適用せずに閉じますか？",
+    "zh": "存在待应用的更改，仍要关闭吗？"
+  },
+  "Identificación": {
+    "de": "Identifikation",
+    "en": "Identification",
+    "fr": "Identification",
+    "it": "Identificazione",
+    "ja": "識別",
+    "zh": "标识"
+  },
+  "Identificación manual: Añadir por IP permite registrar un dispositivo mediante su dirección IP local. Si aparece como UnknownRenderer, la dirección IP permite verificar su identidad y el campo Identificación permite asignarle un nombre. Los reproductores que utilizan la misma IP en un ordenador comparten perfil.": {
+    "de": "Manuelle Identifikation: Per IP hinzufügen registriert ein Gerät anhand seiner lokalen IP-Adresse. Bei der Anzeige UnknownRenderer ermöglicht die IP-Adresse die Zuordnung; unter Identifikation lässt sich ein Name vergeben. Wiedergabeprogramme mit derselben IP auf einem Computer teilen ein Profil.",
+    "en": "Manual identification: Add by IP registers a device using its local IP address. If it appears as UnknownRenderer, the IP address allows its identity to be checked and Identification allows a name to be assigned. Playback applications using the same IP on one computer share a profile.",
+    "fr": "Identification manuelle: Ajouter par IP permet d’enregistrer un appareil avec son adresse IP locale. S’il apparaît comme UnknownRenderer, l’adresse IP permet de vérifier son identité et Identification permet de lui attribuer un nom. Les lecteurs utilisant la même IP sur un ordinateur partagent un profil.",
+    "it": "Identificazione manuale: Aggiungi tramite IP registra un dispositivo mediante il suo indirizzo IP locale. Se appare come UnknownRenderer, l’indirizzo IP consente di verificarne l’identità e Identificazione permette di assegnargli un nome. I lettori che utilizzano lo stesso IP su un computer condividono un profilo.",
+    "ja": "手動での識別: 「IP アドレスで追加」で、ローカル IP アドレスを使用して機器を登録できます。UnknownRenderer と表示される場合は、IP アドレスで機器を確認し、「識別」で名前を設定できます。同じコンピューター上で同じ IP を使用する再生アプリケーションは、プロファイルを共有します。",
+    "zh": "手动识别: “通过 IP 添加”可使用本地 IP 地址注册设备。如果设备显示为 UnknownRenderer，可通过 IP 地址核实设备，并在“标识”中设置名称。同一计算机上使用相同 IP 的播放器共享一个配置。"
+  },
+  "Identificador de perfil inválido o repetido.": {
+    "de": "Ungültige oder doppelte Profilkennung.",
+    "en": "Invalid or duplicate profile ID.",
+    "fr": "Identifiant de profil non valide ou en double.",
+    "it": "ID profilo non valido o duplicato.",
+    "ja": "プロファイル ID が無効または重複しています。",
+    "zh": "配置标识无效或重复。"
+  },
+  "Idioma": {
+    "de": "Sprache",
+    "en": "Language",
+    "fr": "Langue",
+    "it": "Lingua",
+    "ja": "言語",
+    "zh": "语言"
+  },
+  "Incluida; las subcarpetas heredan esta regla.": {
+    "de": "Eingeschlossen; Unterordner erben diese Regel.",
+    "en": "Included; subfolders inherit this rule.",
+    "fr": "Inclus ; les sous-dossiers héritent de cette règle.",
+    "it": "Inclusa; le sottocartelle ereditano questa regola.",
+    "ja": "対象です。サブフォルダーはこのルールを継承します。",
+    "zh": "已包含；子文件夹继承此规则。"
+  },
+  "Inicia el servidor para consultar los dispositivos.": {
+    "de": "Starte den Server, um Geräte anzuzeigen.",
+    "en": "Start the server to view devices.",
+    "fr": "Démarrez le serveur pour voir les appareils.",
+    "it": "Avvia il server per visualizzare i dispositivi.",
+    "ja": "デバイスを表示するにはサーバーを起動してください。",
+    "zh": "启动服务器以查看设备。"
+  },
+  "Iniciar": {
+    "de": "Starten",
+    "en": "Start",
+    "fr": "Démarrer",
+    "it": "Avvia",
+    "ja": "起動",
+    "zh": "启动"
+  },
+  "Iniciar el servidor al entrar en mi sesión de Ubuntu": {
+    "de": "Server bei meiner Ubuntu-Anmeldung starten",
+    "en": "Start the server when I sign in to Ubuntu",
+    "fr": "Démarrer le serveur à l'ouverture de session Ubuntu",
+    "it": "Avvia il server all'accesso a Ubuntu",
+    "ja": "Ubuntu ログイン時にサーバーを起動",
+    "zh": "登录 Ubuntu 时启动服务器"
+  },
+  "Inicio automático ": {
+    "de": "Autostart ",
+    "en": "Autostart ",
+    "fr": "Démarrage automatique ",
+    "it": "Avvio automatico ",
+    "ja": "自動起動 ",
+    "zh": "自动启动 "
+  },
+  "Instala primero el servidor desde UMS Control.": {
+    "de": "Installiere zuerst den Server über UMS Control.",
+    "en": "Install the server from UMS Control first.",
+    "fr": "Installez d’abord le serveur depuis UMS Control.",
+    "it": "Installa prima il server da UMS Control.",
+    "ja": "最初に UMS Control からサーバーをインストールしてください。",
+    "zh": "请先通过 UMS Control 安装服务器。"
+  },
+  "Instalación compatible e íntegra": {
+    "de": "Kompatible, intakte Installation",
+    "en": "Compatible and intact installation",
+    "fr": "Installation compatible et intacte",
+    "it": "Installazione compatibile e integra",
+    "ja": "互換性があり正常なインストール",
+    "zh": "安装兼容且完整"
+  },
+  "Instalación dañada o incompleta": {
+    "de": "Beschädigte oder unvollständige Installation",
+    "en": "Damaged or incomplete installation",
+    "fr": "Installation endommagée ou incomplète",
+    "it": "Installazione danneggiata o incompleta",
+    "ja": "破損または不完全なインストール",
+    "zh": "安装损坏或不完整"
+  },
+  "Instalación no compatible": {
+    "de": "Inkompatible Installation",
+    "en": "Incompatible installation",
+    "fr": "Installation incompatible",
+    "it": "Installazione non compatibile",
+    "ja": "互換性のないインストール",
+    "zh": "不兼容的安装"
+  },
+  "Instalación: el ordenador y el reproductor deben estar conectados a la misma red. En la pestaña Resumen, el botón Instalar servidor UMS permite instalar el servidor previa confirmación. Se requiere conexión a Internet. Una vez instalado, el botón Iniciar permite ponerlo en funcionamiento. El ordenador debe permanecer encendido durante la reproducción.": {
+    "de": "Installation: Computer und Wiedergabegerät müssen mit demselben Netzwerk verbunden sein. Auf der Registerkarte Übersicht installiert UMS-Server installieren den Server nach Bestätigung. Eine Internetverbindung ist erforderlich. Nach der Installation wird der Server mit Starten gestartet. Der Computer muss während der Wiedergabe eingeschaltet bleiben.",
+    "en": "Installation: the computer and playback device must be connected to the same network. On the Overview tab, Install UMS server installs the server after confirmation. An Internet connection is required. Once installed, Start starts the server. The computer must remain powered on during playback.",
+    "fr": "Installation: l’ordinateur et l’appareil de lecture doivent être connectés au même réseau. Dans l’onglet Résumé, Installer le serveur UMS lance l’installation après confirmation. Une connexion Internet est nécessaire. Une fois l’installation terminée, Démarrer met le serveur en service. L’ordinateur doit rester allumé pendant la lecture.",
+    "it": "Installazione: il computer e il dispositivo di riproduzione devono essere connessi alla stessa rete. Nella scheda Riepilogo, Installa server UMS avvia l’installazione previa conferma. È necessaria una connessione Internet. Al termine, Avvia mette in funzione il server. Il computer deve rimanere acceso durante la riproduzione.",
+    "ja": "インストール: コンピューターと再生機器を同じネットワークに接続する必要があります。「概要」タブの「UMS サーバーをインストール」で確認後にインストールを開始します。インターネット接続が必要です。完了後は「起動」でサーバーを起動できます。再生中はコンピューターの電源を入れたままにする必要があります。",
+    "zh": "安装: 计算机与播放设备必须连接到同一网络。在“概览”选项卡中，选择“安装 UMS 服务器”并确认后即可安装。安装需要互联网连接。安装完成后，可通过“启动”运行服务器。播放期间计算机必须保持开机。"
+  },
+  "Instalar servidor UMS": {
+    "de": "UMS-Server installieren",
+    "en": "Install UMS server",
+    "fr": "Installer le serveur UMS",
+    "it": "Installa server UMS",
+    "ja": "UMS サーバーをインストール",
+    "zh": "安装 UMS 服务器"
+  },
+  "Instrucciones": {
+    "de": "Anleitung",
+    "en": "Instructions",
+    "fr": "Instructions",
+    "it": "Istruzioni",
+    "ja": "使い方",
+    "zh": "使用说明"
+  },
+  "La CPU convierte el vídeo. La fluidez depende de la carga y resolución.": {
+    "de": "Die CPU konvertiert das Video. Flüssigkeit hängt von Last und Auflösung ab.",
+    "en": "The CPU converts video. Smooth playback depends on load and resolution.",
+    "fr": "Le CPU convertit la vidéo. La fluidité dépend de la charge et de la résolution.",
+    "it": "La CPU converte il video. La fluidità dipende da carico e risoluzione.",
+    "ja": "CPU で映像を変換します。滑らかさは負荷と解像度に依存します。",
+    "zh": "CPU 转换视频。流畅度取决于负载和分辨率。"
+  },
+  "La descarga del servidor no coincide con la huella oficial esperada.": {
+    "de": "Der Serverdownload stimmt nicht mit dem erwarteten offiziellen Hash überein.",
+    "en": "The server download does not match the expected official hash.",
+    "fr": "Le téléchargement ne correspond pas à l'empreinte officielle attendue.",
+    "it": "Il download non corrisponde all'hash ufficiale previsto.",
+    "ja": "ダウンロードが指定の公式ハッシュと一致しません。",
+    "zh": "下载内容与预期官方哈希不符。"
+  },
+  "La interfaz seleccionada no tiene IPv4.": {
+    "de": "Die gewählte Schnittstelle hat keine IPv4-Adresse.",
+    "en": "The selected interface has no IPv4 address.",
+    "fr": "L'interface choisie n'a pas d'adresse IPv4.",
+    "it": "L'interfaccia scelta non ha IPv4.",
+    "ja": "選択したインターフェースに IPv4 がありません。",
+    "zh": "所选网络接口没有 IPv4 地址。"
+  },
+  "La ruta o el servicio pertenece a otra instalación; no se modificará.": {
+    "de": "Pfad oder Dienst gehört zu einer anderen Installation und wird nicht geändert.",
+    "en": "The path or service belongs to another installation; it will not be changed.",
+    "fr": "Le chemin ou le service appartient à une autre installation ; il ne sera pas modifié.",
+    "it": "Il percorso o servizio appartiene a un'altra installazione; non verrà modificato.",
+    "ja": "パスまたはサービスは別のインストールに属するため変更しません。",
+    "zh": "路径或服务属于其他安装，不会修改。"
+  },
+  "La selección incluye subcarpetas. Dejar de compartir no borra archivos. Para compartir solo una parte, añade las subcarpetas en lugar de su carpeta padre.": {
+    "de": "Unterordner sind eingeschlossen. Freigaben zu entfernen löscht keine Dateien. Für eine teilweise Freigabe wählen Sie Unterordner statt des übergeordneten Ordners.",
+    "en": "Subfolders are included. Removing a share does not delete files. To share only part of a folder, add its subfolders instead.",
+    "fr": "Les sous-dossiers sont inclus. Retirer un partage ne supprime aucun fichier. Pour partager une partie seulement, ajoutez les sous-dossiers plutôt que leur parent.",
+    "it": "Le sottocartelle sono incluse. Rimuovere una condivisione non elimina file. Per condividere solo una parte, aggiungi le sottocartelle anziché la cartella padre.",
+    "ja": "サブフォルダーも含まれます。共有を解除してもファイルは削除されません。一部だけ共有するには、親ではなくサブフォルダーを追加してください。",
+    "zh": "包含子文件夹。取消共享不会删除文件。若只共享部分内容，请添加子文件夹而不是父文件夹。"
+  },
+  "Las bibliotecas del servidor no son compatibles con este sistema. No se ha cambiado la instalación.": {
+    "de": "Die Serverbibliotheken sind nicht kompatibel. Die Installation wurde nicht verändert.",
+    "en": "The server libraries are incompatible with this system. The installation was not changed.",
+    "fr": "Les bibliothèques sont incompatibles avec ce système. L'installation n'a pas été modifiée.",
+    "it": "Le librerie non sono compatibili con il sistema. Installazione non modificata.",
+    "ja": "サーバーライブラリーがシステムに非対応です。インストールは変更していません。",
+    "zh": "服务器库与系统不兼容，未更改安装。"
+  },
+  "Las carpetas seleccionadas se adaptan al contenedor elegido, sin Transcodificar. Las demás se envían en original.": {
+    "de": "Ausgewählte Ordner verwenden den gewählten Container, ohne Transkodieren. Andere Ordner werden im Original gesendet.",
+    "en": "Selected folders use the chosen container, without Transcode. Other folders are sent as originals.",
+    "fr": "Les dossiers sélectionnés utilisent le conteneur choisi, sans Transcoder. Les autres sont envoyés en original.",
+    "it": "Le cartelle selezionate usano il contenitore scelto, senza Transcodifica. Le altre sono inviate in originale.",
+    "ja": "選択したフォルダーは指定コンテナで送信し、トランスコードは表示しません。他はオリジナルで送信します。",
+    "zh": "所选文件夹使用指定封装，不显示转码目录；其他文件夹发送原文件。"
+  },
+  "Las reglas solo pueden aplicarse dentro de las carpetas compartidas con este dispositivo.": {
+    "de": "Regeln dürfen nur für mit diesem Gerät geteilte Ordner gelten.",
+    "en": "Rules may only apply within folders shared with this device.",
+    "fr": "Les règles doivent rester dans les dossiers partagés avec cet appareil.",
+    "it": "Le regole si applicano solo nelle cartelle condivise con questo dispositivo.",
+    "ja": "ルールはこの機器と共有するフォルダー内でのみ適用できます。",
+    "zh": "规则只能应用于与此设备共享的文件夹内。"
+  },
+  "Licencia del frontend": {
+    "de": "Frontend-Lizenz",
+    "en": "Frontend license",
+    "fr": "Licence du frontend",
+    "it": "Licenza del frontend",
+    "ja": "フロントエンドのライセンス",
+    "zh": "前端许可证"
+  },
+  "Licencia del frontend: GNU GPL v3.0 o posterior (GPL-3.0-or-later).": {
+    "de": "Frontend-Lizenz: GNU GPL v3.0 oder neuer (GPL-3.0-or-later).",
+    "en": "Frontend license: GNU GPL v3.0 or later (GPL-3.0-or-later).",
+    "fr": "Licence du frontend : GNU GPL v3.0 ou ultérieure (GPL-3.0-or-later).",
+    "it": "Licenza frontend: GNU GPL v3.0 o successiva (GPL-3.0-or-later).",
+    "ja": "フロントエンド：GNU GPL v3.0 以降（GPL-3.0-or-later）。",
+    "zh": "前端许可：GNU GPL v3.0 或更新版本（GPL-3.0-or-later）。"
+  },
+  "Lista de carpetas no válida.": {
+    "de": "Ungültige Ordnerliste.",
+    "en": "Invalid folder list.",
+    "fr": "Liste de dossiers non valide.",
+    "it": "Elenco cartelle non valido.",
+    "ja": "フォルダー一覧が無効です。",
+    "zh": "文件夹列表无效。"
+  },
+  "Límite de la conversión en megabits por segundo. Sin límite deja variar el bitrate según el contenido y la calidad de codificación.": {
+    "de": "Konvertierungsgrenze in Mbit/s. Unbegrenzt richtet sich nach Inhalt und Qualität.",
+    "en": "Conversion limit in megabits per second. Unlimited follows content and encoding quality.",
+    "fr": "Limite de conversion en mégabits/s. Sans limite suit le contenu et la qualité.",
+    "it": "Limite in megabit/s. Senza limite segue contenuto e qualità.",
+    "ja": "変換上限（Mbps）。無制限では内容と品質に応じて変化します。",
+    "zh": "转换上限，单位为 Mbps。无限制时根据内容和质量变化。"
+  },
+  "MKV con audio y subtítulos seleccionables · sin Transcodificar": {
+    "de": "MKV mit wählbarem Audio und Untertiteln · ohne Transkodieren",
+    "en": "MKV with selectable audio and subtitles · no Transcode",
+    "fr": "MKV avec audio et sous-titres sélectionnables · sans Transcoder",
+    "it": "MKV con audio e sottotitoli selezionabili · senza Transcodifica",
+    "ja": "音声・字幕を選べるMKV · トランスコードなし",
+    "zh": "MKV 可选音轨和字幕 · 无“转码”"
+  },
+  "MP4 necesita H.264.": {
+    "de": "MP4 erfordert H.264.",
+    "en": "MP4 requires H.264.",
+    "fr": "MP4 nécessite H.264.",
+    "it": "MP4 richiede H.264.",
+    "ja": "MP4にはH.264が必要です。",
+    "zh": "MP4需要H.264。"
+  },
+  "MPEG-2 + AC3 · orientado a equipos antiguos": {
+    "de": "MPEG-2 + AC3 · für ältere Geräte",
+    "en": "MPEG-2 + AC3 · for older devices",
+    "fr": "MPEG-2 + AC3 · pour appareils anciens",
+    "it": "MPEG-2 + AC3 · per dispositivi meno recenti",
+    "ja": "MPEG-2 + AC3 · 古い機器向け",
+    "zh": "MPEG-2 + AC3 · 适合旧设备"
+  },
+  "MPEG-2 + AC3: orientado a dispositivos antiguos. Necesita más ancho de banda para una calidad similar a H.264; no es la opción más eficiente para HD/4K.": {
+    "de": "MPEG-2 + AC3: für ältere Geräte. Benötigt bei ähnlicher Qualität mehr Bandbreite als H.264; für HD/4K weniger effizient.",
+    "en": "MPEG-2 + AC3: aimed at older players and devices. Needs more bandwidth for similar quality to H.264; less efficient for HD/4K.",
+    "fr": "MPEG-2 + AC3 : pour anciens lecteurs et appareils. Nécessite plus de débit que H.264 à qualité similaire ; moins efficace en HD/4K.",
+    "it": "MPEG-2 + AC3: per vecchi lettori e dispositivi. Richiede più banda di H.264 a qualità simile; meno efficiente per HD/4K.",
+    "ja": "MPEG-2 + AC3：古いプレーヤーやデバイス向けです。同程度の画質なら H.264 より帯域が必要で、HD/4K には非効率です。",
+    "zh": "MPEG-2 + AC3：面向旧播放器和设备。达到类似 H.264 的画质需要更高带宽，HD/4K 下效率较低。"
+  },
+  "MPEG-2 se codifica por CPU; NVENC no se usa para esta salida.": {
+    "de": "MPEG-2 wird per CPU kodiert; NVENC wird hier nicht verwendet.",
+    "en": "MPEG-2 uses CPU encoding; NVENC is not used for this output.",
+    "fr": "MPEG-2 utilise le CPU ; NVENC n'est pas utilisé ici.",
+    "it": "MPEG-2 usa la CPU; NVENC non viene usato per questa uscita.",
+    "ja": "MPEG-2 は CPU で処理し、この出力では NVENC を使いません。",
+    "zh": "MPEG-2 使用 CPU 编码，此输出不使用 NVENC。"
+  },
+  "MPEG-PS necesita MPEG-2 + AC3.": {
+    "de": "MPEG-PS erfordert MPEG-2 + AC3.",
+    "en": "MPEG-PS requires MPEG-2 + AC3.",
+    "fr": "MPEG-PS nécessite MPEG-2 + AC3.",
+    "it": "MPEG-PS richiede MPEG-2 + AC3.",
+    "ja": "MPEG-PSにはMPEG-2 + AC3が必要です。",
+    "zh": "MPEG-PS需要MPEG-2 + AC3。"
+  },
+  "MPEG-PS necesita MPEG-2 + AC3. MP4 necesita H.264. Cambia el formato o el contenedor antes de guardar.": {
+    "de": "MPEG-PS erfordert MPEG-2 + AC3, MP4 erfordert H.264. Vor dem Speichern Format oder Container ändern.",
+    "en": "MPEG-PS requires MPEG-2 + AC3. MP4 requires H.264. Change the format or container before saving.",
+    "fr": "MPEG-PS nécessite MPEG-2 + AC3. MP4 nécessite H.264. Modifiez le format ou le conteneur avant d’enregistrer.",
+    "it": "MPEG-PS richiede MPEG-2 + AC3. MP4 richiede H.264. Cambia formato o contenitore prima di salvare.",
+    "ja": "MPEG-PSにはMPEG-2 + AC3、MP4にはH.264が必要です。保存前に形式かコンテナを変更してください。",
+    "zh": "MPEG-PS需要MPEG-2 + AC3，MP4需要H.264。保存前请更改格式或封装。"
+  },
+  "Marcada: convertir. Sin marcar: enviar original. Despliega para elegir subcarpetas y crear excepciones. Las carpetas nuevas heredan la regla de su carpeta padre.": {
+    "de": "Ausgewählt: konvertieren. Nicht ausgewählt: Original senden. Aufklappen für Unterordner und Ausnahmen. Neue Ordner erben die Regel des übergeordneten Ordners.",
+    "en": "Checked: convert. Unchecked: send original. Expand to choose subfolders and create exceptions. New folders inherit their parent’s rule.",
+    "fr": "Coché : convertir. Décoché : envoyer l’original. Dépliez pour choisir les sous-dossiers et créer des exceptions. Les nouveaux dossiers héritent de la règle du parent.",
+    "it": "Selezionata: converti. Non selezionata: invia originale. Espandi per scegliere sottocartelle ed eccezioni. Le nuove cartelle ereditano la regola del genitore.",
+    "ja": "オン：変換。オフ：元のまま送信。展開してサブフォルダーや例外を選択します。新規フォルダーは親のルールを継承します。",
+    "zh": "勾选：转换。未勾选：发送原始文件。展开以选择子文件夹并设置例外。新文件夹继承父文件夹规则。"
+  },
+  "Marcada: convertir. Sin marcar: enviar original. Incluye las subcarpetas. Las carpetas nuevas se envían en original hasta que las marques.": {
+    "de": "Aktiviert: konvertieren. Deaktiviert: Original senden. Gilt auch für Unterordner. Neue Ordner bleiben bis zur Auswahl im Original.",
+    "en": "Checked: convert. Unchecked: send original. Includes subfolders. New folders remain original until checked.",
+    "fr": "Coché : convertir. Décoché : envoyer l’original. Sous-dossiers inclus. Les nouveaux dossiers restent originaux tant qu’ils ne sont pas cochés.",
+    "it": "Selezionata: converti. Non selezionata: invia originale. Include le sottocartelle. Le nuove cartelle restano originali finché non le selezioni.",
+    "ja": "チェックあり：変換。なし：オリジナルを送信。サブフォルダーも対象です。新しいフォルダーはチェックするまでオリジナルで送信します。",
+    "zh": "勾选：转换。未勾选：发送原文件。包含子文件夹。新文件夹在勾选前始终发送原文件。"
+  },
+  "Misma carpeta y nombre del vídeo: Pelicula.mkv + Pelicula.spa.srt (también ASS/SSA). Guarda y aplica; después vuelve a entrar en Transcodificar desde el dispositivo.": {
+    "de": "Gleicher Ordner und Name: Pelicula.mkv + Pelicula.spa.srt (auch ASS/SSA). Speichern, anwenden und Transkodieren am Gerät neu öffnen.",
+    "en": "Same folder and video name: Pelicula.mkv + Pelicula.spa.srt (also ASS/SSA). Save and apply, then reopen Transcode on the device.",
+    "fr": "Même dossier et nom : Pelicula.mkv + Pelicula.spa.srt (ASS/SSA aussi). Enregistrez, appliquez, puis rouvrez Transcoder sur l’appareil.",
+    "it": "Stessa cartella e nome: Pelicula.mkv + Pelicula.spa.srt (anche ASS/SSA). Salva e applica, poi riapri Transcodifica sul dispositivo.",
+    "ja": "同じフォルダー・名前：Pelicula.mkv + Pelicula.spa.srt（ASS/SSA も可）。保存・適用後にデバイスでトランスコードを開き直してください。",
+    "zh": "相同文件夹及文件名：Pelicula.mkv + Pelicula.spa.srt（也支持 ASS/SSA）。保存并应用后在设备重新进入转码。"
+  },
+  "Modo A: convierte todas las pistas de audio para elegirlas en el dispositivo. Modo B: envía el audio elegido en Transcodificar; la entrada principal mantiene la selección automática. Hasta 5.1 requiere una pista y un equipo compatibles.": {
+    "de": "Modus A: konvertiert alle Audiospuren zur Auswahl am Gerät. Modus B: sendet die unter Transkodieren gewählte Spur; der Haupteintrag bleibt automatisch. Bis zu 5.1 erfordert kompatible Spuren und Geräte.",
+    "en": "Mode A: converts all audio tracks for selection on the device. Mode B: sends the audio selected in Transcode; the main entry keeps automatic selection. Up to 5.1 requires compatible audio and equipment.",
+    "fr": "Mode A : convertit toutes les pistes audio pour les choisir sur l’appareil. Mode B : envoie l’audio choisi dans Transcoder ; l’entrée principale conserve la sélection automatique. Jusqu’à 5.1 nécessite une piste et un équipement compatibles.",
+    "it": "Modo A: converte tutte le tracce audio da scegliere sul dispositivo. Modo B: invia l’audio scelto in Transcodifica; la voce principale mantiene la selezione automatica. Fino a 5.1 richiede una traccia e un impianto compatibili.",
+    "ja": "モードA：すべての音声を変換し、デバイスで選択します。モードB：「トランスコード」で選んだ音声を送信し、通常の項目は自動選択を維持します。最大5.1chには対応音声と機器が必要です。",
+    "zh": "模式 A：转换所有音轨，供设备选择。模式 B：发送在“转码”中选择的音轨；主条目仍自动选择。最高 5.1 声道需要兼容音轨和设备。"
+  },
+  "Modo Original: envía el archivo sin modificar y requiere que el reproductor admita su formato. La conversión adapta vídeos no compatibles o reduce la calidad enviada. Se realiza durante la reproducción, sin sustituir los originales ni generar una colección adicional en el disco.": {
+    "de": "Originalmodus: Überträgt die Datei unverändert und setzt voraus, dass das Wiedergabegerät ihr Format unterstützt. Die Konvertierung passt nicht unterstützte Videos an oder reduziert die übertragene Qualität. Sie erfolgt während der Wiedergabe, ohne Originale zu ersetzen oder eine zusätzliche Sammlung auf dem Datenträger anzulegen.",
+    "en": "Original mode: sends the file unchanged and requires the playback device to support its format. Conversion adapts unsupported videos or reduces the transmitted quality. It runs during playback without replacing originals or generating an additional collection on disk.",
+    "fr": "Mode Original: transmet le fichier sans modification et nécessite que le lecteur prenne en charge son format. La conversion adapte les vidéos non compatibles ou réduit la qualité transmise. Elle s’effectue pendant la lecture, sans remplacer les originaux ni créer une collection supplémentaire sur le disque.",
+    "it": "Modalità Originale: invia il file senza modifiche e richiede che il lettore ne supporti il formato. La conversione adatta i video non compatibili o riduce la qualità trasmessa. Avviene durante la riproduzione, senza sostituire gli originali né generare una raccolta aggiuntiva sul disco.",
+    "ja": "オリジナルモード: ファイルを変更せずに送信するため、再生機器がその形式に対応している必要があります。変換は、非対応の動画を適合させたり、送信する画質を下げたりする機能です。再生中に実行され、元のファイルの置き換えや、ディスク上への追加の動画コレクションの作成は行いません。",
+    "zh": "原始模式: 不修改文件即可发送，但播放设备必须支持该格式。转换可适配不兼容的视频或降低传输质量。转换在播放期间进行，不会替换原始文件，也不会在磁盘上生成额外的视频集合。"
+  },
+  "Modo de nombres no válido.": {
+    "de": "Ungültiger Namensmodus.",
+    "en": "Invalid naming mode.",
+    "fr": "Mode de nommage non valide.",
+    "it": "Modalità nomi non valida.",
+    "ja": "名前モードが無効です。",
+    "zh": "名称模式无效。"
+  },
+  "Modo de reproducción no válido.": {
+    "de": "Ungültiger Wiedergabemodus.",
+    "en": "Invalid playback mode.",
+    "fr": "Mode de lecture non valide.",
+    "it": "Modalità di riproduzione non valida.",
+    "ja": "再生モードが無効です。",
+    "zh": "无效播放模式。"
+  },
+  "Modos de conversión: en el modo manual se seleccionan las carpetas que se convertirán; el árbol permite definir excepciones por subcarpeta. El modo automático evalúa todos los vídeos compartidos y no utiliza esa selección. En ambos modos, Transcodificar → título contiene las variantes disponibles y Sin transcodificación para acceder al original. Los vídeos no se muestran fuera de esta estructura.": {
+    "de": "Konvertierungsmodi: Im manuellen Modus werden die zu konvertierenden Ordner ausgewählt; die Baumansicht ermöglicht Ausnahmen für Unterordner. Der automatische Modus prüft alle freigegebenen Videos unabhängig von dieser Auswahl. In beiden Modi enthält Transkodieren → Titel die verfügbaren Varianten sowie Ohne Transkodierung für das Original. Videos werden außerhalb dieser Struktur nicht angezeigt.",
+    "en": "Conversion modes: manual mode uses the selected folders, with subfolder exceptions defined in the tree. Automatic mode evaluates all shared videos and does not use that selection. In both modes, Transcode → title contains the available variants and No transcoding for access to the original. Videos are not displayed outside this structure.",
+    "fr": "Modes de conversion: le mode manuel utilise les dossiers sélectionnés ; l’arborescence permet de définir des exceptions par sous-dossier. Le mode automatique évalue toutes les vidéos partagées sans utiliser cette sélection. Dans les deux modes, Transcoder → titre contient les variantes disponibles et Sans transcodage pour accéder à l’original. Les vidéos ne sont pas affichées hors de cette structure.",
+    "it": "Modalità di conversione: nella modalità manuale si selezionano le cartelle da convertire; l’albero consente eccezioni per sottocartella. La modalità automatica valuta tutti i video condivisi senza utilizzare tale selezione. In entrambe le modalità, Transcodifica → titolo contiene le varianti disponibili e Senza transcodifica per accedere all’originale. I video non sono mostrati fuori da questa struttura.",
+    "ja": "変換モード: 手動モードでは変換対象のフォルダーを選択し、ツリーでサブフォルダーごとの例外を指定できます。自動モードでは、その選択を使用せず、すべての共有動画を判定します。どちらのモードでも、「トランスコード → タイトル」内に再生候補と、元のファイルを使用する「トランスコードなし」が表示されます。この構造の外には動画は表示されません。",
+    "zh": "转换模式: 手动模式使用选定的转换文件夹，并可通过树状列表设置子文件夹例外。自动模式会评估所有共享视频，不使用该选择。在两种模式中，“转码 → 标题”下提供可用版本，以及访问原始文件的“不转码”选项。视频不会显示在此结构之外。"
+  },
+  "Modos de reproducción": {
+    "de": "Wiedergabemodi",
+    "en": "Playback modes",
+    "fr": "Modes de lecture",
+    "it": "Modalità di riproduzione",
+    "ja": "再生モード",
+    "zh": "播放模式"
+  },
+  "NVENC requiere NVIDIA y controlador compatible. Acelera la codificación H.264, no la decodificación de High 10.": {
+    "de": "NVENC erfordert kompatible NVIDIA-GPU und Treiber. Beschleunigt H.264-Kodierung, nicht High-10-Dekodierung.",
+    "en": "NVENC requires a compatible NVIDIA GPU and driver. Accelerates H.264 encoding, not High 10 decoding.",
+    "fr": "NVENC nécessite une carte NVIDIA et un pilote compatibles. Accélère l'encodage H.264, pas le décodage High 10.",
+    "it": "NVENC richiede GPU e driver NVIDIA compatibili. Accelera la codifica H.264, non la decodifica High 10.",
+    "ja": "NVENC には対応する NVIDIA GPU とドライバーが必要です。H.264 のエンコードを高速化しますが、High 10 のデコードは対象外です。",
+    "zh": "NVENC 需要兼容的 NVIDIA 显卡和驱动。加速 H.264 编码，不加速 High 10 解码。"
+  },
+  "NVIDIA NVENC · tarjeta gráfica compatible": {
+    "de": "NVIDIA NVENC · kompatible Grafikkarte",
+    "en": "NVIDIA NVENC · compatible GPU",
+    "fr": "NVIDIA NVENC · carte compatible",
+    "it": "NVIDIA NVENC · GPU compatibile",
+    "ja": "NVIDIA NVENC · 対応 GPU",
+    "zh": "NVIDIA NVENC · 兼容显卡"
+  },
+  "No añadas carpetas duplicadas ni subcarpetas ya incluidas en este dispositivo.": {
+    "de": "Fügen Sie keine doppelten oder bereits eingeschlossenen Unterordner für dieses Gerät hinzu.",
+    "en": "Do not add duplicate folders or subfolders already included for this device.",
+    "fr": "N’ajoutez pas de doublons ni de sous-dossiers déjà inclus pour cet appareil.",
+    "it": "Non aggiungere cartelle duplicate o sottocartelle già incluse per questo dispositivo.",
+    "ja": "このデバイスで既に含まれるフォルダーやサブフォルダーを重複して追加しないでください。",
+    "zh": "请勿添加此设备已包含的重复文件夹或子文件夹。"
+  },
+  "No es una carpeta: ": {
+    "de": "Kein Ordner: ",
+    "en": "Not a folder: ",
+    "fr": "Ce n'est pas un dossier : ",
+    "it": "Non è una cartella: ",
+    "ja": "フォルダーではありません：",
+    "zh": "不是文件夹："
+  },
+  "No está disponible la papelera del escritorio.": {
+    "de": "Der Papierkorb ist nicht verfügbar.",
+    "en": "The desktop trash is unavailable.",
+    "fr": "La corbeille du bureau est indisponible.",
+    "it": "Il cestino del desktop non è disponibile.",
+    "ja": "デスクトップのゴミ箱が利用できません。",
+    "zh": "桌面回收站不可用。"
+  },
+  "No se aplica: en Original, el dispositivo recibe las pistas del archivo sin modificar.": {
+    "de": "Nicht anwendbar: Original sendet die Spuren unverändert an das Gerät.",
+    "en": "Not applicable: Original sends the file's tracks unchanged to the device.",
+    "fr": "Sans objet : Original envoie les pistes intactes à l’appareil.",
+    "it": "Non applicabile: Originale invia le tracce inalterate al dispositivo.",
+    "ja": "対象外：オリジナルではトラックを変更せずデバイスへ送信します。",
+    "zh": "不适用：原始模式将文件轨道原样发送给设备。"
+  },
+  "No se ha podido consultar los dispositivos. Se volverá a intentar automáticamente.": {
+    "de": "Die Geräte konnten nicht abgefragt werden. Es wird automatisch erneut versucht.",
+    "en": "Unable to retrieve devices. Retrying automatically.",
+    "fr": "Impossible de consulter les appareils. Une nouvelle tentative sera faite automatiquement.",
+    "it": "Impossibile consultare i dispositivi. Verrà effettuato un nuovo tentativo automatico.",
+    "ja": "デバイスの情報を取得できません。自動的に再試行します。",
+    "zh": "无法获取设备信息。将自动重试。"
+  },
+  "No se han detectado dispositivos.": {
+    "de": "Keine Geräte erkannt.",
+    "en": "No devices detected.",
+    "fr": "Aucun appareil détecté.",
+    "it": "Nessun dispositivo rilevato.",
+    "ja": "デバイスは検出されていません。",
+    "zh": "未检测到设备。"
+  },
+  "No se han detectado dispositivos. Enciende el dispositivo, abre su cliente multimedia compatible con DLNA e inténtalo de nuevo. También puedes añadir su IP manualmente.": {
+    "de": "Keine Player gefunden. Gerät einschalten, seinen DLNA-kompatiblen Medienclient öffnen und erneut versuchen. Die IP kann manuell eingegeben werden.",
+    "en": "No players found. Turn on the device, open its DLNA-compatible media client and try again. You can also enter its IP manually.",
+    "fr": "Aucun lecteur détecté. Allumez l’appareil, ouvrez son client multimédia compatible DLNA et réessayez. Vous pouvez saisir son IP.",
+    "it": "Nessun lettore rilevato. Accendi il dispositivo, apri il suo client multimediale compatibile con DLNA e riprova. Puoi inserire l'IP manualmente.",
+    "ja": "プレーヤーが見つかりません。デバイスを起動してDLNA 対応メディアクライアントを開き再試行してください。IP の手入力も可能です。",
+    "zh": "未发现播放器。请打开设备并进入其兼容 DLNA 的媒体客户端后重试，也可手动添加 IP。"
+  },
+  "No se han detectado problemas. Detener el servidor no requiere reinstalarlo.": {
+    "de": "Keine Probleme erkannt. Ein gestoppter Server muss nicht neu installiert werden.",
+    "en": "No problems detected. A stopped server does not need reinstalling.",
+    "fr": "Aucun problème détecté. Un serveur arrêté n'a pas besoin d'être réinstallé.",
+    "it": "Nessun problema rilevato. Un server arrestato non richiede reinstallazione.",
+    "ja": "問題は見つかりません。停止中という理由で再インストールする必要はありません。",
+    "zh": "未发现问题。服务器停止不需要重新安装。"
+  },
+  "No se pudo completar la operación": {
+    "de": "Der Vorgang konnte nicht abgeschlossen werden",
+    "en": "The operation could not be completed",
+    "fr": "L'opération n'a pas pu être terminée",
+    "it": "Impossibile completare l'operazione",
+    "ja": "操作を完了できませんでした",
+    "zh": "无法完成操作"
+  },
+  "No se pudo comprobar si hay actualizaciones del servidor. Se reintentará al abrir UMS Control.": {
+    "de": "Server-Updates konnten nicht geprüft werden. UMS Control versucht es beim nächsten Start erneut.",
+    "en": "Could not check for server updates. UMS Control will try again next time it opens.",
+    "fr": "Impossible de vérifier les mises à jour du serveur. UMS Control réessaiera à la prochaine ouverture.",
+    "it": "Impossibile verificare gli aggiornamenti del server. UMS Control riproverà alla prossima apertura.",
+    "ja": "サーバーの更新を確認できませんでした。次回UMS Controlを開くと再試行します。",
+    "zh": "无法检查服务器更新。下次打开 UMS Control 时将重试。"
+  },
+  "Nombre compatible · carpetas seleccionadas": {
+    "de": "Kompatibler Name · ausgewählte Ordner",
+    "en": "Compatible name · selected folders",
+    "fr": "Nom compatible · dossiers sélectionnés",
+    "it": "Nome compatibile · cartelle selezionate",
+    "ja": "互換名 · 選択したフォルダー",
+    "zh": "兼容名称 · 所选文件夹"
+  },
+  "Nombre compatible · todas las carpetas": {
+    "de": "Kompatibler Name · alle Ordner",
+    "en": "Compatible name · all folders",
+    "fr": "Nom compatible · tous les dossiers",
+    "it": "Nome compatibile · tutte le cartelle",
+    "ja": "互換名 · すべてのフォルダー",
+    "zh": "兼容名称 · 所有文件夹"
+  },
+  "Nombre con el que los dispositivos ven esta biblioteca multimedia.": {
+    "de": "Unter diesem Namen sehen Geräte diese Mediathek.",
+    "en": "The name devices see for this media library.",
+    "fr": "Nom sous lequel les appareils voient cette bibliothèque multimédia.",
+    "it": "Il nome con cui i dispositivi vedono questa libreria multimediale.",
+    "ja": "デバイスに表示されるメディアライブラリの名前です。",
+    "zh": "设备上显示的此媒体库名称。"
+  },
+  "Nombre de los vídeos": {
+    "de": "Videonamen",
+    "en": "Video names",
+    "fr": "Nom des vidéos",
+    "it": "Nomi dei video",
+    "ja": "動画名",
+    "zh": "视频名称"
+  },
+  "Nombre de servidor no válido.": {
+    "de": "Ungültiger Servername.",
+    "en": "Invalid server name.",
+    "fr": "Nom du serveur non valide.",
+    "it": "Nome server non valido.",
+    "ja": "サーバー名が無効です。",
+    "zh": "无效的服务器名称。"
+  },
+  "Nombre del perfil": {
+    "de": "Profilname",
+    "en": "Profile name",
+    "fr": "Nom du profil",
+    "it": "Nome profilo",
+    "ja": "プロファイル名",
+    "zh": "配置名称"
+  },
+  "Nombre desde cliente": {
+    "de": "Name auf den Clients",
+    "en": "Name shown to clients",
+    "fr": "Nom affiché aux clients",
+    "it": "Nome mostrato ai client",
+    "ja": "クライアントでの表示名",
+    "zh": "客户端显示名称"
+  },
+  "Nombre original": {
+    "de": "Originalname",
+    "en": "Original name",
+    "fr": "Nom original",
+    "it": "Nome originale",
+    "ja": "元の名前",
+    "zh": "原始名称"
+  },
+  "Nombres anunciados al dispositivo": {
+    "de": "An das Gerät gesendete Namen",
+    "en": "Names sent to the device",
+    "fr": "Noms annoncés à l’appareil",
+    "it": "Nomi inviati al dispositivo",
+    "ja": "機器に表示する名前",
+    "zh": "向设备显示的名称"
+  },
+  "Nueva versión disponible: {value}": {
+    "de": "Neue Version verfügbar: {value}",
+    "en": "New version available: {value}",
+    "fr": "Nouvelle version disponible : {value}",
+    "it": "Nuova versione disponibile: {value}",
+    "ja": "新しいバージョン：{value}",
+    "zh": "有新版本可用：{value}"
+  },
+  "Nuevo dispositivo": {
+    "de": "Neues Gerät",
+    "en": "New device",
+    "fr": "Nouvel appareil",
+    "it": "Nuovo dispositivo",
+    "ja": "新しいデバイス",
+    "zh": "新设备"
+  },
+  "Opción no válida: ": {
+    "de": "Ungültige Option: ",
+    "en": "Invalid option: ",
+    "fr": "Option non valide : ",
+    "it": "Opzione non valida: ",
+    "ja": "無効な設定：",
+    "zh": "无效选项："
+  },
+  "Operación del servidor completada": {
+    "de": "Servervorgang abgeschlossen",
+    "en": "Server operation completed",
+    "fr": "Opération du serveur terminée",
+    "it": "Operazione server completata",
+    "ja": "サーバー操作が完了しました",
+    "zh": "服务器操作已完成"
+  },
+  "Operación en curso": {
+    "de": "Vorgang läuft",
+    "en": "Operation in progress",
+    "fr": "Opération en cours",
+    "it": "Operazione in corso",
+    "ja": "処理中",
+    "zh": "正在操作"
+  },
+  "Original intacto · sin límite de conversión · sin Transcodificar": {
+    "de": "Original unverändert · keine Konvertierungsgrenze · ohne Transkodieren",
+    "en": "Unchanged original · no conversion limit · no Transcode",
+    "fr": "Original intact · sans limite de conversion · sans Transcoder",
+    "it": "Originale intatto · senza limite di conversione · senza Transcodifica",
+    "ja": "原本のまま · 変換上限なし · トランスコードなし",
+    "zh": "原始文件 · 无转换限制 · 无转码"
+  },
+  "Original · enviar el archivo intacto": {
+    "de": "Original · Datei unverändert senden",
+    "en": "Original · send the unchanged file",
+    "fr": "Original · envoyer le fichier intact",
+    "it": "Originale · invia il file intatto",
+    "ja": "オリジナル · ファイルをそのまま送信",
+    "zh": "原始 · 原样发送文件"
+  },
+  "Original: solo el archivo, sin Transcodificar ni alternativas.": {
+    "de": "Original: nur die Datei, ohne Transkodieren oder Varianten.",
+    "en": "Original: file only, no Transcode or alternatives.",
+    "fr": "Original : fichier seul, sans Transcoder ni variantes.",
+    "it": "Originale: solo il file, senza Transcodifica o varianti.",
+    "ja": "オリジナル：ファイルのみ。トランスコードや代替項目なし。",
+    "zh": "原始：仅文件，不含转码或替代项。"
+  },
+  "Otra red ({value})": {
+    "de": "Anderes Netzwerk ({value})",
+    "en": "Other network ({value})",
+    "fr": "Autre réseau ({value})",
+    "it": "Altra rete ({value})",
+    "ja": "その他のネットワーク（{value}）",
+    "zh": "其他网络（{value}）"
+  },
+  "Otros controles: la pestaña Resumen permite activar el inicio del servidor al iniciar sesión en Ubuntu. Abrir UMS web muestra la administración del servidor en el navegador. Actualizar servidor UMS modifica la versión del servidor; Actualizar catálogo multimedia renueva únicamente la lista de contenidos.": {
+    "de": "Weitere Bedienelemente: Auf der Registerkarte Übersicht lässt sich der automatische Serverstart bei der Anmeldung an Ubuntu aktivieren. UMS-Weboberfläche zeigt die Serververwaltung im Browser. UMS-Server aktualisieren ändert die Serverversion; Medienkatalog aktualisieren erneuert nur die Inhaltsliste.",
+    "en": "Other controls: the Overview tab allows the server to start automatically when signing in to Ubuntu. Open UMS web displays server administration in the browser. Update UMS server changes the server version; Refresh media library refreshes only the content list.",
+    "fr": "Autres commandes: l’onglet Résumé permet d’activer le démarrage du serveur à l’ouverture de session Ubuntu. Ouvrir UMS web affiche l’administration du serveur dans le navigateur. Mettre à jour le serveur UMS change la version du serveur ; Actualiser le catalogue renouvelle uniquement la liste des contenus.",
+    "it": "Altri comandi: la scheda Riepilogo consente di attivare l’avvio del server all’accesso a Ubuntu. Apri UMS web mostra l’amministrazione del server nel browser. Aggiorna server UMS modifica la versione del server; Aggiorna catalogo multimediale rinnova solo l’elenco dei contenuti.",
+    "ja": "その他の操作: 「概要」タブでは、Ubuntu へのログイン時にサーバーを自動起動する設定を有効にできます。「UMS Web を開く」は、ブラウザーにサーバー管理画面を表示します。「UMSサーバーを更新」はサーバーのバージョンを変更し、「メディアカタログを更新」は内容の一覧だけを更新します。",
+    "zh": "其他控件: “概览”选项卡可设置登录 Ubuntu 时自动启动服务器。打开 UMS 网页可在浏览器中显示服务器管理界面。“更新 UMS 服务器”更改服务器版本；“更新媒体库”仅刷新内容列表。"
+  },
+  "Pon un nombre válido a cada dispositivo.": {
+    "de": "Geben Sie jedem Gerät einen gültigen Namen.",
+    "en": "Give each device a valid name.",
+    "fr": "Donnez un nom valide à chaque appareil.",
+    "it": "Assegna un nome valido a ogni dispositivo.",
+    "ja": "各デバイスに有効な名前を付けてください。",
+    "zh": "请为每个设备设置有效名称。"
+  },
+  "Primeros pasos": {
+    "de": "Erste Schritte",
+    "en": "Getting started",
+    "fr": "Premiers pas",
+    "it": "Primi passi",
+    "ja": "はじめに",
+    "zh": "开始使用"
+  },
+  "Procesador de vídeo": {
+    "de": "Videoprozessor",
+    "en": "Video processor",
+    "fr": "Processeur vidéo",
+    "it": "Processore video",
+    "ja": "映像プロセッサー",
+    "zh": "视频处理器"
+  },
+  "Proyecto Universal Media Server ↗": {
+    "de": "Projekt Universal Media Server ↗",
+    "en": "Universal Media Server project ↗",
+    "fr": "Projet Universal Media Server ↗",
+    "it": "Progetto Universal Media Server ↗",
+    "ja": "Universal Media Server プロジェクト ↗",
+    "zh": "Universal Media Server 项目 ↗"
+  },
+  "Puerto del servidor no válido.": {
+    "de": "Ungültiger Server-Port.",
+    "en": "Invalid server port.",
+    "fr": "Port du serveur non valide.",
+    "it": "Porta del server non valida.",
+    "ja": "サーバーのポートが無効です。",
+    "zh": "服务器端口无效。"
+  },
+  "Red del servidor": {
+    "de": "Servernetzwerk",
+    "en": "Server network",
+    "fr": "Réseau du serveur",
+    "it": "Rete del server",
+    "ja": "サーバーのネットワーク",
+    "zh": "服务器网络"
+  },
+  "Red no disponible ({value})": {
+    "de": "Netzwerk nicht verfügbar ({value})",
+    "en": "Unavailable network ({value})",
+    "fr": "Réseau indisponible ({value})",
+    "it": "Rete non disponibile ({value})",
+    "ja": "利用できないネットワーク（{value}）",
+    "zh": "网络不可用（{value}）"
+  },
+  "Registro del servidor": {
+    "de": "Serverprotokoll",
+    "en": "Server log",
+    "fr": "Journal du serveur",
+    "it": "Registro del server",
+    "ja": "サーバーログ",
+    "zh": "服务器日志"
+  },
+  "Reglas de carpeta duplicadas o contradictorias.": {
+    "de": "Doppelte oder widersprüchliche Ordnerregeln.",
+    "en": "Duplicate or conflicting folder rules.",
+    "fr": "Règles de dossier dupliquées ou contradictoires.",
+    "it": "Regole di cartella duplicate o contraddittorie.",
+    "ja": "フォルダールールが重複または競合しています。",
+    "zh": "文件夹规则重复或冲突。"
+  },
+  "Reiniciar": {
+    "de": "Neu starten",
+    "en": "Restart",
+    "fr": "Redémarrer",
+    "it": "Riavvia",
+    "ja": "再起動",
+    "zh": "重启"
+  },
+  "Reinstalar servidor UMS": {
+    "de": "UMS-Server neu installieren",
+    "en": "Reinstall UMS server",
+    "fr": "Réinstaller le serveur UMS",
+    "it": "Reinstalla server UMS",
+    "ja": "UMS サーバーを再インストール",
+    "zh": "重新安装 UMS 服务器"
+  },
+  "Reinstalar servidor UMS…": {
+    "de": "UMS-Server neu installieren…",
+    "en": "Reinstall UMS server…",
+    "fr": "Réinstaller le serveur UMS…",
+    "it": "Reinstalla server UMS…",
+    "ja": "UMS サーバーを再インストール…",
+    "zh": "重新安装 UMS 服务器…"
+  },
+  "Reproducción": {
+    "de": "Wiedergabe",
+    "en": "Playback",
+    "fr": "Lecture",
+    "it": "Riproduzione",
+    "ja": "再生",
+    "zh": "播放"
+  },
+  "Resolución de problemas": {
+    "de": "Fehlerbehebung",
+    "en": "Troubleshooting",
+    "fr": "Résolution des problèmes",
+    "it": "Risoluzione dei problemi",
+    "ja": "トラブルシューティング",
+    "zh": "故障排查"
+  },
+  "Resolución máxima": {
+    "de": "Maximale Auflösung",
+    "en": "Maximum resolution",
+    "fr": "Résolution maximale",
+    "it": "Risoluzione massima",
+    "ja": "最大解像度",
+    "zh": "最大分辨率"
+  },
+  "Resolución y bitrate: Calidad y audio solo está disponible durante la conversión. Los valores actuales y Contenedor Automático constituyen una configuración inicial. Si se producen interrupciones, un límite de resolución o bitrate inferior puede reducir la carga de transmisión. Sin límite no aumenta la capacidad de la conexión. Una reducción excesiva puede deteriorar la imagen.": {
+    "de": "Auflösung und Bitrate: Qualität und Audio ist nur bei Konvertierung verfügbar. Die aktuellen Werte und der automatische Container bilden eine Ausgangskonfiguration. Bei Unterbrechungen kann eine niedrigere Auflösungs- oder Bitratengrenze die Übertragungslast verringern. Unbegrenzt erhöht die Verbindungskapazität nicht. Eine zu starke Reduzierung kann das Bild beeinträchtigen.",
+    "en": "Resolution and bitrate: Quality and audio is available only for conversion. The current values and Automatic container provide an initial configuration. If playback is interrupted, a lower resolution or bitrate limit may reduce transmission load. No limit does not increase connection capacity. Excessive reduction may degrade the image.",
+    "fr": "Résolution et débit: Qualité et audio est disponible uniquement pour la conversion. Les valeurs actuelles et le conteneur Automatique constituent une configuration initiale. En cas d’interruptions, une limite de résolution ou de débit inférieure peut réduire la charge de transmission. Sans limite n’augmente pas la capacité de la connexion. Une réduction excessive peut dégrader l’image.",
+    "it": "Risoluzione e bitrate: Qualità e audio è disponibile solo per la conversione. I valori attuali e il contenitore Automatico costituiscono una configurazione iniziale. In caso di interruzioni, un limite di risoluzione o bitrate inferiore può ridurre il carico di trasmissione. Senza limite non aumenta la capacità della connessione. Una riduzione eccessiva può deteriorare l’immagine.",
+    "ja": "解像度とビットレート: 「画質と音声」は変換時のみ使用できます。現在の値と自動コンテナーを初期設定として使用できます。再生が途切れる場合は、解像度またはビットレートの上限を下げると転送負荷を軽減できることがあります。「制限なし」は接続の転送能力を高めるものではありません。下げすぎると画質が低下する場合があります。",
+    "zh": "分辨率与码率: “质量和音频”仅在转换时可用。当前数值与自动封装格式可作为初始配置。发生播放中断时，降低分辨率或码率上限可能减少传输负载。“无限制”不会增加连接容量。过度降低数值可能损害画质。"
+  },
+  "Resumen": {
+    "de": "Übersicht",
+    "en": "Overview",
+    "fr": "Résumé",
+    "it": "Riepilogo",
+    "ja": "概要",
+    "zh": "概览"
+  },
+  "Resumen del perfil seleccionado": {
+    "de": "Zusammenfassung des gewählten Profils",
+    "en": "Selected profile summary",
+    "fr": "Résumé du profil choisi",
+    "it": "Riepilogo profilo selezionato",
+    "ja": "選択中のプロファイルの概要",
+    "zh": "所选配置摘要"
+  },
+  "Retirar perfil": {
+    "de": "Profil entfernen",
+    "en": "Remove profile",
+    "fr": "Retirer le profil",
+    "it": "Rimuovi profilo",
+    "ja": "プロファイルを解除",
+    "zh": "移除配置"
+  },
+  "Reutilizar ajustes": {
+    "de": "Einstellungen wiederverwenden",
+    "en": "Reuse settings",
+    "fr": "Réutiliser les réglages",
+    "it": "Riutilizza impostazioni",
+    "ja": "設定を再利用",
+    "zh": "复用设置"
+  },
+  "Revisa la configuración guardada y la interfaz de red; reinstalar no corrige estos ajustes.": {
+    "de": "Gespeicherte Einstellungen und Netzwerkschnittstelle prüfen; eine Neuinstallation korrigiert diese nicht.",
+    "en": "Check saved settings and network interface; reinstalling does not fix these settings.",
+    "fr": "Vérifiez les réglages et l'interface réseau ; réinstaller ne corrige pas ces réglages.",
+    "it": "Controlla impostazioni salvate e interfaccia di rete; reinstallare non le corregge.",
+    "ja": "保存済み設定とネットワークを確認してください。再インストールでは設定は直りません。",
+    "zh": "请检查已保存的配置及网络接口，重新安装不会修复这些设置。"
+  },
+  "Revisa los ajustes": {
+    "de": "Einstellungen prüfen",
+    "en": "Check settings",
+    "fr": "Vérifier les réglages",
+    "it": "Controlla impostazioni",
+    "ja": "設定を確認",
+    "zh": "检查设置"
+  },
+  "Salud del servidor": {
+    "de": "Serverzustand",
+    "en": "Server health",
+    "fr": "État du serveur",
+    "it": "Stato del server",
+    "ja": "サーバーの状態",
+    "zh": "服务器健康状态"
+  },
+  "Se actualizará el servidor a UMS {value}. Se conservarán carpetas, perfiles y configuración. Si está en ejecución, se reiniciará y se interrumpirá la reproducción. Si falla la actualización, se restaurará la instalación anterior.": {
+    "de": "Der Server wird auf UMS {value} aktualisiert. Ordner, Profile und Einstellungen bleiben erhalten. Ein laufender Server wird neu gestartet; die Wiedergabe wird unterbrochen. Bei einem Fehler wird die vorherige Installation wiederhergestellt.",
+    "en": "The server will be updated to UMS {value}. Folders, profiles and settings will be preserved. If running, it will restart and interrupt playback. If the update fails, the previous installation will be restored.",
+    "fr": "Le serveur sera mis à jour vers UMS {value}. Dossiers, profils et paramètres seront conservés. S’il est en cours d’exécution, il redémarrera et interrompra la lecture. En cas d’échec, l’installation précédente sera restaurée.",
+    "it": "Il server verrà aggiornato a UMS {value}. Cartelle, profili e impostazioni saranno conservati. Se in esecuzione, verrà riavviato interrompendo la riproduzione. Se l’aggiornamento non riesce, verrà ripristinata l’installazione precedente.",
+    "ja": "サーバーをUMS {value}に更新します。フォルダー、プロファイル、設定は保持されます。稼働中の場合は再起動し、再生が中断されます。更新に失敗した場合は以前の状態に戻します。",
+    "zh": "服务器将更新至 UMS {value}。文件夹、配置文件和设置将保留。如果正在运行，将重启并中断播放。如果更新失败，将恢复原来的安装。"
+  },
+  "Se descargará la última versión estable de UMS desde el proyecto oficial y se verificará su huella y compatibilidad. Se instalará solo para tu usuario, sin permisos de administrador. Se conservarán los ajustes y los archivos multimedia. No se iniciará un servidor que estuviera detenido.": {
+    "de": "Die neueste stabile UMS-Version wird vom offiziellen Projekt geladen und auf Prüfsumme und Kompatibilität geprüft. Die Installation erfolgt nur für Ihren Benutzer, ohne Administratorrechte. Einstellungen und Medien bleiben erhalten. Ein gestoppter Server wird nicht gestartet.",
+    "en": "The latest stable UMS release will be downloaded from the official project, and its checksum and compatibility will be verified. It will be installed for your user only, without administrator permissions. Settings and media will be preserved. A stopped server will not be started.",
+    "fr": "La dernière version stable d’UMS sera téléchargée depuis le projet officiel ; son empreinte et sa compatibilité seront vérifiées. L’installation se fera uniquement pour votre utilisateur, sans droits administrateur. Paramètres et médias seront conservés. Un serveur arrêté ne sera pas démarré.",
+    "it": "Verrà scaricata l’ultima versione stabile di UMS dal progetto ufficiale, verificandone impronta e compatibilità. L’installazione sarà solo per il tuo utente, senza permessi di amministratore. Impostazioni e file multimediali saranno conservati. Un server arrestato non verrà avviato.",
+    "ja": "公式プロジェクトから最新の安定版UMSをダウンロードし、チェックサムと互換性を確認します。管理者権限なしで現在のユーザーのみにインストールします。設定とメディアは保持されます。停止中のサーバーは起動しません。",
+    "zh": "将从官方项目下载最新稳定版 UMS，并验证校验值和兼容性。仅为当前用户安装，无需管理员权限。设置和媒体文件将保留。已停止的服务器不会被启动。"
+  },
+  "Se detendrá y deshabilitará únicamente el servidor UMS gestionado por esta aplicación y sus archivos se moverán a la papelera. UMS Control seguirá instalado. Se conservarán perfiles, configuración, archivos multimedia y otros servidores. ¿Continuar?": {
+    "de": "Nur der von dieser Anwendung verwaltete UMS-Server wird gestoppt und deaktiviert; seine Dateien werden in den Papierkorb verschoben. UMS Control bleibt installiert. Profile, Einstellungen, Mediendateien und andere Server bleiben erhalten. Fortfahren?",
+    "en": "Only the UMS server managed by this application will be stopped and disabled, and its files moved to the trash. UMS Control will remain installed. Profiles, settings, media files and other servers will be kept. Continue?",
+    "fr": "Seul le serveur UMS géré par cette application sera arrêté et désactivé, et ses fichiers placés dans la corbeille. UMS Control restera installé. Les profils, réglages, fichiers multimédias et autres serveurs seront conservés. Continuer ?",
+    "it": "Verrà arrestato e disabilitato solo il server UMS gestito da questa applicazione e i suoi file saranno spostati nel cestino. UMS Control resterà installato. Profili, impostazioni, file multimediali e altri server saranno conservati. Continuare?",
+    "ja": "このアプリが管理する UMS サーバーのみを停止・無効化し、そのファイルをゴミ箱に移動します。UMS Control は残ります。プロファイル、設定、メディアファイル、他のサーバーは保持されます。続行しますか？",
+    "zh": "仅停止并禁用此应用管理的 UMS 服务器，其文件将移至回收站。UMS Control 将保留安装。配置文件、设置、媒体文件和其他服务器不会被删除。是否继续？"
+  },
+  "Se ha detectado otra instalación de UMS. No se modificará ni se desinstalará. Evita iniciar ambos servidores a la vez.": {
+    "de": "Eine andere UMS-Installation wurde erkannt. Sie wird nicht geändert oder entfernt. Beide Server nicht gleichzeitig starten.",
+    "en": "Another UMS installation was detected. It will not be changed or removed. Avoid running both servers at once.",
+    "fr": "Une autre installation UMS a été détectée. Elle ne sera ni modifiée ni supprimée. Évitez de lancer les deux serveurs ensemble.",
+    "it": "Rilevata un'altra installazione UMS. Non verrà modificata né rimossa. Evita di avviare entrambi i server insieme.",
+    "ja": "別の UMS が見つかりました。変更・削除はしません。両方を同時に起動しないでください。",
+    "zh": "检测到其他 UMS 安装，不会修改或卸载。请避免同时运行两个服务器。"
+  },
+  "Se recomienda reinstalar los archivos del servidor. Se conservarán ajustes, perfiles y archivos multimedia.": {
+    "de": "Neuinstallation der Serverdateien empfohlen. Einstellungen, Profile und Medien bleiben erhalten.",
+    "en": "Reinstalling server files is recommended. Settings, profiles and media will be preserved.",
+    "fr": "Réinstaller les fichiers du serveur est conseillé. Réglages, profils et médias seront conservés.",
+    "it": "Si consiglia di reinstallare i file del server. Impostazioni, profili e media saranno mantenuti.",
+    "ja": "サーバーファイルの再インストールを推奨します。設定・プロファイル・メディアは維持します。",
+    "zh": "建议重新安装服务器文件，设置、配置和媒体将保留。"
+  },
+  "Se sustituirán los ajustes de este dispositivo en el formulario, sin cambiar su identificación. El servidor no cambia hasta guardar.": {
+    "de": "Ersetzt Formulareinstellungen dieses Geräts, nicht seine Identität. Serveränderungen erst beim Speichern.",
+    "en": "Replaces this device's form settings without changing its identity. The server does not change until you save.",
+    "fr": "Remplace les réglages du formulaire sans changer l'identité de l’appareil. Le serveur ne change qu'à l'enregistrement.",
+    "it": "Sostituisce le impostazioni nel modulo senza cambiare l'identità del dispositivo. Il server cambia solo al salvataggio.",
+    "ja": "このデバイスの設定だけをフォーム上で置き換え、識別情報は維持します。保存するまでサーバーは変更しません。",
+    "zh": "在表单中替换此设备设置，不更改设备标识；保存前服务器不变。"
+  },
+  "Selecciona la conexión de este equipo que comparte red con tus dispositivos.": {
+    "de": "Wähle die Verbindung dieses Computers zum selben Netzwerk wie deine Geräte.",
+    "en": "Select this computer’s connection to the same network as your devices.",
+    "fr": "Sélectionnez la connexion de cet ordinateur au même réseau que vos appareils.",
+    "it": "Seleziona la connessione di questo computer alla stessa rete dei tuoi dispositivi.",
+    "ja": "デバイスと同じネットワークにつながる、このコンピューターの接続を選択します。",
+    "zh": "选择此计算机上与设备处于同一网络的连接。"
+  },
+  "Selecciona los dispositivos que quieras añadir o actualizar. Los ajustes existentes se conservan.": {
+    "de": "Geräte zum Hinzufügen oder Aktualisieren wählen. Bestehende Einstellungen bleiben erhalten.",
+    "en": "Select devices to add or update. Existing settings are preserved.",
+    "fr": "Choisissez les appareils à ajouter ou actualiser. Les réglages existants sont conservés.",
+    "it": "Scegli i dispositivi da aggiungere o aggiornare. Le impostazioni esistenti restano.",
+    "ja": "追加・更新するデバイスを選んでください。既存設定は維持します。",
+    "zh": "选择要添加或更新的设备，保留现有设置。"
+  },
+  "Selecciona o añade un dispositivo": {
+    "de": "Geräte wählen oder hinzufügen",
+    "en": "Select or add a device",
+    "fr": "Sélectionnez ou ajoutez un appareil",
+    "it": "Seleziona o aggiungi un dispositivo",
+    "ja": "デバイスを選択または追加",
+    "zh": "选择或添加设备"
+  },
+  "Selecciona un archivo de vídeo existente.": {
+    "de": "Vorhandene Videodatei wählen.",
+    "en": "Select an existing video file.",
+    "fr": "Choisissez un fichier vidéo existant.",
+    "it": "Seleziona un file video esistente.",
+    "ja": "既存の動画ファイルを選択してください。",
+    "zh": "选择现有视频文件。"
+  },
+  "Selecciona una interfaz de red disponible.": {
+    "de": "Verfügbare Netzwerkschnittstelle wählen.",
+    "en": "Select an available network interface.",
+    "fr": "Choisissez une interface réseau disponible.",
+    "it": "Scegli un'interfaccia di rete disponibile.",
+    "ja": "使用可能なネットワークを選んでください。",
+    "zh": "选择可用的网络接口。"
+  },
+  "Seleccionar carpeta para compartir": {
+    "de": "Freizugebenden Ordner wählen",
+    "en": "Select folder to share",
+    "fr": "Choisir le dossier à partager",
+    "it": "Scegli cartella da condividere",
+    "ja": "共有するフォルダーを選択",
+    "zh": "选择共享文件夹"
+  },
+  "Seleccione una categoría para consultar las instrucciones. La consulta de esta guía no modifica la configuración.": {
+    "de": "Zur Anzeige der Anleitung eine Kategorie auswählen. Das Lesen dieser Anleitung ändert die Konfiguration nicht.",
+    "en": "Select a category to view the instructions. Consulting this guide does not modify the configuration.",
+    "fr": "Sélectionner une catégorie pour consulter les instructions. La consultation de ce guide ne modifie pas la configuration.",
+    "it": "Selezionare una categoria per consultare le istruzioni. La consultazione della guida non modifica la configurazione.",
+    "ja": "カテゴリーを選択すると操作説明を参照できます。このガイドを参照しても設定は変更されません。",
+    "zh": "选择类别以查看操作说明。查阅本指南不会修改配置。"
+  },
+  "Selección de carpetas: con el dispositivo seleccionado, Carpetas compartidas → Añadir carpeta permite definir el contenido accesible para ese dispositivo. Las subcarpetas se incluyen automáticamente. Para limitar el acceso a una parte de la biblioteca, se debe añadir directamente la subcarpeta correspondiente.": {
+    "de": "Ordnerauswahl: Bei ausgewähltem Gerät legt Freigegebene Ordner → Ordner hinzufügen dessen zugängliche Inhalte fest. Unterordner werden automatisch einbezogen. Um den Zugriff auf einen Teil der Bibliothek zu beschränken, muss der entsprechende Unterordner direkt hinzugefügt werden.",
+    "en": "Folder selection: with a device selected, Shared folders → Add folder defines the content accessible to that device. Subfolders are included automatically. To restrict access to part of the library, the relevant subfolder must be added directly.",
+    "fr": "Sélection des dossiers: lorsqu’un appareil est sélectionné, Dossiers partagés → Ajouter un dossier définit le contenu auquel il peut accéder. Les sous-dossiers sont inclus automatiquement. Pour limiter l’accès à une partie de la bibliothèque, le sous-dossier concerné doit être ajouté directement.",
+    "it": "Selezione delle cartelle: con un dispositivo selezionato, Cartelle condivise → Aggiungi cartella definisce i contenuti accessibili a quel dispositivo. Le sottocartelle sono incluse automaticamente. Per limitare l’accesso a una parte della libreria, occorre aggiungere direttamente la sottocartella corrispondente.",
+    "ja": "フォルダーの選択: 機器を選択し、「共有フォルダー → フォルダーを追加」で、その機器がアクセスできる内容を指定します。サブフォルダーは自動的に含まれます。ライブラリーの一部だけを共有する場合は、該当するサブフォルダーを直接追加する必要があります。",
+    "zh": "文件夹选择: 选中设备后，可通过“共享文件夹 → 添加文件夹”指定该设备可访问的内容。子文件夹会自动包含在内。如需限制为媒体库的一部分，应直接添加对应的子文件夹。"
+  },
+  "Selección de pistas: A · Gestionados por el dispositivo mantiene las pistas juntas y permite seleccionarlas con el mando si el reproductor lo admite. B · Preseleccionados e incrustados ofrece combinaciones de audio y subtítulos en Transcodificar. Los subtítulos incrustados forman parte de la imagen y no pueden desactivarse desde el reproductor.": {
+    "de": "Spurauswahl: A · Vom Gerät verwaltet erhält die Spuren gemeinsam und ermöglicht deren Auswahl per Fernbedienung, sofern das Wiedergabegerät dies unterstützt. B · Vorauswahl und Einbrennen bietet Audio- und Untertitelkombinationen unter Transkodieren. Eingebrannte Untertitel sind Teil des Bildes und können am Wiedergabegerät nicht deaktiviert werden.",
+    "en": "Track selection: A · Managed by the device keeps tracks together and allows remote-control selection if supported by the player. B · Preselected and burned in provides audio and subtitle combinations in Transcode. Burned-in subtitles become part of the image and cannot be disabled from the player.",
+    "fr": "Sélection des pistes: A · Gérés par l’appareil conserve les pistes ensemble et permet leur sélection à la télécommande si le lecteur le prend en charge. B · Présélection et incrustation propose des combinaisons audio et sous-titres dans Transcoder. Les sous-titres incrustés font partie de l’image et ne peuvent pas être désactivés depuis le lecteur.",
+    "it": "Selezione delle tracce: A · Gestiti dal dispositivo mantiene le tracce insieme e consente la selezione con il telecomando, se supportata dal lettore. B · Preselezionati e impressi offre combinazioni audio e sottotitoli in Transcodifica. I sottotitoli impressi fanno parte dell’immagine e non possono essere disattivati dal lettore.",
+    "ja": "トラックの選択: 「A · デバイスで選択」はトラックをまとめて保持し、再生機器が対応していればリモコンで選択できます。「B · 事前選択と字幕焼き込み」は、「トランスコード」に音声と字幕の組み合わせを表示します。焼き込み字幕は映像の一部となるため、再生機器では無効にできません。",
+    "zh": "轨道选择: “A · 由设备管理”将轨道保留在一起；如果播放器支持，可使用遥控器选择。“B · 预选音轨并烧录字幕”在“转码”中提供音轨与字幕组合。烧录字幕属于视频画面的一部分，无法在播放器中关闭。"
+  },
+  "Selección parcial: despliega para ver las excepciones.": {
+    "de": "Teilweise Auswahl: für Ausnahmen aufklappen.",
+    "en": "Partial selection: expand to see exceptions.",
+    "fr": "Sélection partielle : dépliez pour voir les exceptions.",
+    "it": "Selezione parziale: espandi per vedere le eccezioni.",
+    "ja": "一部選択：展開すると例外を確認できます。",
+    "zh": "部分选中：展开以查看例外。"
+  },
+  "Servicio con error": {
+    "de": "Dienstfehler",
+    "en": "Service error",
+    "fr": "Erreur du service",
+    "it": "Errore del servizio",
+    "ja": "サービスエラー",
+    "zh": "服务错误"
+  },
+  "Servidor": {
+    "de": "Server",
+    "en": "Server",
+    "fr": "Serveur",
+    "it": "Server",
+    "ja": "サーバー",
+    "zh": "服务器"
+  },
+  "Servidor ": {
+    "de": "Server ",
+    "en": "Server ",
+    "fr": "Serveur ",
+    "it": "Server ",
+    "ja": "サーバー ",
+    "zh": "服务器 "
+  },
+  "Servidor actualizado": {
+    "de": "Server aktualisiert",
+    "en": "Server updated",
+    "fr": "Serveur mis à jour",
+    "it": "Server aggiornato",
+    "ja": "サーバーを更新しました",
+    "zh": "服务器已更新"
+  },
+  "Servidor desinstalado. Configuración y archivos multimedia conservados.": {
+    "de": "Server deinstalliert. Konfiguration und Medien erhalten.",
+    "en": "Server uninstalled. Configuration and media preserved.",
+    "fr": "Serveur désinstallé. Configuration et médias conservés.",
+    "it": "Server disinstallato. Configurazione e media mantenuti.",
+    "ja": "サーバーを削除しました。設定とメディアは維持しました。",
+    "zh": "服务器已卸载，配置和媒体已保留。"
+  },
+  "Servidor no compatible": {
+    "de": "Inkompatibler Server",
+    "en": "Incompatible server",
+    "fr": "Serveur incompatible",
+    "it": "Server non compatibile",
+    "ja": "非互換のサーバー",
+    "zh": "不兼容的服务器"
+  },
+  "Servidor no instalado": {
+    "de": "Server nicht installiert",
+    "en": "Server not installed",
+    "fr": "Serveur non installé",
+    "it": "Server non installato",
+    "ja": "サーバー未インストール",
+    "zh": "服务器未安装"
+  },
+  "Servidor o carpetas no disponibles: se debe comprobar que el ordenador esté encendido, UMS iniciado y ambos equipos conectados a la misma red. Red del servidor, en la pestaña Resumen, permite revisar la conexión. Si faltan carpetas, deben verificarse el dispositivo seleccionado, la conexión del disco y la configuración guardada.": {
+    "de": "Server oder Ordner nicht verfügbar: Der Computer muss eingeschaltet, UMS gestartet und beide Geräte mit demselben Netzwerk verbunden sein. Servernetzwerk auf der Registerkarte Übersicht ermöglicht die Prüfung der Verbindung. Bei fehlenden Ordnern sind das ausgewählte Gerät, die Laufwerksverbindung und die gespeicherte Konfiguration zu prüfen.",
+    "en": "Server or folders unavailable: the computer must be powered on, UMS running and both devices connected to the same network. Server network on the Overview tab allows the connection to be reviewed. Missing folders require checking the selected device, drive connection and saved configuration.",
+    "fr": "Serveur ou dossiers indisponibles: l’ordinateur doit être allumé, UMS démarré et les deux équipements connectés au même réseau. Réseau du serveur dans l’onglet Résumé permet de vérifier la connexion. En cas de dossiers manquants, l’appareil sélectionné, la connexion du disque et la configuration enregistrée doivent être vérifiés.",
+    "it": "Server o cartelle non disponibili: il computer deve essere acceso, UMS avviato ed entrambi i dispositivi connessi alla stessa rete. Rete del server nella scheda Riepilogo consente di verificare la connessione. In caso di cartelle mancanti, devono essere controllati il dispositivo selezionato, il collegamento del disco e la configurazione salvata.",
+    "ja": "サーバーまたはフォルダーが見つからない場合: コンピューターの電源、UMS の起動状態、両機器が同じネットワークに接続されていることを確認する必要があります。「概要」タブのサーバーネットワーク欄で接続を確認できます。フォルダーが表示されない場合は、選択中の機器、ディスクの接続、保存済みの設定を確認します。",
+    "zh": "服务器或文件夹不可用: 应检查计算机是否开机、UMS 是否启动，以及两台设备是否连接到同一网络。“概览”选项卡中的服务器网络区域可用于检查连接。如果缺少文件夹，应核实所选设备、磁盘连接及已保存的配置。"
+  },
+  "Sin aplicar · Guardar reinicia UMS e interrumpe la reproducción": {
+    "de": "Nicht angewendet · Speichern startet UMS neu und unterbricht die Wiedergabe",
+    "en": "Not applied · Saving restarts UMS and interrupts playback",
+    "fr": "Non appliqué · Enregistrer redémarre UMS et interrompt la lecture",
+    "it": "Non applicato · Salvare riavvia UMS e interrompe la riproduzione",
+    "ja": "未適用 · 保存で UMS を再起動し再生を中断",
+    "zh": "未应用 · 保存将重启 UMS 并中断播放"
+  },
+  "Sin cambios pendientes": {
+    "de": "Keine ausstehenden Änderungen",
+    "en": "No pending changes",
+    "fr": "Aucune modification en attente",
+    "it": "Nessuna modifica in sospeso",
+    "ja": "未適用の変更なし",
+    "zh": "没有待应用更改"
+  },
+  "Sin datos todavía": {
+    "de": "Noch keine Daten",
+    "en": "No data yet",
+    "fr": "Pas encore de données",
+    "it": "Ancora nessun dato",
+    "ja": "データなし",
+    "zh": "暂无数据"
+  },
+  "Sin límite": {
+    "de": "Unbegrenzt",
+    "en": "Unlimited",
+    "fr": "Sans limite",
+    "it": "Senza limite",
+    "ja": "無制限",
+    "zh": "无限制"
+  },
+  "Sin límite de resolución": {
+    "de": "Keine Auflösungsgrenze",
+    "en": "No resolution limit",
+    "fr": "Sans limite de résolution",
+    "it": "Nessun limite di risoluzione",
+    "ja": "解像度の上限なし",
+    "zh": "分辨率无限制"
+  },
+  "Sin nombre": {
+    "de": "Unbenannt",
+    "en": "Unnamed",
+    "fr": "Sans nom",
+    "it": "Senza nome",
+    "ja": "名前なし",
+    "zh": "未命名"
+  },
+  "Sin seleccionar; las subcarpetas heredan esta regla.": {
+    "de": "Nicht ausgewählt; Unterordner erben diese Regel.",
+    "en": "Not selected; subfolders inherit this rule.",
+    "fr": "Non sélectionné ; les sous-dossiers héritent de cette règle.",
+    "it": "Non selezionata; le sottocartelle ereditano questa regola.",
+    "ja": "対象外です。サブフォルダーはこのルールを継承します。",
+    "zh": "未选中；子文件夹继承此规则。"
+  },
+  "Solo cambia el título y el nombre del enlace: minúsculas, sin tildes, ñ, espacios ni signos. Conserva el título reconocible y la extensión. No modifica archivos ni convierte el vídeo.": {
+    "de": "Ändert nur Titel und Linknamen: Kleinbuchstaben, ohne Akzente, ñ, Leer- oder Sonderzeichen. Titel und Erweiterung bleiben erkennbar. Dateien und Video bleiben unverändert.",
+    "en": "Only changes the title and link name: lowercase, without accents, ñ, spaces or symbols. Keeps a recognizable title and extension. Does not change files or convert video.",
+    "fr": "Modifie uniquement le titre et le nom du lien : minuscules, sans accents, ñ, espaces ni signes. Conserve un titre reconnaissable et l’extension. Ne modifie ni ne convertit les fichiers.",
+    "it": "Cambia solo titolo e nome del collegamento: minuscole, senza accenti, ñ, spazi o simboli. Mantiene titolo riconoscibile ed estensione. Non modifica i file né converte il video.",
+    "ja": "タイトルとリンク名のみを変更します。小文字化し、アクセント・ñ・空白・記号を除去します。識別できる名前と拡張子を保ち、ファイルや映像は変更しません。",
+    "zh": "仅更改标题和链接名称：小写，移除重音、ñ、空格和符号。保留可辨认的标题及扩展名。不修改文件或转换视频。"
+  },
+  "Solo se pueden convertir carpetas compartidas con este dispositivo.": {
+    "de": "Nur für dieses Gerät freigegebene Ordner können konvertiert werden.",
+    "en": "Only folders shared with this device can be converted.",
+    "fr": "Seuls les dossiers partagés avec cet appareil peuvent être convertis.",
+    "it": "Si possono convertire solo cartelle condivise con questo dispositivo.",
+    "ja": "このデバイスに共有しているフォルダーのみ変換できます。",
+    "zh": "只能转换与此设备共享的文件夹。"
+  },
+  "Subtítulos externos: Buscar subtítulos junto al vídeo permite utilizar archivos como Pelicula.spa.srt situados junto a Pelicula.mkv. Tras guardar los cambios, es necesario volver a abrir Transcodificar en el reproductor. En Original y Sin transcodificación, la selección de pistas depende de las funciones del reproductor.": {
+    "de": "Externe Untertitel: Untertitel neben der Videodatei suchen ermöglicht Dateien wie Pelicula.spa.srt neben Pelicula.mkv. Nach dem Speichern der Änderungen muss Transkodieren am Wiedergabegerät erneut geöffnet werden. Bei Original und Ohne Transkodierung hängt die Spurauswahl von den Funktionen des Wiedergabegeräts ab.",
+    "en": "External subtitles: Find subtitles next to the video allows files such as Pelicula.spa.srt alongside Pelicula.mkv to be used. After saving changes, Transcode must be reopened on the player. In Original and No transcoding, track selection depends on the player’s capabilities.",
+    "fr": "Sous-titres externes: Chercher les sous-titres près de la vidéo permet d’utiliser des fichiers tels que Pelicula.spa.srt placés à côté de Pelicula.mkv. Après l’enregistrement des modifications, Transcoder doit être rouvert sur le lecteur. En mode Original et Sans transcodage, la sélection des pistes dépend des fonctions du lecteur.",
+    "it": "Sottotitoli esterni: Cerca sottotitoli accanto al video consente di utilizzare file come Pelicula.spa.srt accanto a Pelicula.mkv. Dopo il salvataggio delle modifiche, è necessario riaprire Transcodifica sul lettore. In Originale e Senza transcodifica, la selezione delle tracce dipende dalle funzioni del lettore.",
+    "ja": "外部字幕: 「動画と同じ場所の字幕を検索」を有効にすると、Pelicula.mkv と同じ場所にある Pelicula.spa.srt などを使用できます。変更を保存した後、再生機器で「トランスコード」を開き直す必要があります。オリジナルと「トランスコードなし」では、トラックの選択は再生機器の機能に依存します。",
+    "zh": "外部字幕: “查找视频旁的字幕文件”可使用与 Pelicula.mkv 位于同一文件夹的 Pelicula.spa.srt 等文件。保存更改后，需要在播放器上重新打开“转码”。在原始模式和“不转码”下，轨道选择取决于播放器功能。"
+  },
+  "Tema": {
+    "de": "Design",
+    "en": "Theme",
+    "fr": "Thème",
+    "it": "Tema",
+    "ja": "テーマ",
+    "zh": "主题"
+  },
+  "Tema, idioma y otros controles": {
+    "de": "Design, Sprache und weitere Optionen",
+    "en": "Theme, language and other controls",
+    "fr": "Thème, langue et autres commandes",
+    "it": "Tema, lingua e altri comandi",
+    "ja": "テーマ・言語・その他の操作",
+    "zh": "主题、语言和其他功能"
+  },
+  "Trabajando…": {
+    "de": "Wird bearbeitet…",
+    "en": "Working…",
+    "fr": "En cours…",
+    "it": "Operazione in corso…",
+    "ja": "処理中…",
+    "zh": "正在处理…"
+  },
+  "Tratamiento": {
+    "de": "Behandlung",
+    "en": "Handling",
+    "fr": "Traitement",
+    "it": "Gestione",
+    "ja": "処理方法",
+    "zh": "处理方式"
+  },
+  "Tu biblioteca multimedia en un único servidor.": {
+    "de": "Deine Mediathek auf einem einzigen Server.",
+    "en": "Your media library in a single server.",
+    "fr": "Votre bibliothèque multimédia sur un seul serveur.",
+    "it": "La tua libreria multimediale in un unico server.",
+    "ja": "メディアライブラリを1つのサーバーに。",
+    "zh": "在同一个服务器中管理你的媒体库。"
+  },
+  "UMS Control es una capa de gestión o frontend independiente. No desarrollamos el código de Universal Media Server ni somos una aplicación oficial del proyecto.": {
+    "de": "UMS Control ist eine unabhängige Verwaltungsoberfläche. Wir entwickeln nicht den Code von Universal Media Server und sind keine offizielle Anwendung des Projekts.",
+    "en": "UMS Control is an independent management layer or frontend. We do not develop Universal Media Server's code and are not an official project application.",
+    "fr": "UMS Control est une interface de gestion indépendante. Nous ne développons pas le code d'Universal Media Server et ne sommes pas une application officielle du projet.",
+    "it": "UMS Control è un frontend di gestione indipendente. Non sviluppiamo il codice di Universal Media Server e non siamo un'applicazione ufficiale del progetto.",
+    "ja": "UMS Control は独立した管理用フロントエンドです。Universal Media Server 本体のコードを開発するものではなく、公式アプリでもありません。",
+    "zh": "UMS Control 是独立的管理层或前端。我们不开发 Universal Media Server 本身的代码，也不是该项目的官方应用。"
+  },
+  "UMS Control ya está abierto.": {
+    "de": "UMS Control ist bereits geöffnet.",
+    "en": "UMS Control is already open.",
+    "fr": "UMS Control est déjà ouvert.",
+    "it": "UMS Control è già aperto.",
+    "ja": "UMS Control はすでに開いています。",
+    "zh": "UMS Control 已打开。"
+  },
+  "UMS Control · versión 1.0": {
+    "de": "UMS Control · Version 1.0",
+    "en": "UMS Control · version 1.0",
+    "fr": "UMS Control · version 1.0",
+    "it": "UMS Control · versione 1.0",
+    "ja": "UMS Control · バージョン 1.0",
+    "zh": "UMS Control · 版本 1.0"
+  },
+  "UMS limita AAC a 320 kbps y puede ajustar AC3 según los canales; el resultado depende del códec. Se convierte también el audio para respetar estos ajustes.": {
+    "de": "UMS begrenzt AAC auf 320 kbit/s und passt AC3 eventuell an die Kanäle an. Das Ergebnis hängt vom Codec ab. Audio wird ebenfalls konvertiert.",
+    "en": "UMS caps AAC at 320 kbps and may adjust AC3 by channel count; output depends on the codec. Audio is also converted to respect these settings.",
+    "fr": "UMS limite AAC à 320 kbit/s et peut ajuster AC3 selon les canaux. Le résultat dépend du codec. L'audio est converti pour respecter ces réglages.",
+    "it": "UMS limita AAC a 320 kbps e può adattare AC3 ai canali. Il risultato dipende dal codec. Anche l'audio viene convertito per rispettare queste impostazioni.",
+    "ja": "UMS は AAC を 320 kbps に制限し、AC3 をチャンネル数に応じ調整する場合があります。これらの設定に従い音声も変換します。",
+    "zh": "UMS 将 AAC 限制为 320 kbps，并可能按声道调整 AC3。结果取决于编码；音频也会转换以遵循设置。"
+  },
+  "UMS no confirmó las carpetas configuradas.": {
+    "de": "UMS hat die konfigurierten Ordner nicht bestätigt.",
+    "en": "UMS did not confirm the configured folders.",
+    "fr": "UMS n'a pas confirmé les dossiers configurés.",
+    "it": "UMS non ha confermato le cartelle configurate.",
+    "ja": "UMS が設定済みフォルダーを確認できませんでした。",
+    "zh": "UMS 未确认已配置文件夹。"
+  },
+  "UMS no está listo. Revisa el estado en Resumen o abre la administración web de UMS.": {
+    "de": "UMS ist nicht bereit. Übersicht prüfen oder UMS-Webverwaltung öffnen.",
+    "en": "UMS is not ready. Check Overview or open UMS web administration.",
+    "fr": "UMS n'est pas prêt. Consultez Résumé ou ouvrez l'administration web UMS.",
+    "it": "UMS non è pronto. Controlla Riepilogo o apri la gestione web UMS.",
+    "ja": "UMS は準備未完了です。概要を確認するか Web 管理を開いてください。",
+    "zh": "UMS 尚未就绪。检查概览或打开 UMS 网页管理。"
+  },
+  "UUID de dispositivo no válido.": {
+    "de": "Ungültige Geräte-UUID.",
+    "en": "Invalid device UUID.",
+    "fr": "UUID d’appareil non valide.",
+    "it": "UUID dispositivo non valido.",
+    "ja": "デバイスの UUID が無効です。",
+    "zh": "无效的设备 UUID。"
+  },
+  "UUID detectado": {
+    "de": "Erkannte UUID",
+    "en": "Detected UUID",
+    "fr": "UUID détecté",
+    "it": "UUID rilevato",
+    "ja": "検出された UUID",
+    "zh": "检测到的 UUID"
+  },
+  "Ubicación no disponible: comprueba su conexión y permisos.": {
+    "de": "Speicherort nicht verfügbar: Prüfe Verbindung und Zugriffsrechte.",
+    "en": "Location unavailable: check its connection and permissions.",
+    "fr": "Emplacement indisponible : vérifiez sa connexion et ses autorisations.",
+    "it": "Percorso non disponibile: verifica connessione e permessi.",
+    "ja": "場所を利用できません。接続とアクセス権を確認してください。",
+    "zh": "位置不可用：请检查连接和访问权限。"
+  },
+  "Un componente del servidor no puede ejecutarse: {value}": {
+    "de": "Serverkomponente kann nicht ausgeführt werden: {value}",
+    "en": "A server component cannot run: {value}",
+    "fr": "Un composant du serveur ne peut pas s'exécuter : {value}",
+    "it": "Impossibile eseguire un componente server: {value}",
+    "ja": "サーバーコンポーネントを実行できません：{value}",
+    "zh": "服务器组件无法运行：{value}"
+  },
+  "Usa códigos de idioma separados por comas: spa,eng,und.": {
+    "de": "Sprachcodes durch Kommas trennen: spa,eng,und.",
+    "en": "Use comma-separated language codes: spa,eng,und.",
+    "fr": "Utilisez des codes de langue séparés par des virgules : spa,eng,und.",
+    "it": "Usa codici lingua separati da virgole: spa,eng,und.",
+    "ja": "言語コードをカンマ区切りで指定：spa,eng,und。",
+    "zh": "使用逗号分隔的语言代码：spa,eng,und。"
+  },
+  "Usa la IPv4 local del dispositivo.": {
+    "de": "Lokale IPv4 des Geräts verwenden.",
+    "en": "Use the device's local IPv4 address.",
+    "fr": "Utilisez l'IPv4 locale de l’appareil.",
+    "it": "Usa l'IPv4 locale del dispositivo.",
+    "ja": "デバイスのローカル IPv4 を使用してください。",
+    "zh": "使用设备的本地 IPv4 地址。"
+  },
+  "Usa rutas absolutas válidas.": {
+    "de": "Gültige absolute Pfade verwenden.",
+    "en": "Use valid absolute paths.",
+    "fr": "Utilisez des chemins absolus valides.",
+    "it": "Usa percorsi assoluti validi.",
+    "ja": "有効な絶対パスを使用してください。",
+    "zh": "使用有效的绝对路径。"
+  },
+  "Usa «Buscar en la red» o «Añadir por IP».": {
+    "de": "„Netzwerk durchsuchen“ oder „Per IP hinzufügen“ verwenden.",
+    "en": "Use “Search network” or “Add by IP”.",
+    "fr": "Utilisez « Rechercher sur le réseau » ou « Ajouter par IP ».",
+    "it": "Usa «Cerca in rete» o «Aggiungi tramite IP».",
+    "ja": "「ネットワークを検索」または「IP アドレスで追加」を使用してください。",
+    "zh": "使用“搜索网络”或“通过 IP 添加”。"
+  },
+  "Usar nombres compatibles": {
+    "de": "Kompatible Namen verwenden",
+    "en": "Use compatible names",
+    "fr": "Utiliser les noms compatibles",
+    "it": "Usare nomi compatibili",
+    "ja": "互換名を使う",
+    "zh": "使用兼容名称"
+  },
+  "Ver registro del servidor": {
+    "de": "Serverprotokoll anzeigen",
+    "en": "View server log",
+    "fr": "Voir le journal du serveur",
+    "it": "Visualizza registro server",
+    "ja": "サーバーログを表示",
+    "zh": "查看服务器日志"
+  },
+  "Verde/amarillo": {
+    "de": "Grün/Gelb",
+    "en": "Green/yellow",
+    "fr": "Vert/jaune",
+    "it": "Verde/giallo",
+    "ja": "緑/黄",
+    "zh": "绿/黄"
+  },
+  "Vuelve a explorar las carpetas guardadas para detectar archivos nuevos, modificados o eliminados. No modifica los originales. Puede tardar según el tamaño de la biblioteca.": {
+    "de": "Durchsucht die gespeicherten Ordner erneut nach neuen, geänderten oder entfernten Dateien. Die Originale bleiben unverändert. Die Dauer hängt von der Größe der Mediathek ab.",
+    "en": "Scans the saved folders again for new, changed or deleted files. Does not modify the originals. This may take time depending on library size.",
+    "fr": "Analyse à nouveau les dossiers enregistrés pour détecter les fichiers ajoutés, modifiés ou supprimés. Ne modifie pas les originaux. La durée dépend de la taille de la bibliothèque.",
+    "it": "Analizza di nuovo le cartelle salvate per rilevare file nuovi, modificati o eliminati. Non modifica gli originali. Il tempo richiesto dipende dalle dimensioni della libreria.",
+    "ja": "保存済みのフォルダーを再スキャンし、ファイルの追加・変更・削除を検出します。元のファイルは変更しません。ライブラリのサイズによって時間がかかります。",
+    "zh": "重新扫描已保存的文件夹，检测新增、更改或删除的文件。不修改原始文件。所需时间取决于媒体库大小。"
+  },
+  "Vídeo · límites y conversión": {
+    "de": "Video · Grenzen und Konvertierung",
+    "en": "Video · conversion limits",
+    "fr": "Vidéo · limites et conversion",
+    "it": "Video · limiti e conversione",
+    "ja": "映像 · 上限と変換",
+    "zh": "视频 · 限制和转换"
+  },
+  "Windows clásico": {
+    "de": "Windows klassisch",
+    "en": "Windows Classic",
+    "fr": "Windows classique",
+    "it": "Windows classico",
+    "ja": "Windows クラシック",
+    "zh": "经典 Windows"
+  },
+  "Ya existe una instalación. Usa Salud del servidor para revisarla.": {
+    "de": "Eine Installation ist vorhanden. Mit Serverzustand überprüfen.",
+    "en": "An installation already exists. Use Server health to check it.",
+    "fr": "Une installation existe déjà. Utilisez État du serveur pour la vérifier.",
+    "it": "Esiste già un'installazione. Usa Stato del server per controllarla.",
+    "ja": "すでにインストール済みです。サーバーの状態で確認してください。",
+    "zh": "已存在安装，请通过服务器健康状态检查。"
+  },
+  "activado": {
+    "de": "aktiviert",
+    "en": "enabled",
+    "fr": "activé",
+    "it": "attivato",
+    "ja": "有効",
+    "zh": "已启用"
+  },
+  "activo": {
+    "de": "aktiv",
+    "en": "active",
+    "fr": "actif",
+    "it": "attivo",
+    "ja": "アクティブ",
+    "zh": "活跃"
+  },
+  "audio preseleccionado y subtítulos incrustados · Transcodificar visible": {
+    "de": "vorgewähltes Audio und eingebrannte Untertitel · Transkodieren sichtbar",
+    "en": "preselected audio and burned-in subtitles · Transcode visible",
+    "fr": "audio présélectionné et sous-titres incrustés · Transcoder visible",
+    "it": "audio preselezionato e sottotitoli impressi · Transcodifica visibile",
+    "ja": "事前選択した音声と焼き込み字幕 · トランスコード表示",
+    "zh": "预选音轨与烧录字幕 · 显示“转码”"
+  },
+  "automático": {
+    "de": "automatisch",
+    "en": "automatic",
+    "fr": "automatique",
+    "it": "automatico",
+    "ja": "自動",
+    "zh": "自动"
+  },
+  "con error": {
+    "de": "mit Fehler",
+    "en": "with error",
+    "fr": "en erreur",
+    "it": "con errore",
+    "ja": "エラーあり",
+    "zh": "出现错误"
+  },
+  "desactivado": {
+    "de": "deaktiviert",
+    "en": "disabled",
+    "fr": "désactivé",
+    "it": "disattivato",
+    "ja": "無効",
+    "zh": "已禁用"
+  },
+  "detenido": {
+    "de": "gestoppt",
+    "en": "stopped",
+    "fr": "arrêté",
+    "it": "arrestato",
+    "ja": "停止中",
+    "zh": "已停止"
+  },
+  "disponible": {
+    "de": "verfügbar",
+    "en": "available",
+    "fr": "disponible",
+    "it": "disponibile",
+    "ja": "利用可能",
+    "zh": "可用"
+  },
+  "identificada por UUID": {
+    "de": "per UUID erkannt",
+    "en": "identified by UUID",
+    "fr": "identifié par UUID",
+    "it": "identificata tramite UUID",
+    "ja": "UUID で識別",
+    "zh": "通过 UUID 识别"
+  },
+  "iniciando": {
+    "de": "startet",
+    "en": "starting",
+    "fr": "démarrage",
+    "it": "avvio",
+    "ja": "起動中",
+    "zh": "启动中"
+  },
+  "sin actividad": {
+    "de": "inaktiv",
+    "en": "inactive",
+    "fr": "sans activité",
+    "it": "inattivo",
+    "ja": "待機中",
+    "zh": "无活动"
+  },
+  "uuid:… (opcional si hay IP)": {
+    "de": "uuid:… (optional bei IP)",
+    "en": "uuid:… (optional with IP)",
+    "fr": "uuid:… (facultatif avec IP)",
+    "it": "uuid:… (facoltativo con IP)",
+    "ja": "uuid:…（IP 指定時は省略可）",
+    "zh": "uuid:…（有 IP 时可选）"
+  },
+  "¿Volver a la configuración guardada? Se perderán los cambios sin aplicar.": {
+    "de": "Gespeicherte Einstellungen laden? Nicht angewendete Änderungen gehen verloren.",
+    "en": "Restore saved settings? Unapplied changes will be lost.",
+    "fr": "Restaurer les réglages enregistrés ? Les modifications non appliquées seront perdues.",
+    "it": "Ripristinare le impostazioni salvate? Le modifiche non applicate andranno perse.",
+    "ja": "保存済み設定に戻しますか？未適用の変更は失われます。",
+    "zh": "恢复已保存设置？未应用的更改将丢失。"
+  },
+  "Ámbito de aplicación: Reproducción → Nombres anunciados al dispositivo permite conservar el nombre original o simplificarlo en todas las carpetas o en las seleccionadas. Esta opción está destinada a reproductores con dificultades para mostrar determinados nombres; no garantiza la resolución de otros problemas de reproducción.": {
+    "de": "Geltungsbereich: Wiedergabe → An das Gerät gesendete Namen ermöglicht Originalnamen oder vereinfachte Namen in allen oder ausgewählten Ordnern. Die Option ist für Wiedergabegeräte vorgesehen, die bestimmte Namen nicht korrekt anzeigen. Sie garantiert keine Behebung anderer Wiedergabeprobleme.",
+    "en": "Scope: Playback → Names sent to the device allows the original name to be retained or simplified in all folders or selected folders. This option is intended for players that have difficulty displaying certain names; it does not guarantee resolution of other playback issues.",
+    "fr": "Champ d’application: Lecture → Noms annoncés à l’appareil permet de conserver le nom original ou de le simplifier dans tous les dossiers ou dans les dossiers sélectionnés. Cette option vise les lecteurs ayant des difficultés à afficher certains noms ; elle ne garantit pas la résolution d’autres problèmes de lecture.",
+    "it": "Ambito di applicazione: Riproduzione → Nomi inviati al dispositivo consente di conservare il nome originale o semplificarlo in tutte le cartelle o in quelle selezionate. L’opzione è destinata ai lettori che presentano difficoltà nella visualizzazione di determinati nomi; non garantisce la risoluzione di altri problemi di riproduzione.",
+    "ja": "適用範囲: 「再生 → 機器に表示する名前」では、元の名前を保持するか、すべてのフォルダーまたは選択したフォルダーで名前を簡略化できます。この機能は特定の名前を正しく表示できない再生機器向けであり、その他の再生問題の解決を保証するものではありません。",
+    "zh": "应用范围: “播放 → 向设备显示的名称”可保留原始名称，或在所有文件夹或选定文件夹中使用简化名称。此选项适用于无法正确显示某些名称的播放器，但不保证解决其他播放问题。"
+  },
+  "○ UMS ": {
+    "de": "○ UMS ",
+    "en": "○ UMS ",
+    "fr": "○ UMS ",
+    "it": "○ UMS ",
+    "ja": "○ UMS ",
+    "zh": "○ UMS "
+  },
+  "● UMS disponible": {
+    "de": "● UMS verfügbar",
+    "en": "● UMS available",
+    "fr": "● UMS disponible",
+    "it": "● UMS disponibile",
+    "ja": "● UMS 利用可能",
+    "zh": "● UMS 可用"
+  },
+  "No se puede leer la configuración guardada. El archivo original y el servidor no se modificarán.": {
+    "en": "The saved configuration cannot be read. The original file and server will not be modified.",
+    "fr": "La configuration enregistrée est illisible. Le fichier original et le serveur ne seront pas modifiés.",
+    "de": "Die gespeicherte Konfiguration kann nicht gelesen werden. Originaldatei und Server werden nicht verändert.",
+    "it": "Impossibile leggere la configurazione salvata. Il file originale e il server non verranno modificati.",
+    "zh": "无法读取已保存的配置。原始文件和服务器不会被修改。",
+    "ja": "保存された設定を読み取れません。元のファイルとサーバーは変更されません。"
+  },
+  "Es posible conservar una copia del archivo y abrir un borrador con los valores iniciales. Los perfiles del servidor solo se modificarán al guardar y aplicar.": {
+    "en": "A copy of the file can be preserved and a draft opened with initial values. Server profiles will only change after saving and applying.",
+    "fr": "Une copie du fichier peut être conservée avant d’ouvrir un brouillon avec les valeurs initiales. Les profils du serveur ne seront modifiés qu’après enregistrement et application.",
+    "de": "Eine Kopie der Datei kann gesichert und ein Entwurf mit Ausgangswerten geöffnet werden. Serverprofile ändern sich erst beim Speichern und Anwenden.",
+    "it": "È possibile conservare una copia del file e aprire una bozza con i valori iniziali. I profili del server cambieranno solo dopo il salvataggio e l’applicazione.",
+    "zh": "可以保留文件副本，并使用初始值打开草稿。只有保存并应用后，服务器配置才会更改。",
+    "ja": "ファイルのコピーを保存し、初期値の下書きを開けます。サーバープロファイルは保存して適用した場合にのみ変更されます。"
+  },
+  "Conservar copia y abrir borrador": {
+    "en": "Preserve a copy and open draft",
+    "fr": "Conserver une copie et ouvrir un brouillon",
+    "de": "Kopie sichern und Entwurf öffnen",
+    "it": "Conservare una copia e aprire la bozza",
+    "zh": "保留副本并打开草稿",
+    "ja": "コピーを保存して下書きを開く"
+  },
+  "Abrir carpeta": {
+    "en": "Open folder",
+    "fr": "Ouvrir le dossier",
+    "de": "Ordner öffnen",
+    "it": "Aprire cartella",
+    "zh": "打开文件夹",
+    "ja": "フォルダーを開く"
+  },
+  "No se ha podido conservar el archivo. No se realizará la recuperación.": {
+    "en": "The file could not be preserved. Recovery will not proceed.",
+    "fr": "Le fichier n’a pas pu être conservé. La récupération est annulée.",
+    "de": "Die Datei konnte nicht gesichert werden. Die Wiederherstellung wird nicht durchgeführt.",
+    "it": "Impossibile conservare il file. Il ripristino non verrà eseguito.",
+    "zh": "无法保留文件。恢复操作不会继续。",
+    "ja": "ファイルを保存できませんでした。復旧は実行されません。"
+  },
+  "Copia de recuperación conservada en:": {
+    "en": "Recovery copy preserved at:",
+    "fr": "Copie de récupération conservée dans :",
+    "de": "Wiederherstellungskopie gespeichert unter:",
+    "it": "Copia di ripristino conservata in:",
+    "zh": "恢复副本保存在：",
+    "ja": "復旧用コピーの保存先："
+  }
+}

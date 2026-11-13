@@ -1,0 +1,33 @@
+name: Verify source candidate
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install test prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends python3-pyqt6 python3-psutil python3-send2trash python3-zstandard qt6-translations-l10n openjdk-17-jdk-headless iproute2 libglib2.0-bin desktop-file-utils libcurl3t64-gnutls libmms0 ffmpeg fonts-dejavu-core
+      - name: Provision verified upstream inputs
+        run: /usr/bin/python3 tools/fetch_upstream.py
+      - name: Regression and isolated lifecycle (no skipped integration)
+        env:
+          QT_QPA_PLATFORM: offscreen
+          UMS_REQUIRE_INTEGRATION: '1'
+        run: /usr/bin/python3 -m unittest discover -v
+      - name: Real isolated synthetic DLNA integration
+        run: |
+          /usr/bin/python3 tools/integration.py
+          /usr/bin/python3 tools/integration.py --mode force --subtitles burn --output .cache/integration-force-burn.json
+          /usr/bin/python3 tools/integration.py --mode force --subtitles passthrough --output .cache/integration-force-soft.json
+          /usr/bin/python3 tools/integration.py --mode auto --subtitles passthrough --output .cache/integration-auto.json
+      - name: Reproducible Java build
+        run: /usr/bin/python3 tools/verify_rebuild.py
+      - name: Public source/privacy check
+        run: /usr/bin/python3 tools/export_public.py --check

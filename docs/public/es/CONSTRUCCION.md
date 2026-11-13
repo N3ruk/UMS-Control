@@ -1,0 +1,42 @@
+# Construcción y verificación
+
+[English](../BUILD.md)
+
+Las recetas y comandos completos se mantienen en [la guía principal de construcción](../BUILD.md). Las fuentes requieren Python 3.12+, PyQt6, psutil y Send2Trash. Los usuarios finales utilizan DEB, ZIP o EXE, que incluyen el runtime del panel.
+
+## Integración UMS
+
+Las fuentes modificadas están en `patches/net`. Linux y Windows tienen JAR oficiales e integraciones separados, identificados por SHA256. La construcción inicial reproducible exige JDK 17; JDK 21 con `--release 17` no produce el mismo bytecode. Nunca se modifica el JAR oficial.
+
+## DEB y ZIP Linux
+
+```sh
+python3 packaging/prepare_inputs.py
+python3 packaging/build_linux.py --base /ruta/absoluta/base-ubuntu22-preparada
+```
+
+`packaging/inputs.json` fija Python y las ruedas exactas por URL, tamaño y SHA256. `server-support/dependencies-portable.json` fija paquetes nativos Ubuntu 22.04 y sus fuentes. La base necesita libcurl3-gnutls y las bibliotecas habituales X11/XCB/Wayland/fontconfig/OpenGL. El constructor requiere bwrap y dpkg-deb; no son requisitos Python del usuario final. No se incluyen libc ni controladores gráficos.
+
+El DEB utiliza una pregunta debconf en inglés. El ZIP utiliza una pregunta de terminal en inglés con los mismos siete idiomas; `./install.sh --language en` permite instalación desatendida explícita. Se conservan las preferencias existentes.
+
+## EXE Windows
+
+```sh
+python packaging/prepare_inputs.py --windows
+```
+
+La preparación incorpora únicamente las ruedas verificadas al Python Windows de construcción, sin instalar pip en el sistema. La herramienta de construcción requiere `7z` en PATH. Se fijan PyInstaller 6.16.0 y pefile 2023.2.7. Con NSIS disponible:
+
+```sh
+python packaging/build_windows.py
+```
+
+La construcción cruzada utiliza Wine y NSIS aislado; los argumentos completos están en la guía inglesa. La instalación es por usuario, no ejecuta el instalador upstream de UMS ni instala un servicio de sistema. El extractor 7-Zip incluye su licencia. Ajustes, perfiles, servidor y medios quedan fuera del directorio del panel.
+
+## Aceptación
+
+La autoprueba se ejecuta con `ums-control --self-test` o `UMS-Control.exe --self-test --report resultado.json`. `--smoke-gui` comprueba el arranque normal; `--screenshots CARPETA` genera capturas con datos de demostración, sin aplicar ajustes del servidor.
+
+Se deben probar instalación, actualización, retirada, selección/conservación de idioma y ciclo real del servidor en sistemas desechables. Un entorno aislado no sustituye una sesión gráfica/systemd física. Wine no certifica la red, el cortafuegos ni la reproducción física de Windows. La aceptación Windows nativa sigue siendo un requisito para añadir Windows a una release estable; la prerelease de pruebas permanece separada. Véase la [lista pendiente](PRUEBAS-WINDOWS.md).
+
+No publicar `.cache`, perfiles ni diagnósticos privados. Revisar la allowlist de fuentes y los manifiestos/checksums de los artefactos antes de publicar.

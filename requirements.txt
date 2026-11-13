@@ -1,0 +1,6 @@
+# Ubuntu 24.04 uses python3-pyqt6 (6.4.2); no pip install is required.
+PyQt6>=6.4,<7
+
+psutil>=5.9,<8
+Send2Trash>=1.8,<3
+zstandard>=0.22,<1

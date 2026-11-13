@@ -1,0 +1,8 @@
+[project]
+name = "ums-control"
+version = "1.0.0"
+description = "Independent per-device DLNA control panel for Universal Media Server"
+requires-python = ">=3.12"
+dependencies = ["PyQt6>=6.4,<7", "psutil>=5.9,<8", "Send2Trash>=1.8,<3", "zstandard>=0.22,<1"]
+license = "GPL-3.0-or-later"
+authors = [{name = "N3ruk"}]

@@ -1,0 +1,15 @@
+{
+  "version": "15.9.0",
+  "runtime": {
+    "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/15.9.0/UMS-Linux-15.9.0-x86_64.tgz",
+    "size": 246213103,
+    "sha256": "532d6311539beb27f44a353762f164b0b4e9dc452903476b4818d8af8d948ac9"
+  },
+  "source_reference": "https://github.com/UniversalMediaServer/UniversalMediaServer/tree/15.9.0",
+  "source_archive": "https://codeload.github.com/UniversalMediaServer/UniversalMediaServer/tar.gz/refs/tags/15.9.0",
+  "source": {
+    "url": "https://codeload.github.com/UniversalMediaServer/UniversalMediaServer/tar.gz/refs/tags/15.9.0",
+    "size": 319292565,
+    "sha256": "adef85446dc07ab5999e8273636107005b6ffaaf777979ccf05a2e2c37905b8e"
+  }
+}
