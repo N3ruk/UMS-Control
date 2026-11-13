@@ -12,7 +12,7 @@ import native_dependencies
 import platform_support as platform_os
 import platform_support as fcntl
 
-SUPPORT=Path(__file__).resolve().parent/'server-support'
+SUPPORT=platform_os.ROOT/'server-support'
 BUNDLE_SHA='98556b264710793ecc02eceb8fc3031b979131cd0f000c96b0700a50f3f16abc'
 
 def digest(path):

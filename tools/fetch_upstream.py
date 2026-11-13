@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Provision the pinned test runtime, without reading or controlling user UMS."""
+"""Download pinned upstream runtime and dependencies for source builds."""
 import argparse,json,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 from native_dependencies import fetch,packages
 
 def main():

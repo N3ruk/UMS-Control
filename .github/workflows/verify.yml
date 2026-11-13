@@ -1,33 +1,39 @@
-name: Verify source candidate
+name: Verify minimal source
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
   source:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 15
     env:
       JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+      QT_QPA_PLATFORM: offscreen
     steps:
       - uses: actions/checkout@v4
-      - name: Install test prerequisites
+      - name: Install source and build prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends python3-pyqt6 python3-psutil python3-send2trash python3-zstandard qt6-translations-l10n openjdk-17-jdk-headless iproute2 libglib2.0-bin desktop-file-utils libcurl3t64-gnutls libmms0 ffmpeg fonts-dejavu-core
-      - name: Provision verified upstream inputs
-        run: /usr/bin/python3 tools/fetch_upstream.py
-      - name: Regression and isolated lifecycle (no skipped integration)
-        env:
-          QT_QPA_PLATFORM: offscreen
-          UMS_REQUIRE_INTEGRATION: '1'
-        run: /usr/bin/python3 -m unittest discover -v
-      - name: Real isolated synthetic DLNA integration
-        run: |
-          /usr/bin/python3 tools/integration.py
-          /usr/bin/python3 tools/integration.py --mode force --subtitles burn --output .cache/integration-force-burn.json
-          /usr/bin/python3 tools/integration.py --mode force --subtitles passthrough --output .cache/integration-force-soft.json
-          /usr/bin/python3 tools/integration.py --mode auto --subtitles passthrough --output .cache/integration-auto.json
-      - name: Reproducible Java build
-        run: /usr/bin/python3 tools/verify_rebuild.py
-      - name: Public source/privacy check
+          sudo apt-get install -y --no-install-recommends python3-pyqt6 python3-psutil python3-send2trash python3-zstandard openjdk-17-jdk-headless
+      - name: Validate public sources and runtime allowlist
         run: /usr/bin/python3 tools/export_public.py --check
+      - name: Compile and check application startup
+        run: |
+          /usr/bin/python3 -X pycache_prefix=.cache/bytecode -m compileall -q src packaging tools patches/build.py
+          /usr/bin/python3 src/launcher.py --version
+          /usr/bin/python3 src/launcher.py --self-test
+      - name: Rebuild Java integration from verified upstream
+        run: |
+          /usr/bin/python3 - <<'PY'
+          import json, subprocess, sys, tarfile
+          from pathlib import Path
+          sys.path.insert(0, 'src')
+          from native_dependencies import fetch
+          spec = json.loads(Path('server-support/upstream.json').read_text())
+          archive = fetch(spec['runtime'], Path('.cache'))
+          with tarfile.open(archive) as tf:
+              tf.extract(tf.getmember('ums-15.9.0/ums.jar'), '.cache/java-input', filter='data')
+          subprocess.run([sys.executable, 'patches/build.py', '--ums-jar', '.cache/java-input/ums-15.9.0/ums.jar', '--output', '.cache/rebuilt-update.jar'], check=True)
+          assert Path('.cache/rebuilt-update.jar').read_bytes() == Path('server-support/update.jar').read_bytes(), 'Rebuilt JAR differs'
+          print('Java build matches shipped integration')
+          PY

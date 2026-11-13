@@ -3,22 +3,21 @@
 """Build matched DEB and self-contained ZIP from pinned portable inputs."""
 import argparse,hashlib,json,os,re,shutil,subprocess,sys,tarfile,tempfile,zipfile
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 import native_dependencies
 CACHE=ROOT/'.cache/distribution-20261113'
 
 def digest(f):return hashlib.sha256(f.read_bytes()).hexdigest()
 def copy_source(target):
-    spec=json.loads((ROOT/'public-files.json').read_text(encoding='utf-8'))
-    for name in spec['files']+['assets/'+name for name in spec['generated_assets']]:
+    spec=json.loads((ROOT/'packaging/runtime-files.json').read_text(encoding='utf-8'))
+    for name,destination in spec.items():
         f=ROOT/name
-        if f.is_file():
-            out=target/name;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,out)
-    shutil.copy2(ROOT/'PUBLIC-MANIFEST.json',target/'PUBLIC-MANIFEST.json')
+        if not f.is_file():raise FileNotFoundError(f)
+        out=target/destination;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,out)
     (target/'distribution-marker.json').write_text(json.dumps(dict(version='1.0.0',format='linux',native_baseline='jammy')), encoding='utf-8')
 
 def build(args):
-    stage=CACHE/'linux-payload';stage.mkdir(parents=True,exist_ok=True);copy_source(stage)
+    stage=Path(tempfile.mkdtemp(prefix='linux-payload-',dir=CACHE));copy_source(stage)
     # The runtime is pinned in inputs.json; the archive is verified before extraction.
     pin=json.loads((ROOT/'packaging/inputs.json').read_text(encoding='utf-8'))['linux_python']
     archive=CACHE/'python-linux.tar.gz'

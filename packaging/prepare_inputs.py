@@ -3,7 +3,7 @@
 """Download exact build inputs. All input bytes are checked before extraction."""
 import argparse,json,os,subprocess,sys,tarfile,zipfile
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));from native_dependencies import fetch
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'));from native_dependencies import fetch
 CACHE=ROOT/'.cache/distribution-20261113'
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--windows',action='store_true');args=parser.parse_args();spec=json.loads((ROOT/'packaging/inputs.json').read_text(encoding='utf-8'));CACHE.mkdir(parents=True,exist_ok=True)
@@ -28,7 +28,7 @@ def main():
    with zipfile.ZipFile(wheels/item['name']) as wheel:
     if any('.data/' in name or '..' in Path(name).parts or Path(name).is_absolute() for name in wheel.namelist()):raise RuntimeError('Unsupported wheel layout: '+item['name'])
     wheel.extractall(site)
-  source=str(ROOT) if os.name=='nt' else 'Z:'+str(ROOT).replace('/','\\')
+  source=str(ROOT/'src') if os.name=='nt' else 'Z:'+str(ROOT/'src').replace('/','\\')
   (target/'python312._pth').write_text('python312.zip\n.\nLib/site-packages\n'+source+'\nimport site\n',encoding='utf-8')
   print('Windows Python and locked wheels prepared without system installation. Run packaging/build_windows.py; cross-builds require Wine.')
  else:

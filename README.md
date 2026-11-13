@@ -16,13 +16,13 @@ Linux **1.0.0** is the [first release](https://github.com/N3ruk/UMS-Control/rele
 
 The installers ask **in English** which language should be used for the first launch. Seven languages are available: English, Spanish, French, German, Italian, Chinese and Japanese. The language can be changed later from the **Language** menu. Existing user preferences take precedence.
 
-The Linux packages include Python and Qt; no system Python, pip or compiler is needed. The ZIP does not use APT/RPM and does not need administrator privileges. Its compatibility target is **x86-64, glibc 2.35+**, an X11/Wayland desktop and standard graphics drivers. It is not a musl/Alpine or ARM package. See the [tested compatibility and limitations](docs/public/COMPATIBILITY.md); a portable format is not a guarantee for every distribution.
+The Linux packages include Python and Qt; no system Python, pip or compiler is needed. The ZIP does not use APT/RPM and does not need administrator privileges. Its compatibility target is **x86-64, glibc 2.35+**, an X11/Wayland desktop and standard graphics drivers. It is not a musl/Alpine or ARM package. See the [tested compatibility and limitations](docs/COMPATIBILITY.md); a portable format is not a guarantee for every distribution.
 
 After opening **UMS Control**, select **Install UMS server** in **Overview**, then **Start**. This separate, explicit action downloads the official UMS runtime, checks its SHA256, applies the matching integration and tests a disposable copy before activating it. Internet access and temporary disk space are needed. Installing the panel does not start the server or enable session autostart.
 
 Windows uses the same Qt interface, profile rules and Java integration as Linux. Process management, paths, recycling and session autostart are adapted to Windows. **Native Windows acceptance testing is still required**; the Windows executable and installer have passed installer/executable checks under Wine, which does not certify native networking, firewall prompts or device playback.
 
-**Windows is not yet validated on native Windows 10/11.** Pending: real server installation/repair/update, start/stop/restart, session autostart, LAN discovery and firewall interaction, and physical DLNA browsing/playback (original and transcoded, audio/subtitles and seeking). Native installer/reinstallation/removal and settings preservation also need confirmation. See the [complete pending checklist](docs/public/WINDOWS-TESTING.md); Windows will only be added to a stable release after these checks pass.
+**Windows is not yet validated on native Windows 10/11.** Pending: real server installation/repair/update, start/stop/restart, session autostart, LAN discovery and firewall interaction, and physical DLNA browsing/playback (original and transcoded, audio/subtitles and seeking). Native installer/reinstallation/removal and settings preservation also need confirmation. See the [complete pending checklist](docs/WINDOWS-TESTING.md); Windows will only be added to a stable release after these checks pass.
 
 ## Screenshots
 
@@ -30,13 +30,11 @@ English interface with demonstration devices and no private library data. Linux 
 
 ### Linux · DEB
 
-![Linux DEB — Overview](docs/screenshots/linux-deb-summary.png)
+![Linux DEB — Overview](docs/screenshots/linux-current-summary.png)
 
-![Linux DEB — Devices](docs/screenshots/linux-deb-devices.png)
+![Linux DEB — Devices](docs/screenshots/linux-current-devices.png)
 
 #### Linux themes
-
-![Linux — Blue](docs/screenshots/linux-current-summary.png)
 
 ![Linux — UGM](docs/screenshots/linux-ugm-summary.png)
 
@@ -67,12 +65,11 @@ Some devices may not be **100% compatible**. Compatibility depends on the device
 
 ## Documentation
 
-- [Usage and installation](docs/public/USAGE.md)
-- [Compatibility and verification limits](docs/public/COMPATIBILITY.md)
-- [Build and verification](docs/public/BUILD.md)
+- [Usage and installation](docs/USAGE.md)
+- [Compatibility and verification limits](docs/COMPATIBILITY.md)
+- [Build and verification](docs/BUILD.md)
 - [Third-party licenses and corresponding sources](THIRD_PARTY_NOTICES.md)
-
-- [Verification results](docs/public/VERIFICATION.md)
+- [Verification results](docs/VERIFICATION.md)
 
 ## Data and independence
 

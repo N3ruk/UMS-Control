@@ -10,6 +10,7 @@ from PyQt6.QtCore import QUrl
 from PyQt6.QtWidgets import (QApplication,QMainWindow,QWidget,QVBoxLayout,QHBoxLayout,QLabel,QPushButton,QTabWidget,QListWidget,QListWidgetItem,QAbstractItemView,QLineEdit,QComboBox,QSpinBox,QFormLayout,QGroupBox,QFileDialog,QMessageBox,QCheckBox,QScrollArea,QSplitter,QDialog,QDialogButtonBox,QSizePolicy,QTextBrowser)
 import baul_core as core
 import appearance
+from platform_support import ROOT as RESOURCE_ROOT
 from user_guide import GuideDialog
 from folder_rules import FolderRuleTree
 import server_manager as manager
@@ -101,7 +102,7 @@ class AppBackdrop(QWidget):
     def load_image(self):
         theme=self.window_owner.preferences['theme']
         if theme in appearance.WALLPAPER_THEMES and self.image_theme!=theme:
-            self.image=QPixmap(str(Path(__file__).with_name('assets')/(theme+'-background.png')));self.image_theme=theme;self.scaled_size=None
+            self.image=QPixmap(str((RESOURCE_ROOT/'assets')/(theme+'-background.png')));self.image_theme=theme;self.scaled_size=None
 
     def paintEvent(self,event):
         self.load_image()
@@ -147,7 +148,7 @@ class Window(QMainWindow):
     def __init__(self,preferences=None):
         super().__init__();self.state=load_with_recovery(core.load_state,core.defaults);self.legacy_migration=any(core.editable_tv(t)!=t for t in self.state['tvs']);self.state['tvs']=[core.editable_tv(t) for t in self.state['tvs']];self.row=-1;self.loading=False;self.dirty=False;self.busy=False;self.refreshing=False;self.jobs=set();self.latest_release=None;self.update_check_error=None;self.control_generation=0
         self.preferences=preferences or load_with_recovery(appearance.load,lambda:dict(theme='current',language='es'));initial_language=self.preferences['language'];self.preferences['language']='es';self.ui_texts={};set_language('es');configure_qt_language(QApplication.instance(),self.preferences['language']);self.language_choices={};self.make_menus()
-        self.setWindowTitle('UMS Control');self.setWindowIcon(QIcon(str(Path(__file__).with_name('assets')/'ums-control.png')));self.resize(1140,840);self.setMinimumSize(860,620)
+        self.setWindowTitle('UMS Control');self.setWindowIcon(QIcon(str((RESOURCE_ROOT/'assets')/'ums-control.png')));self.resize(1140,840);self.setMinimumSize(860,620)
         root=AppBackdrop(self);self.setCentralWidget(root);v=QVBoxLayout(root);v.setContentsMargins(24,20,24,18);v.setSpacing(14)
         h=QHBoxLayout();title=label('UMS Control');title.setObjectName('title');h.addWidget(title);h.addStretch();self.ums_brand=label('Universal Media Server',True);self.ums_brand.setWordWrap(False);h.addWidget(self.ums_brand);v.addLayout(h)
         v.addWidget(label(tr('Tu biblioteca multimedia en un único servidor.'),True))
@@ -214,7 +215,7 @@ class Window(QMainWindow):
         v.addWidget(label(tr('Licencia del frontend: GNU GPL v3.0 o posterior (GPL-3.0-or-later).')))
         v.addWidget(label(tr('UMS Control es una capa de gestión o frontend independiente. No desarrollamos el código de Universal Media Server ni somos una aplicación oficial del proyecto.')))
         v.addWidget(label(tr('El servidor es Universal Media Server (GPL-2.0), basado en PS3 Media Server. Incluye correcciones locales de integración con sus fuentes y licencia; no se presenta como código propio ni como una versión oficial. FFmpeg, Java y MediaInfo conservan sus respectivos créditos y licencias.')))
-        v.addWidget(button(tr('Licencia del frontend'),lambda:QDesktopServices.openUrl(QUrl.fromLocalFile(str(Path(__file__).with_name('LICENSE'))))))
+        v.addWidget(button(tr('Licencia del frontend'),lambda:QDesktopServices.openUrl(QUrl.fromLocalFile(str((RESOURCE_ROOT/'LICENSE'))))))
         v.addWidget(button(tr('Proyecto Universal Media Server ↗'),lambda:QDesktopServices.openUrl(QUrl('https://github.com/UniversalMediaServer/UniversalMediaServer'))))
         bb=QDialogButtonBox(QDialogButtonBox.StandardButton.Close);bb.rejected.connect(d.reject);v.addWidget(bb);d.exec()
 
@@ -669,7 +670,7 @@ def configure_qt_language(app,language):
     previous=getattr(app,'ums_translator',None)
     if previous:app.removeTranslator(previous)
     translator=QTranslator(app);code='zh_CN' if language=='zh' else language
-    base=Path(__file__).with_name('qt-translations')
+    base=(RESOURCE_ROOT/'qt-translations')
     if not translator.load(str(base/('qtbase_'+code+'.qm'))):translator.load('/usr/share/qt6/translations/qtbase_'+code+'.qm')
     app.ums_translator=translator;app.installTranslator(translator)
 

@@ -2,6 +2,8 @@
 
 [English](../VERIFICATION.md)
 
+Estos son resultados históricos de la release publicada. Las regresiones completas y los arneses de interfaz/DLNA se conservan en privado y no hacen falta para ejecutar ni construir el programa. La CI pública actual comprueba la allowlist mínima, compilación, autoprueba y reconstrucción Java; no vuelve a ejecutar toda la aceptación privada de la release.
+
 La [release Linux v1.0.0](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0) contiene el DEB y el ZIP. El EXE Windows es una [prerelease v1.0.0-windows-rc1](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0-windows-rc1) separada, pendiente de la [lista de aceptación en Windows nativo](PRUEBAS-WINDOWS.md). Publicar Linux no certifica Windows ni la compatibilidad universal de dispositivos.
 
 | Comprobación | Resultado |
@@ -23,6 +25,6 @@ Una sesión gráfica Linux limpia real con systemd de usuario, las combinaciones
 
 Algunos dispositivos pueden no ser compatibles al 100 %. No se clasifica ningún fabricante como incompatible.
 
-Los registros y las comprobaciones privadas del anfitrión quedan fuera de las fuentes públicas. SHA256SUMS se genera tras cerrar los paquetes y PUBLIC-MANIFEST.json identifica las fuentes públicas exactas.
+Los registros y las comprobaciones privadas del anfitrión quedan fuera de las fuentes públicas. SHA256SUMS se genera tras cerrar los paquetes y packaging/source-manifest.json identifica las fuentes públicas exactas.
 
 Auditoría ELF Linux: 470 archivos comprobados, versión máxima requerida de símbolos GLIBC 2.35.

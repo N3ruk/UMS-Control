@@ -3,7 +3,8 @@
 import contextlib,json,os,shutil,socket,subprocess,sys,tarfile
 from pathlib import Path
 WINDOWS=os.name=='nt'
-ROOT=Path(__file__).resolve().parent
+CODE_ROOT=Path(__file__).resolve().parent
+ROOT=CODE_ROOT.parent if CODE_ROOT.name=='src' else CODE_ROOT
 LOCK_EX=2;LOCK_NB=4
 
 def flock(stream,flags):

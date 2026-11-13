@@ -8,7 +8,7 @@ import platform_support as platform_os
 
 LATEST_URL='https://api.github.com/repos/UniversalMediaServer/UniversalMediaServer/releases/latest'
 DOWNLOAD_PREFIX='https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/'
-ROOT=Path(__file__).resolve().parent
+ROOT=platform_os.ROOT
 # Bootstrap recognition only: never selects which release is downloaded.
 WINDOWS_JAR_SHA='c84b86cfcfc09852ce979be539775ad4797be983f58ef0e38893638e560190c1'
 BOOTSTRAP_JAR_SHA='d4154acba671955a4ccfc793e8c654c0a853eca006dbb4ca8b5825265885ea5c'

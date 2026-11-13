@@ -16,13 +16,13 @@ Linux **1.0.0** es la [primera release](https://github.com/N3ruk/UMS-Control/rel
 
 Los instaladores preguntan **en inglés** el idioma del primer inicio. Se ofrecen español, inglés, francés, alemán, italiano, chino y japonés. Posteriormente puede cambiarse desde el menú **Idioma**. Las preferencias existentes se conservan.
 
-Los paquetes Linux incluyen Python y Qt; no requieren Python del sistema, pip ni compilador. El ZIP no utiliza APT/RPM ni requiere privilegios de administrador. Su objetivo de compatibilidad es **x86-64, glibc 2.35+**, escritorio X11/Wayland y controladores gráficos normales. No es un paquete para musl/Alpine ni ARM. Véanse los [sistemas probados y sus límites](docs/public/es/COMPATIBILIDAD.md); el formato portable no garantiza todas las distribuciones.
+Los paquetes Linux incluyen Python y Qt; no requieren Python del sistema, pip ni compilador. El ZIP no utiliza APT/RPM ni requiere privilegios de administrador. Su objetivo de compatibilidad es **x86-64, glibc 2.35+**, escritorio X11/Wayland y controladores gráficos normales. No es un paquete para musl/Alpine ni ARM. Véanse los [sistemas probados y sus límites](docs/es/COMPATIBILIDAD.md); el formato portable no garantiza todas las distribuciones.
 
 Tras abrir **UMS Control**, seleccionar **Instalar servidor UMS** en la pestaña **Resumen** y después **Iniciar**. Esta acción independiente y explícita descarga el runtime oficial de UMS, verifica su SHA256, incorpora la integración correspondiente y prueba una copia temporal antes de activarla. Requiere conexión a Internet y espacio temporal. Instalar el panel no inicia el servidor ni activa el autoinicio.
 
 Windows utiliza la misma interfaz Qt, reglas por dispositivo e integración Java que Linux. Se adaptan la gestión de procesos, rutas, papelera e inicio de sesión. **La aceptación en Windows nativo sigue pendiente**: el ejecutable y el instalador han superado las comprobaciones del instalador y del ejecutable bajo Wine, lo que no certifica la red, los avisos del cortafuegos ni la reproducción física en Windows.
 
-**Windows aún no está validado en Windows 10/11 nativo.** Falta probar instalación/reparación/actualización real del servidor, inicio/parada/reinicio, autoinicio, búsqueda en LAN y cortafuegos, y navegación/reproducción DLNA física (original y convertida, audio/subtítulos y saltos). También falta confirmar instalador/reinstalación/retirada y conservación de ajustes en Windows nativo. Véase la [lista completa pendiente](docs/public/es/PRUEBAS-WINDOWS.md); Windows solo se añadirá a una release estable tras superar esas pruebas.
+**Windows aún no está validado en Windows 10/11 nativo.** Falta probar instalación/reparación/actualización real del servidor, inicio/parada/reinicio, autoinicio, búsqueda en LAN y cortafuegos, y navegación/reproducción DLNA física (original y convertida, audio/subtítulos y saltos). También falta confirmar instalador/reinstalación/retirada y conservación de ajustes en Windows nativo. Véase la [lista completa pendiente](docs/es/PRUEBAS-WINDOWS.md); Windows solo se añadirá a una release estable tras superar esas pruebas.
 
 ## Capturas
 
@@ -30,9 +30,9 @@ Interfaz inglesa y dispositivos de demostración, sin datos de bibliotecas priva
 
 ### Linux · DEB
 
-![Linux DEB — Resumen](docs/screenshots/linux-deb-summary.png)
+![Linux DEB — Resumen](docs/screenshots/linux-current-summary.png)
 
-![Linux DEB — Dispositivos](docs/screenshots/linux-deb-devices.png)
+![Linux DEB — Dispositivos](docs/screenshots/linux-current-devices.png)
 
 #### Temas Linux
 
@@ -67,12 +67,11 @@ Algunos dispositivos pueden no ser **compatibles al 100 %**. La compatibilidad d
 
 ## Documentación
 
-- [Uso e instalación](docs/public/es/USO.md)
-- [Compatibilidad y límites de verificación](docs/public/es/COMPATIBILIDAD.md)
-- [Construcción y verificación](docs/public/es/CONSTRUCCION.md)
+- [Uso e instalación](docs/es/USO.md)
+- [Compatibilidad y límites de verificación](docs/es/COMPATIBILIDAD.md)
+- [Construcción y verificación](docs/es/CONSTRUCCION.md)
 - [Licencias y fuentes de terceros](THIRD_PARTY_NOTICES.md)
-
-- [Resultados de verificación](docs/public/es/VERIFICACION.md)
+- [Resultados de verificación](docs/es/VERIFICACION.md)
 
 ## Datos e independencia
 

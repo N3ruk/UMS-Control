@@ -24,12 +24,12 @@ def autostart_path():
 def autostart_text():
     executable=Path(sys.executable)
     if getattr(sys,'frozen',False):argv=[str(executable),'--start-server']
-    else:argv=[str(executable),str(p.ROOT/'launcher.py'),'--start-server']
+    else:argv=[str(executable),str(p.CODE_ROOT/'launcher.py'),'--start-server']
     if p.WINDOWS:
         command=subprocess.list2cmdline(argv).replace('"','""')
         return 'CreateObject("WScript.Shell").Run "'+command+'", 0, False\r\n'
     from install import desktop_exec
-    return '[Desktop Entry]\nType=Application\nName=UMS Control Server\nExec='+desktop_exec(executable)+' '+('' if getattr(sys,'frozen',False) else desktop_exec(p.ROOT/'launcher.py')+' ')+'--start-server\nTerminal=false\n'
+    return '[Desktop Entry]\nType=Application\nName=UMS Control Server\nExec='+desktop_exec(executable)+' '+('' if getattr(sys,'frozen',False) else desktop_exec(p.CODE_ROOT/'launcher.py')+' ')+'--start-server\nTerminal=false\n'
 
 def autostart():
     path=autostart_path()

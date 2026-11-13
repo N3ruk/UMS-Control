@@ -2,7 +2,20 @@
 
 [English](../BUILD.md)
 
-Las recetas y comandos completos se mantienen en [la guía principal de construcción](../BUILD.md). Las fuentes requieren Python 3.12+, PyQt6, psutil y Send2Trash. Los usuarios finales utilizan DEB, ZIP o EXE, que incluyen el runtime del panel.
+Las recetas y comandos completos se mantienen en [la guía principal de construcción](../BUILD.md). Las fuentes requieren Python 3.12+, PyQt6, psutil, Send2Trash y zstandard. Los usuarios finales utilizan DEB, ZIP o EXE, que incluyen el runtime del panel.
+
+## Ejecución desde fuentes
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python src/launcher.py
+```
+
+El código y las traducciones están en `src/`; los recursos se mantienen en `assets/`, `patches/` y `server-support/`. `python src/install.py` es el instalador opcional para desarrollo.
+
+Las regresiones completas, la matriz visual y las comprobaciones DLNA se mantienen en privado. No hacen falta para ejecutar ni empaquetar el programa. La CI pública comprueba integridad de fuentes, compilación Python, autoprueba y reconstrucción Java. Los resultados de la release son históricos y se conservan en [VERIFICACION.md](VERIFICACION.md).
 
 ## Integración UMS
 
@@ -41,4 +54,6 @@ La autoprueba se ejecuta con `ums-control --self-test` o `UMS-Control.exe --self
 
 Se deben probar instalación, actualización, retirada, selección/conservación de idioma y ciclo real del servidor en sistemas desechables. Un entorno aislado no sustituye una sesión gráfica/systemd física. Wine no certifica la red, el cortafuegos ni la reproducción física de Windows. La aceptación Windows nativa sigue siendo un requisito para añadir Windows a una release estable; la prerelease de pruebas permanece separada. Véase la [lista pendiente](PRUEBAS-WINDOWS.md).
 
-No publicar `.cache`, perfiles ni diagnósticos privados. Revisar la allowlist de fuentes y los manifiestos/checksums de los artefactos antes de publicar.
+No publicar `.cache`, perfiles ni diagnósticos privados. `packaging/public-files.json` enumera las fuentes públicas y `packaging/runtime-files.json` identifica únicamente los archivos que necesitan los paquetes instalados. Las herramientas de desarrollo no se copian al payload Linux. Tras revisar los cambios, ejecutar `python3 tools/export_public.py --update-manifest` y `python3 tools/export_public.py --check`. `--destination CARPETA` exporta a un directorio nuevo vacío. Revisar los checksums de los artefactos antes de publicar.
+
+La nueva estructura se aplica a la rama principal y las construcciones futuras. Las etiquetas y descargas ya publicadas conservan su estructura original; esta reorganización no las sustituye.

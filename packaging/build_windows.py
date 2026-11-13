@@ -7,9 +7,10 @@ ROOT=Path(__file__).resolve().parents[1];CACHE=ROOT/'.cache/distribution-2026111
 
 def assemble(payload):
     internal=payload/'_internal';internal.mkdir(exist_ok=True)
-    for name in ['translations.json','LICENSE','THIRD_PARTY_NOTICES.md','README.md','README_ES.md']:
+    for name in ['LICENSE','THIRD_PARTY_NOTICES.md','README.md','README_ES.md']:
         shutil.copy2(ROOT/name,internal/name)
-    for name in ['assets','docs/public','server-support','patches']:
+    shutil.copy2(ROOT/'src/translations.json',internal/'translations.json')
+    for name in ['assets','docs','server-support','patches']:
         shutil.copytree(ROOT/name,internal/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__'))
     # Windows retains its independent geometric icon and wallpaper set.
     shutil.copytree(ROOT/'assets/windows',internal/'assets',dirs_exist_ok=True)
@@ -27,8 +28,6 @@ def assemble(payload):
                 if not any(word in name.lower() for word in ['license','copying','notice','metadata']):continue
                 out=licenses/name;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(wheel.read(name))
     shutil.copy2(ROOT/'packaging/inputs.json',licenses/'build-inputs.json')
-    for name in ['screenshots']:
-        shutil.copytree(ROOT/'docs'/name,internal/'docs'/name,dirs_exist_ok=True)
     (internal/'distribution-marker.json').write_text(json.dumps(dict(version='1.0.0',format='windows')),encoding='utf-8')
     remove=CACHE/'remove-windows.nsh';lines=[]
     for f in sorted(payload.rglob('*'),reverse=True):
@@ -41,7 +40,7 @@ def assemble(payload):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--wine-python',type=Path);parser.add_argument('--nsis-root',type=Path);args=parser.parse_args()
     driver=CACHE/'freeze_driver.py'
-    driver.write_text('import os\nos.environ.setdefault("PATH",r"C:\\windows\\system32;C:\\windows")\nfrom PyInstaller.__main__ import run\nrun('+repr(['--noconfirm','--clean','--windowed','--name','UMS-Control','--distpath',str(CACHE/'windows-dist') if os.name=='nt' else 'Z:'+str(CACHE/'windows-dist').replace('/','\\'),'--workpath',str(CACHE/'windows-build') if os.name=='nt' else 'Z:'+str(CACHE/'windows-build').replace('/','\\'),'--specpath',str(CACHE) if os.name=='nt' else 'Z:'+str(CACHE).replace('/','\\'),str(ROOT/'launcher.py') if os.name=='nt' else 'Z:'+str(ROOT/'launcher.py').replace('/','\\')])+')\n',encoding='utf-8')
+    driver.write_text('import os\nos.environ.setdefault("PATH",r"C:\\windows\\system32;C:\\windows")\nfrom PyInstaller.__main__ import run\nrun('+repr(['--noconfirm','--clean','--windowed','--name','UMS-Control','--distpath',str(CACHE/'windows-dist') if os.name=='nt' else 'Z:'+str(CACHE/'windows-dist').replace('/','\\'),'--workpath',str(CACHE/'windows-build') if os.name=='nt' else 'Z:'+str(CACHE/'windows-build').replace('/','\\'),'--specpath',str(CACHE) if os.name=='nt' else 'Z:'+str(CACHE).replace('/','\\'),str(ROOT/'src/launcher.py') if os.name=='nt' else 'Z:'+str(ROOT/'src/launcher.py').replace('/','\\')])+')\n',encoding='utf-8')
     command=[str(sys.executable),str(driver)] if os.name=='nt' else ['wine',str(args.wine_python),'Z:'+str(driver).replace('/','\\')]
     subprocess.run(command,check=True)
     payload=CACHE/'windows-dist/UMS-Control';remove=assemble(payload);dist=ROOT/'dist';dist.mkdir(exist_ok=True)

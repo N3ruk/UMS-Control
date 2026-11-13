@@ -2,7 +2,7 @@
 """Pinned upstream dependencies; downloaded, never redistributed by this project."""
 import argparse, hashlib, json, os, tempfile, urllib.request
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent
+from platform_support import ROOT
 LOCK=ROOT/'server-support/dependencies.json'
 
 def manifest():

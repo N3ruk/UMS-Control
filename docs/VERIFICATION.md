@@ -2,6 +2,8 @@
 
 [Español](es/VERIFICACION.md)
 
+These are historical checks of the published release. Full regression/UI/DLNA harnesses are maintained privately and are not needed to run or build the application. Current public CI validates the minimal source allowlist, compilation, application self-test and Java rebuild; it does not rerun the private release acceptance suite.
+
 The [Linux v1.0.0 release](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0) contains the DEB and ZIP. The Windows EXE is a separate [v1.0.0-windows-rc1 prerelease](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0-windows-rc1), pending the [native Windows acceptance checklist](WINDOWS-TESTING.md). Publishing Linux does not certify Windows or universal device compatibility.
 
 | Check | Result |
@@ -23,6 +25,6 @@ A real clean Linux graphical login with its systemd user manager, distribution-s
 
 Some devices may not be 100% compatible. No manufacturer is classified as incompatible.
 
-Private logs and workstation-state snapshots remain outside the public source allowlist. The binary SHA256SUMS is generated after final packaging; the source PUBLIC-MANIFEST.json records the exact public source files.
+Private logs and workstation-state snapshots remain outside the public source allowlist. The binary SHA256SUMS is generated after final packaging; the source packaging/source-manifest.json records the exact public source files.
 
 Linux ELF audit: 470 files checked, maximum required GLIBC symbol version 2.35.

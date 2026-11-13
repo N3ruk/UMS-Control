@@ -5,7 +5,7 @@ UMS Control 1.0.0 candidate — Copyright (C) 2026 N3ruk — frontend GPL-3.0-or
 ## Files actually redistributed in the public source candidate
 
 - Original frontend Python/UI catalogs: GPL-3.0-or-later. Windows geometric artwork: GPL-3.0-or-later, editable source `tools/render_assets.py`, inventory `assets/windows/ORIGIN.md`. Linux icon and wallpapers are supplied artwork selected by N3ruk, preserved byte-for-byte; provenance and SHA256 are in `assets/ORIGIN.md`. The frontend license does not claim authorship of or relicense any third-party imagery.
-- Modified Universal Media Server Java files under `patches/net` and compiled `server-support/update.jar` / `update-windows.jar`: retain their upstream GPL-2.0 notices and authorship; see `patches/LICENSE.UMS.txt`. Complete modified files, exact upstream source reference/archive/hash, verified official build input and deterministic build recipe are provided. See `server-support/upstream.json` and `docs/public/BUILD.md`. This notice does not relicense the upstream Java code as frontend code.
+- Modified Universal Media Server Java files under `patches/net` and compiled `server-support/update.jar` / `update-windows.jar`: retain their upstream GPL-2.0 notices and authorship; see `patches/LICENSE.UMS.txt`. Complete modified files, exact upstream source reference/archive/hash, verified official build input and deterministic build recipe are provided. See `server-support/upstream.json` and `docs/BUILD.md`. This notice does not relicense the upstream Java code as frontend code.
 - `baul.svg`: original geometric development icon, GPL-3.0-or-later; retained for source-install compatibility.
 
 ## Downloaded or system-provided, not redistributed in this public source tree

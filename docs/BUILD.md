@@ -4,19 +4,20 @@
 
 ## Source and runtime integration
 
-Python 3.12+, PyQt6, psutil and Send2Trash are needed for source execution. `install.py` is the developer/source installer; release end users use the DEB, ZIP or EXE instead. Do not build from a private development tree containing user logs, profiles or wallpapers.
+Python 3.12+, PyQt6, psutil, Send2Trash and zstandard are needed for source execution. Application modules and translations are in `src/`; resources stay in `assets/`, `patches/` and `server-support/`. From the repository root:
 
 ```sh
-python3 packaging/prepare_inputs.py
-python3 tools/fetch_upstream.py
-python3 tools/prepare_test_root.py
-QT_QPA_PLATFORM=offscreen python3 -m unittest discover -v
-python3 tools/verify_ui.py
-python3 tools/integration.py
-python3 tools/verify_rebuild.py
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python src/launcher.py
 ```
 
-The bootstrap Linux JAR and the separately compiled Windows JAR are pinned by SHA256 in `server_releases.py`. The integration source is in `patches/net`. A JDK 17 compiler is required for reproducible bootstrap bytecode; JDK 21 with `--release 17` is not equivalent. Windows must be compiled against the official **Windows** UMS JAR. Use `python3 patches/build.py --platform windows --ums-jar OFFICIAL_WINDOWS_UMS_JAR --output server-support/update-windows.jar` for the pinned Windows bootstrap (omit `--platform windows` for Linux). The official JAR is never modified. `tools/update_bundle.py` refreshes checksums only after an intentional input revision.
+`python src/install.py` is the optional developer/source installer; release end users use the DEB, ZIP or EXE instead. Do not build from a private development tree containing user logs or profiles.
+
+The public repository contains only application sources, documentation, artwork and build/publication tools. Full regression, UI-matrix and DLNA integration checks are maintained privately; they are not required to run or package the program. Public CI checks source integrity, Python compilation, application self-test and a Java rebuild. Historical release validation is recorded in [VERIFICATION.md](VERIFICATION.md).
+
+The bootstrap Linux JAR and the separately compiled Windows JAR are pinned by SHA256 in `src/server_releases.py`. The integration source is in `patches/net`. A JDK 17 compiler is required for reproducible bootstrap bytecode; JDK 21 with `--release 17` is not equivalent. Windows must be compiled against the official **Windows** UMS JAR. Use `python3 patches/build.py --platform windows --ums-jar OFFICIAL_WINDOWS_UMS_JAR --output server-support/update-windows.jar` for the pinned Windows bootstrap (omit `--platform windows` for Linux). The official JAR is never modified. `tools/update_bundle.py` refreshes checksums only after an intentional input revision.
 
 ## Linux DEB and ZIP
 
@@ -59,4 +60,6 @@ Run `ums-control --self-test` on Linux or `UMS-Control.exe --self-test --report 
 
 Test actual package install/update/removal in disposable users/systems. Verify language selection and preservation, real server start/stop/restart/autostart and protocol delivery. A clean rootless userspace is not a physical graphical/systemd login test. Wine verifies the Windows artifact but does not certify native Windows networking/firewall/device playback. Native Windows acceptance remains a gate for adding Windows to a stable release; a clearly labelled testing prerelease is available. See [the pending checklist](WINDOWS-TESTING.md).
 
-Never publish private `.cache` trees or workstation configuration. Refresh the explicit `public-files.json` allowlist and `PUBLIC-MANIFEST.json`; review source and artifact SHA256SUMS before publishing.
+Never publish private `.cache` trees or workstation configuration. `packaging/public-files.json` lists public sources; `packaging/runtime-files.json` maps only files needed in installed packages. Build/CI/regression tools are not copied into the Linux payload. Refresh `packaging/source-manifest.json` with `python3 tools/export_public.py --update-manifest` after reviewing intentional source changes, then run `python3 tools/export_public.py --check`. Export to a new empty directory using `--destination OUTPUT_FOLDER`. Review artifact SHA256SUMS before publishing.
+
+The release tags and existing downloadable packages are immutable references to their original layout. The reorganized layout applies to the default branch and future builds; it does not replace already published binaries or source archives.
