@@ -6,13 +6,13 @@ Independent desktop control panel by **N3ruk** for Universal Media Server. Confi
 
 ## Downloads and installation
 
-Linux **1.0.0** is the [first release](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0) (DEB and ZIP). The Windows EXE is distributed separately as [**v1.0.0-windows-rc1 — prerelease, native testing pending**](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0-windows-rc1), not as part of the stable Linux release.
+**UMS Control 1.0.0** is available for **Linux and Windows** in the [same stable release](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0): Linux DEB/ZIP, Windows EXE and SHA256 checksums.
 
 | System | Distribution | Installation |
 | --- | --- | --- |
 | Debian-family Linux, x86-64 | `.deb` | `sudo apt install ./ums-control_1.0.0-1_amd64.deb` |
 | Other glibc Linux desktops, x86-64 | `.zip` | Extract, open a terminal in the extracted folder and run `./install.sh` as the desktop user |
-| Windows 10/11, x86-64 — testing prerelease | `.exe` | Run `ums-control-1.0.0-windows-x86_64-setup.exe`; installation is per user |
+| Windows 10/11, x86-64 | `.exe` | Run `ums-control-1.0.0-windows-x86_64-setup.exe`; installation is per user |
 
 The installers ask **in English** which language should be used for the first launch. Seven languages are available: English, Spanish, French, German, Italian, Chinese and Japanese. The language can be changed later from the **Language** menu. Existing user preferences take precedence.
 
@@ -20,7 +20,7 @@ The Linux packages include Python and Qt; no system Python, pip or compiler is n
 
 After opening **UMS Control**, select **Install UMS server** in **Overview**, then **Start**. This separate, explicit action downloads the official UMS runtime, checks its SHA256, applies the matching integration and tests a disposable copy before activating it. Internet access and temporary disk space are needed. Installing the panel does not start the server or enable session autostart.
 
-Windows uses the same Qt interface, profile rules and Java integration as Linux, with OS-specific process management, paths, recycling and session autostart. **Windows remains a testing prerelease.** Native Windows 11 tests uncovered defects in the public RC1; a private corrected development candidate passed installer/server lifecycle, Unicode paths and cross-machine synthetic DLNA checks. Those fixes are not yet in the downloadable EXE. Physical TV/console playback, real session login, clean-machine firewall interaction and other acceptance checks remain pending. See the [exact tested scope and remaining checklist](docs/WINDOWS-TESTING.md).
+Windows uses the same Qt interface, profile rules and Java integration as Linux, with OS-specific processes, paths, recycling and session autostart. The stable installer includes the native Windows fixes, physical Ethernet/Wi-Fi selection, catalogue recovery after a TV identity change and persistent custom device names. [Windows verification](docs/WINDOWS-TESTING.md) distinguishes native checks from user-reported physical acceptance.
 
 ## Screenshots
 

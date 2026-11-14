@@ -52,10 +52,10 @@ La construcción cruzada utiliza Wine y NSIS aislado; los argumentos completos e
 
 La autoprueba se ejecuta con `ums-control --self-test` o `UMS-Control.exe --self-test --report resultado.json`. `--smoke-gui` comprueba el arranque normal; `--screenshots CARPETA` genera capturas con datos de demostración, sin aplicar ajustes del servidor.
 
-Se deben probar instalación, actualización, retirada, selección/conservación de idioma y ciclo real del servidor en sistemas desechables. Un entorno aislado no sustituye una sesión gráfica/systemd física. Wine no certifica la red, el cortafuegos ni la reproducción física de Windows. La aceptación Windows nativa sigue siendo un requisito para añadir Windows a una release estable; la prerelease de pruebas permanece separada. Véase la [lista pendiente](PRUEBAS-WINDOWS.md).
+Se deben probar instalación, actualización, retirada, selección/conservación de idioma y ciclo real del servidor en sistemas desechables. Un entorno aislado no sustituye una sesión gráfica/systemd física. Wine no certifica la red, el cortafuegos ni la reproducción física de Windows. Windows 1.0.0 estable incluye el ejecutable nativo corregido. Véase la [verificación Windows](PRUEBAS-WINDOWS.md).
 
 No publicar `.cache`, perfiles ni diagnósticos privados. `packaging/public-files.json` enumera las fuentes públicas y `packaging/runtime-files.json` identifica únicamente los archivos que necesitan los paquetes instalados. Las herramientas de desarrollo no se copian al payload Linux. Tras revisar los cambios, ejecutar `python3 tools/export_public.py --update-manifest` y `python3 tools/export_public.py --check`. `--destination CARPETA` exporta a un directorio nuevo vacío. Revisar los checksums de los artefactos antes de publicar.
 
-La nueva estructura se aplica a la rama principal y las construcciones futuras. Las etiquetas y descargas ya publicadas conservan su estructura original; esta reorganización no las sustituye.
+Las fuentes y recetas están en el repositorio y la etiqueta v1.0.0. La release adjunta DEB/ZIP Linux, instalador Windows y SHA256SUMS, sin ZIP adicional de fuentes.
 
 El EXE, el instalador y el desinstalador integran `assets/windows/ums-control.ico`, derivado multirresolución del PNG Windows. Los accesos y Aplicaciones instaladas usan ese icono; la GUI tiene identidad propia en Windows. El constructor admite `--output`, `--build-dir` y `--inputs-dir` para candidatas aisladas. En Linux, build y salida deben quedar dentro del árbol fuente. Los recursos instalados proceden solo de `packaging/runtime-files.json`.

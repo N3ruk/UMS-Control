@@ -5,7 +5,7 @@
 | Target | Package | Actual verification |
 | --- | --- | --- |
 | Linux x86-64, glibc 2.35+ | DEB / ZIP | Ubuntu 22.04 and 24.04 isolated userspaces; the host desktop is Linux. See the verification report for package lifecycle checks. |
-| Windows 10/11 x86-64 | EXE | Windows PE executable and NSIS installer built; Wine execution and English-interface captures. Native Windows acceptance remains pending. |
+| Windows 10/11 x86-64 | EXE | Stable installer; native Windows 11 checks and user-confirmed TV playback/autostart. Windows 10 is a compatibility target. |
 | ARM, 32-bit, musl/Alpine, macOS | None | Not supported by these binary packages. |
 
 The ZIP bundles Python, Qt and a private native-library closure based on Ubuntu 22.04. It does not install Debian packages into the operating system and does not require APT/RPM, system Python, pip or a compiler. Linux requires a graphical desktop, compatible graphics drivers and glibc 2.35 or later. More distributions may work, but only actual tested configurations are certified. Clean userspace tests are not physical desktop/systemd-login tests.
@@ -18,6 +18,6 @@ Discovery is local IPv4. Applications sharing one IP cannot have separate IP-bas
 
 The bootstrap integration has separate reproducible Linux/Windows builds against the corresponding UMS 15.9.0 JARs and Java 17. Future stable releases are staged, rebuilt against their JAR if necessary, checked and probed before replacement. A future incompatible release may be rejected without replacing the existing installation. Rebuilding an integration requires an appropriate JDK.
 
-NVIDIA encoding needs compatible hardware and drivers. CPU tests do not certify NVENC, HDR, every seek operation, long playback sessions or every media format. Logs, profiles, media and private development diagnostics are excluded from public source exports.
+NVIDIA encoding needs compatible hardware and drivers. CPU tests alone do not certify hardware encoding or every media format. Logs, profiles, media and private development diagnostics are excluded from public source exports.
 
-The Windows EXE is a separate testing prerelease, not a stable Linux release asset. See [all pending native Windows checks](WINDOWS-TESTING.md).
+Windows EXE and Linux DEB/ZIP are distributed together in stable 1.0.0. See [Windows verification](WINDOWS-TESTING.md).
