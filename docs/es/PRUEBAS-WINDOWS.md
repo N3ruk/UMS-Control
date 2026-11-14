@@ -1,28 +1,38 @@
-# Prerelease Windows: aceptación nativa pendiente
+# Prerelease Windows: aceptación nativa parcial
 
 [English](../WINDOWS-TESTING.md)
 
-**Estado: solo para pruebas.** El EXE pertenece a [v1.0.0-windows-rc1](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0-windows-rc1). No se incluye en la release estable Linux v1.0.0. El instalador y la aplicación siguen mostrando la versión 1.0.0; el tag prerelease identifica su estado de aceptación.
+**Estado: solo para pruebas.** El EXE público sigue siendo [v1.0.0-windows-rc1](https://github.com/N3ruk/UMS-Control/releases/tag/v1.0.0-windows-rc1), separado de Linux estable. Sus archivos no se han sustituido. Instalador e interfaz conservan la versión 1.0.0.
 
-## Qué se ha comprobado realmente
+## EXE publicado frente a candidata corregida
 
-**Solo bajo Wine**: instalación NSIS por usuario, apertura normal de la aplicación Qt, autoprueba, capturas inglesas, conservación de idioma/preferencias al sustituir la misma versión y desinstalación. Se verificaron los componentes UMS Windows y su integración Java independiente. Estos resultados no validan Windows 10/11 nativo.
+Las pruebas nativas Windows 11 del 2026-11-14 descubrieron defectos de cierre, codificación/propiedad del lanzador de autoinicio y tratamiento de carpetas Unicode en RC1. Las correcciones se han probado en una **candidata privada de desarrollo**; todavía no están en el EXE descargable. No atribuir los resultados de la candidata corregida al instalador publicado.
 
-La JVM y FFmpeg oficiales Windows arrancan bajo Wine, pero la prueba temporal del servidor UMS falla durante la inicialización de entropía del sistema con JNA/SecureRandom. Este fallo del entorno de pruebas no demuestra que el servidor funcione ni falle en Windows nativo. No se disponía de equipo Windows nativo.
+Las pruebas Wine anteriores cubrían NSIS, panel y conservación de preferencias, pero JNA/SecureRandom impedía probar el servidor. Windows 11 nativo, compilación 26300.9974, sí ejecuta el servidor real; aquel límite de Wine no es un fallo nativo del servidor.
 
-## Pendiente antes de añadir Windows a una release estable
+## Comprobado en Windows 11 nativo
 
-Todos los puntos siguientes están **pendientes en Windows 10/11 x86-64 nativo**, con una cuenta normal sin administrador. Registrar la compilación exacta de Windows, checksum del instalador, resultados y correcciones/repeticiones. Un resultado en una versión de Windows no certifica la otra.
+Con usuario normal sin administrador y medios sintéticos:
 
-- [ ] Instalar y abrir el EXE; elegir el idioma inicial, cambiarlo después y comprobar rutas con espacios/caracteres no ASCII.
-- [ ] Sustituir/reinstalar y desinstalar el panel; comprobar que conserva ajustes, perfiles y medios originales, y que solo afecta al proceso/autoinicio del servidor gestionado.
-- [ ] Instalar el runtime oficial UMS desde el panel, superar su prueba temporal y alcanzar la administración localhost con salud correcta; comprobar reparación, actualización/recuperación de fallos y retirada del servidor sin borrar configuración ni medios.
-- [ ] Iniciar, parar y reiniciar UMS real; consultar salud y registros y verificar que no quedan procesos gestionados duplicados o huérfanos.
-- [ ] Activar/desactivar autoinicio y cerrar/abrir sesión para comprobar ambos estados sin derechos de administrador.
-- [ ] Elegir la interfaz IPv4 de la LAN, descubrir dispositivos y comprobar permisos/avisos del cortafuegos en red privada, administración limitada a localhost y acceso DLNA desde otro dispositivo físico.
-- [ ] Navegar/buscar desde un cliente DLNA real; comprobar aislamiento de carpetas por dispositivo, exclusión de clientes sin configurar y del anfitrión, sin renombrar ni modificar medios originales.
-- [ ] Reproducir originales y conversión manual/automática en un cliente físico; comprobar audio/subtítulos, saltos, reinicio/aplicación de ajustes y sesión prolongada. Verificar NVENC por separado si se afirma soporte de codificación NVIDIA.
+- Instalación NSIS por usuario en ruta con espacios, español y japonés; elección inicial de idioma, sustitución conservando preferencias, autoprueba del ejecutable y cierre limpio de la interfaz.
+- Comprobación de disposición Qt nativa: 168 vistas, seis temas y siete idiomas. No sustituye una revisión manual de usabilidad.
+- Runtime oficial UMS 15.9.0, prueba temporal Java/JNA nativa, administración localhost saludable, inicio/parada/reinicio y prevención de arranques duplicados.
+- Reparación, retirada e instalación nueva del servidor desde la interfaz del ejecutable corregido; desinstalación del panel conservando ajustes, perfiles y medios. Una descarga corrupta se rechaza sin sustituir el runtime activo. No se instaló una versión superior del servidor.
+- Propiedad/activación/desactivación del autoinicio y ejecución real mediante Windows Script Host del lanzador empaquetado desde ruta Unicode. **No se cerró/abrió sesión ni reinició Windows.**
+- Entrega LAN a otro ordenador Linux físico: navegación por carpeta Unicode, exclusión de carpeta ajena, originales idénticos por hash, GET/HEAD y rangos de bytes; FFmpeg Windows convierte realmente en modos manual/automático, con pistas de audio y rutas de subtítulos incrustados/separados. Los clips sintéticos no validan reproducción en TV/consola ni percepción de audio/subtítulos.
+- DLNA accesible desde LAN; administración limitada a localhost e inaccesible desde el otro ordenador. Sin modificar cortafuegos; falta probar los avisos y permitir/denegar en un equipo limpio.
+- Instalación, datos, procesos gestionados, accesos, registro, autoinicio y temporales de prueba retirados; solo archivos propios de la prueba a papelera. Medios personales y nodo nativo OpenClaw intactos.
 
-Cuando estas pruebas pasen y los fallos estén corregidos y comprobados de nuevo, podrá añadirse el instalador Windows a una release estable. Hasta entonces permanece como **prerelease** independiente, aunque instalador e interfaz funcionen bajo Wine.
+Regresiones completas de fuentes: 163 pruebas, 168 vistas, cuatro escenarios DLNA reales aislados, reconstrucción Java reproducible y payload mínimo correctos. Son resultados de desarrollo, no una nueva publicación binaria.
 
-Algunos dispositivos pueden no ser compatibles al 100 %; estas pruebas no certifican todos los dispositivos, códecs o firmwares. No publicar medios personales, direcciones privadas ni registros sin anonimizar en los informes.
+## Pendiente para aceptación estable Windows
+
+- [ ] Instalador corregido definitivo y fuentes/checksums exactos de su entrega.
+- [ ] Cerrar/abrir sesión con autoinicio activado/desactivado; reinicio/reconexión si se afirma.
+- [ ] Aviso de cortafuegos en equipo limpio/red privada, permitir/denegar y selección del adaptador previsto.
+- [ ] Navegación y reproducción en TV/consola física, audio/subtítulos y saltos; aislamiento entre varios clientes configurados, cliente sin configurar y anfitrión en la red objetivo.
+- [ ] Sesión prolongada, aplicación/reinicio de ajustes y recuperación de interrupciones; NVENC por separado antes de afirmar codificación hardware.
+- [ ] Actualización real a una versión oficial UMS superior y recuperación de un fallo de activación.
+- [ ] Windows 10 nativo antes de afirmar pruebas en Windows 10 y 11.
+
+Windows sigue como **prerelease** independiente. No se certifican todos los dispositivos, códecs, controladores ni firmwares. No publicar medios privados, direcciones de red ni registros sin anonimizar.

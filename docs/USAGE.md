@@ -15,3 +15,9 @@ The built-in Instructions menu contains the localized guide. See [known limitati
 DEB: install with APT and answer the English language question. ZIP: extract and run `./install.sh` as the desktop user; `--language en` is available for unattended use. Windows: run the EXE installer without administrator rights and select the first-launch language. Existing preferences are preserved; change language later from the Language menu.
 
 Remove the managed UMS server from Overview first if its binaries are no longer needed. Remove the panel using APT on Debian-family systems, `~/.local/share/ums-control/uninstall.sh` for the ZIP installation, or Windows Settings → Apps. Panel removal preserves settings, profiles and media. The Windows/ZIP removal actions stop their managed server and disable its session autostart but keep server binaries.
+
+On Windows, the server network selector lists only connected physical Ethernet/Wi-Fi adapters with a usable IPv4 address. Virtual, VPN, Bluetooth and disconnected adapters are excluded. A direct LAN does not require a default gateway or Internet access. A previously saved unavailable adapter remains explicitly marked as unavailable; it is never silently replaced.
+
+### Device identity after a TV restart
+
+Some TVs regenerate their UPnP UUID after a full power cycle. When that UUID has no saved profile, UMS Control reapplies the profile explicitly saved for the actual requesting IP before browsing. A configured UUID still has priority. Other clients do not inherit its shared folders; reserve the TV address in your router if necessary.

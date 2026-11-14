@@ -27,20 +27,27 @@ def autostart_text():
     else:argv=[str(executable),str(p.CODE_ROOT/'launcher.py'),'--start-server']
     if p.WINDOWS:
         command=subprocess.list2cmdline(argv).replace('"','""')
-        return 'CreateObject("WScript.Shell").Run "'+command+'", 0, False\r\n'
+        return 'CreateObject("WScript.Shell").Run "'+command+'", 0, False\n'
     from install import desktop_exec
     return '[Desktop Entry]\nType=Application\nName=UMS Control Server\nExec='+desktop_exec(executable)+' '+('' if getattr(sys,'frozen',False) else desktop_exec(p.CODE_ROOT/'launcher.py')+' ')+'--start-server\nTerminal=false\n'
 
 def autostart():
     path=autostart_path()
-    return path.is_file() and path.read_text(encoding='utf-8')==autostart_text()
+    if not path.is_file():return False
+    encoding='utf-16' if p.WINDOWS and path.read_bytes().startswith((b'\xff\xfe',b'\xfe\xff')) else 'utf-8'
+    text=path.read_text(encoding=encoding);expected=autostart_text()
+    # Normalize the trailing blank line produced by legacy CRCRLF writes on
+    # Windows, without accepting any additional command or changed argument.
+    return text.rstrip('\n')==expected.rstrip('\n') if p.WINDOWS else text==expected
 
 def control(action):
     import psutil
     if action in ('enable','disable'):
         path=autostart_path()
         if path.exists() and not autostart():raise RuntimeError('Autostart entry belongs to another installation.')
-        if action=='enable':c.atomic_write(path,autostart_text())
+        if action=='enable':
+            if p.WINDOWS:c.atomic_write(path,autostart_text(),encoding='utf-16')
+            else:c.atomic_write(path,autostart_text())
         else:path.unlink(missing_ok=True)
         return
     if action in ('stop','restart'):

@@ -3,7 +3,7 @@
 """Adapter for the managed Universal Media Server runtime. No shell, Samba or media mutations."""
 from __future__ import annotations
 import concurrent.futures, copy, ipaddress, json, os, re, socket, subprocess, tempfile, time, uuid
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import urllib.parse, urllib.request
 from configuration import ConfigurationError, read_object
 import xml.etree.ElementTree as ET
@@ -31,11 +31,11 @@ def run(args, timeout=40, check=True):
         raise RuntimeError((r.stderr or r.stdout or f'Error {r.returncode}: {args[0]}').strip()[-2500:])
     return r
 
-def atomic_write(path, text):
+def atomic_write(path, text, encoding="utf-8"):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
     fd,name = tempfile.mkstemp(prefix='.'+path.name,dir=path.parent)
     try:
-        with os.fdopen(fd,'w',encoding='utf-8') as f:
+        with os.fdopen(fd,'w',encoding=encoding) as f:
             f.write(text); f.flush(); os.fsync(f.fileno())
         os.chmod(name,0o600); os.replace(name,path)
     finally:
@@ -151,6 +151,11 @@ def migrate_state(state):
 def shared_folders(state):
     return list(dict.fromkeys(f for device in state['tvs'] for f in device['folders']))
 
+def _same_folder_list(actual,expected):
+    if platform_os.WINDOWS:
+        return [PureWindowsPath(f) for f in actual]==[PureWindowsPath(f) for f in expected]
+    return actual==expected
+
 def validate_folders(folders):
     if not isinstance(folders,list):raise ValueError('Lista de carpetas no válida.')
     paths=[]
@@ -240,7 +245,7 @@ def device_config(tv):
     w,h=(0,0) if direct else RESOLUTIONS[tv['resolution']]
     bitrate=0 if direct else tv['bitrate']
     target=output_target(tv)
-    e=[('ums_control_auto',str(tv['mode']=='auto').lower()),('ums_control_container',tv_value(tv,'container')),('ums_control_soft_subtitles',str(soft).lower()),('ums_control_shared_folders',json.dumps(tv['folders'],ensure_ascii=True)),('ums_control_convert_folders',json.dumps(tv['convert_folders'] if not direct else [],ensure_ascii=True)),('ums_control_convert_exclusions',json.dumps(tv_value(tv,'convert_exclusions') if not direct else [],ensure_ascii=True)),('ums_control_name_mode',tv_value(tv,'name_mode')),('ums_control_name_folders',json.dumps(tv_value(tv,'name_folders'),ensure_ascii=True)),('ums_control_name_exclusions',json.dumps(tv_value(tv,'name_exclusions'),ensure_ascii=True)),('Device',', '.join(v for v in [tv['udn'].removeprefix('uuid:'),tv['ip']] if v)),('RendererName',tv['name']),
+    e=[('ums_control_auto',str(tv['mode']=='auto').lower()),('ums_control_container',tv_value(tv,'container')),('ums_control_soft_subtitles',str(soft).lower()),('ums_control_shared_folders',json.dumps(tv['folders'],ensure_ascii=False)),('ums_control_convert_folders',json.dumps(tv['convert_folders'] if not direct else [],ensure_ascii=False)),('ums_control_convert_exclusions',json.dumps(tv_value(tv,'convert_exclusions') if not direct else [],ensure_ascii=False)),('ums_control_name_mode',tv_value(tv,'name_mode')),('ums_control_name_folders',json.dumps(tv_value(tv,'name_folders'),ensure_ascii=False)),('ums_control_name_exclusions',json.dumps(tv_value(tv,'name_exclusions'),ensure_ascii=False)),('Device',', '.join(v for v in [tv['udn'].removeprefix('uuid:'),tv['ip']] if v)),('RendererName',tv['name']),
        ('disable_transcoding',str(tv['mode']=='direct').lower()),('force_transcode_for_extensions','*' if tv['mode']=='force' else ''),
        ('disable_transcode_for_extensions','*' if tv['mode']=='direct' else ''),('TranscodeVideo',target),('TranscodeAudio','MP3'),
        ('MaxVideoWidth',w),('MaxVideoHeight',h),('MaxVideoBitrateMbps',bitrate),('maximum_bitrate',bitrate),
@@ -358,7 +363,7 @@ def apply(state,restart=True):
             if was_active and restart:
                 service('start'); ready()
                 got=[x.get('file') for x in api('shared/')['shared_content'] if x.get('type')=='Folder']
-                if got!=[f for f in shared_folders(state) if Path(f).is_dir()]: raise RuntimeError('UMS no confirmó las carpetas configuradas.')
+                if not _same_folder_list(got,[f for f in shared_folders(state) if Path(f).is_dir()]): raise RuntimeError('UMS no confirmó las carpetas configuradas.')
         except Exception:
             service('stop')
             for p,content in old.items():
@@ -512,15 +517,18 @@ def transcode_sample(path,tv):
 
 
 def device_display_name(renderer, profiles):
-    """Use the local profile label, preferring UUID over a possibly stale IP."""
+    """Match the engine: saved UUID first, then an unambiguous explicit peer IP.
+
+    UPnP identifiers may change across TV restarts. This display-only lookup
+    neither edits saved identities nor grants access to media.
+    """
     def identity(value):
         return (value or '').strip().lower().removeprefix('uuid:')
     remote_id=identity(renderer.get('uuid'))
     matches=[p for p in profiles if remote_id and identity(p.get('udn'))==remote_id]
     if not matches:
         address=renderer.get('address','').strip().lstrip('/')
-        matches=[p for p in profiles if address and p.get('ip','').strip()==address
-                 and not (remote_id and identity(p.get('udn')) and identity(p.get('udn'))!=remote_id)]
+        matches=[p for p in profiles if address and p.get('ip','').strip()==address]
     if len(matches)==1 and matches[0].get('name','').strip():
         return matches[0]['name'].strip()
     return renderer.get('name') or ''

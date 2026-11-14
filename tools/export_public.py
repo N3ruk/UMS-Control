@@ -21,7 +21,7 @@ def source_hashes():
         path=ROOT/safe_path(name)
         if path.is_symlink() or not path.resolve().is_relative_to(ROOT) or not path.is_file():raise ValueError('Invalid public source: '+name)
         if path.suffix in {'.deb','.tgz','.log','.pyc'} or path.name.startswith('test_'):raise ValueError('Development file in public source: '+name)
-        if path.suffix not in {'.jar','.png'}:
+        if path.suffix not in {'.jar','.png','.ico'}:
             content=path.read_text(encoding='utf-8')
             if re.search(('/'+'home'+r'/[^/\s]+/|'+'/'+'run/media'+r'/[^/\s]+/|docs/CONTINUAR\.md|192\.168\.1\.(?:133|141|149)\b'),content):raise ValueError('Private workstation data: '+name)
         hashes[name]=hashlib.sha256(path.read_bytes()).hexdigest()

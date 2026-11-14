@@ -48,14 +48,68 @@ def addresses():
     try:return [dict(ifname=n,addr_info=[dict(family='inet',local=a.address) for a in aa if a.family==socket.AF_INET]) for n,aa in psutil.net_if_addrs().items()]
     except (OSError,RuntimeError):return []
 
+def _windows_adapters(names):
+    """Query driver metadata, independently of localized/renamed adapter aliases."""
+    import ctypes
+    from ctypes import wintypes as w
+    class GUID(ctypes.Structure):
+        _fields_=[('Data1',w.DWORD),('Data2',w.WORD),('Data3',w.WORD),('Data4',w.BYTE*8)]
+    class Row(ctypes.Structure):
+        # Complete MIB_IF_ROW2; GetIfEntry2 writes the entire structure.
+        _fields_=[('InterfaceLuid',ctypes.c_ulonglong),('InterfaceIndex',w.ULONG),('InterfaceGuid',GUID),
+          ('Alias',w.WCHAR*257),('Description',w.WCHAR*257),('PhysicalAddressLength',w.ULONG),
+          ('PhysicalAddress',w.BYTE*32),('PermanentPhysicalAddress',w.BYTE*32),('Mtu',w.ULONG),
+          ('Type',w.ULONG),('TunnelType',ctypes.c_int),('MediaType',ctypes.c_int),
+          ('PhysicalMediumType',ctypes.c_int),('AccessType',ctypes.c_int),('DirectionType',ctypes.c_int),
+          ('InterfaceAndOperStatusFlags',w.BYTE),('OperStatus',ctypes.c_int),('AdminStatus',ctypes.c_int),
+          ('MediaConnectState',ctypes.c_int),('NetworkGuid',GUID),('ConnectionType',ctypes.c_int)]+[
+          (name,ctypes.c_ulonglong) for name in ('TransmitLinkSpeed','ReceiveLinkSpeed','InOctets',
+          'InUcastPkts','InNUcastPkts','InDiscards','InErrors','InUnknownProtos','InUcastOctets',
+          'InMulticastOctets','InBroadcastOctets','OutOctets','OutUcastPkts','OutNUcastPkts',
+          'OutDiscards','OutErrors','OutUcastOctets','OutMulticastOctets','OutBroadcastOctets','OutQLen')]
+    api=ctypes.WinDLL('iphlpapi.dll')
+    alias_to_luid=api.ConvertInterfaceAliasToLuid
+    alias_to_luid.argtypes=[w.LPCWSTR,ctypes.POINTER(ctypes.c_ulonglong)];alias_to_luid.restype=w.ULONG
+    get_row=api.GetIfEntry2;get_row.argtypes=[ctypes.POINTER(Row)];get_row.restype=w.ULONG
+    result={}
+    for name in names:
+        row=Row();luid=ctypes.c_ulonglong()
+        if alias_to_luid(name,ctypes.byref(luid))!=0:continue
+        row.InterfaceLuid=luid.value
+        if get_row(ctypes.byref(row))!=0:continue
+        flags=row.InterfaceAndOperStatusFlags
+        result[name]=dict(hardware=bool(flags&1),filtered=bool(flags&2),endpoint=bool(flags&128),
+          up=row.OperStatus==1,connected=row.MediaConnectState==1,
+          type=row.Type,physical_medium=row.PhysicalMediumType)
+    return result
+
+def _usable_ipv4(address):
+    import ipaddress
+    try:ip=ipaddress.IPv4Address(address)
+    except ipaddress.AddressValueError:return False
+    # Do not require Internet access or a gateway: direct/offline LANs are valid.
+    return not (ip.is_loopback or ip.is_link_local or ip.is_unspecified or ip.is_multicast or int(ip)==0xffffffff)
+
 def networks():
     import psutil
     try:stats=psutil.net_if_stats();adapters=psutil.net_if_addrs()
     except (OSError,RuntimeError):return []
+    metadata={}
+    if WINDOWS:
+        try:metadata=_windows_adapters(adapters)
+        except (OSError,AttributeError):return []
     result=[];counts={}
     for name,aa in sorted(adapters.items()):
-        if not any(a.family==socket.AF_INET and not a.address.startswith('127.') for a in aa):continue
-        kind='wifi' if any(s in name.lower() for s in ('wi-fi','wifi','wlan','wireless')) else 'ethernet'
+        if WINDOWS:
+            info=metadata.get(name,{})
+            if not (info.get('hardware') and not info.get('filtered') and not info.get('endpoint')
+                    and info.get('up') and info.get('connected')):continue
+            if info['type'] not in (6,71) or info['physical_medium']==10:continue
+            if not any(a.family==socket.AF_INET and _usable_ipv4(a.address) for a in aa):continue
+            kind='wifi' if info['type']==71 or info['physical_medium'] in (1,9) else 'ethernet'
+        else:
+            if not any(a.family==socket.AF_INET and not a.address.startswith('127.') for a in aa):continue
+            kind='wifi' if any(s in name.lower() for s in ('wi-fi','wifi','wlan','wireless')) else 'ethernet'
         counts[kind]=counts.get(kind,0)+1
         result.append(dict(name=name,kind=kind,number=counts[kind],up=bool(stats.get(name) and stats[name].isup)))
     return result

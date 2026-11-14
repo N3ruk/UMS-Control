@@ -13,7 +13,7 @@ import platform_support as platform_os
 import platform_support as fcntl
 
 SUPPORT=platform_os.ROOT/'server-support'
-BUNDLE_SHA='98556b264710793ecc02eceb8fc3031b979131cd0f000c96b0700a50f3f16abc'
+BUNDLE_SHA='e856a3a8eca453a6de3e74d4bfd4dd8c92863bb37a388723eac05f1669d72f67'
 
 def digest(path):
     with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()

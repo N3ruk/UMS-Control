@@ -20,9 +20,7 @@ Los paquetes Linux incluyen Python y Qt; no requieren Python del sistema, pip ni
 
 Tras abrir **UMS Control**, seleccionar **Instalar servidor UMS** en la pestaña **Resumen** y después **Iniciar**. Esta acción independiente y explícita descarga el runtime oficial de UMS, verifica su SHA256, incorpora la integración correspondiente y prueba una copia temporal antes de activarla. Requiere conexión a Internet y espacio temporal. Instalar el panel no inicia el servidor ni activa el autoinicio.
 
-Windows utiliza la misma interfaz Qt, reglas por dispositivo e integración Java que Linux. Se adaptan la gestión de procesos, rutas, papelera e inicio de sesión. **La aceptación en Windows nativo sigue pendiente**: el ejecutable y el instalador han superado las comprobaciones del instalador y del ejecutable bajo Wine, lo que no certifica la red, los avisos del cortafuegos ni la reproducción física en Windows.
-
-**Windows aún no está validado en Windows 10/11 nativo.** Falta probar instalación/reparación/actualización real del servidor, inicio/parada/reinicio, autoinicio, búsqueda en LAN y cortafuegos, y navegación/reproducción DLNA física (original y convertida, audio/subtítulos y saltos). También falta confirmar instalador/reinstalación/retirada y conservación de ajustes en Windows nativo. Véase la [lista completa pendiente](docs/es/PRUEBAS-WINDOWS.md); Windows solo se añadirá a una release estable tras superar esas pruebas.
+Windows utiliza la misma interfaz Qt, reglas por dispositivo e integración Java que Linux, con gestión de procesos, rutas, papelera y autoinicio adaptados. **Windows continúa como prerelease de pruebas.** Las pruebas nativas Windows 11 detectaron fallos en RC1 público; una candidata privada corregida supera instalación/ciclo del servidor, rutas Unicode y DLNA sintético entre equipos. Las correcciones todavía no están en el EXE descargable. Siguen pendientes TV/consola física, inicio de sesión real, cortafuegos en equipo limpio y otros criterios. Véanse el [alcance probado y la lista pendiente](docs/es/PRUEBAS-WINDOWS.md).
 
 ## Capturas
 

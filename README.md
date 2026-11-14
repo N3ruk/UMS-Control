@@ -20,9 +20,7 @@ The Linux packages include Python and Qt; no system Python, pip or compiler is n
 
 After opening **UMS Control**, select **Install UMS server** in **Overview**, then **Start**. This separate, explicit action downloads the official UMS runtime, checks its SHA256, applies the matching integration and tests a disposable copy before activating it. Internet access and temporary disk space are needed. Installing the panel does not start the server or enable session autostart.
 
-Windows uses the same Qt interface, profile rules and Java integration as Linux. Process management, paths, recycling and session autostart are adapted to Windows. **Native Windows acceptance testing is still required**; the Windows executable and installer have passed installer/executable checks under Wine, which does not certify native networking, firewall prompts or device playback.
-
-**Windows is not yet validated on native Windows 10/11.** Pending: real server installation/repair/update, start/stop/restart, session autostart, LAN discovery and firewall interaction, and physical DLNA browsing/playback (original and transcoded, audio/subtitles and seeking). Native installer/reinstallation/removal and settings preservation also need confirmation. See the [complete pending checklist](docs/WINDOWS-TESTING.md); Windows will only be added to a stable release after these checks pass.
+Windows uses the same Qt interface, profile rules and Java integration as Linux, with OS-specific process management, paths, recycling and session autostart. **Windows remains a testing prerelease.** Native Windows 11 tests uncovered defects in the public RC1; a private corrected development candidate passed installer/server lifecycle, Unicode paths and cross-machine synthetic DLNA checks. Those fixes are not yet in the downloadable EXE. Physical TV/console playback, real session login, clean-machine firewall interaction and other acceptance checks remain pending. See the [exact tested scope and remaining checklist](docs/WINDOWS-TESTING.md).
 
 ## Screenshots
 

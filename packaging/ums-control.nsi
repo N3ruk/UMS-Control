@@ -8,6 +8,8 @@ InstallDir "$LOCALAPPDATA\Programs\UMS Control"
 RequestExecutionLevel user
 SetCompressor /SOLID lzma
 !define MUI_ABORTWARNING
+!define MUI_ICON "..\assets\windows\ums-control.ico"
+!define MUI_UNICON "..\assets\windows\ums-control.ico"
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "..\LICENSE"
 Page custom LanguagePage LanguageLeave
@@ -57,11 +59,12 @@ Section "UMS Control"
  FileWrite $0 '{$\"language$\":$\"$SelectedLanguage$\"}'
  FileClose $0
  CreateDirectory "$SMPROGRAMS\UMS Control"
- CreateShortcut "$SMPROGRAMS\UMS Control\UMS Control.lnk" "$INSTDIR\UMS-Control.exe"
+ CreateShortcut "$SMPROGRAMS\UMS Control\UMS Control.lnk" "$INSTDIR\UMS-Control.exe" "" "$INSTDIR\UMS-Control.exe" 0
  WriteUninstaller "$INSTDIR\Uninstall.exe"
  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\UMS Control" "DisplayName" "UMS Control"
  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\UMS Control" "DisplayVersion" "1.0.0"
  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\UMS Control" "Publisher" "N3ruk"
+ WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\UMS Control" "DisplayIcon" '$\"$INSTDIR\UMS-Control.exe$\",0'
  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\UMS Control" "UninstallString" '$\"$INSTDIR\Uninstall.exe$\"'
 SectionEnd
 Section "Uninstall"

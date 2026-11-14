@@ -9,3 +9,5 @@ All five PNG files are original geometric renders from `tools/render_assets.py`.
 - `green-background.png`: SHA256 `096aa355e3ea659d637617910927b075633daf50d4a81fffeb221f09c628ab51`
 - `ugm-background.png`: SHA256 `3e7e68d3586a3f6b9625459ea6835f3e3e0687eea7d02736d51bf33e2edbc1f2`
 - `ums-control.png`: SHA256 `c94174bcc53d116c158119949017993d5a262d5189a63c91e885094f56fb9d42`
+
+`ums-control.ico` is the Windows multi-resolution derivative of `ums-control.png` (16, 24, 32, 48, 64, 128 and 256 pixels), with the same authorship and license.

@@ -678,7 +678,11 @@ def configure_theme(app,theme=None):
     appearance.apply(app,STYLE,theme or appearance.load()['theme'])
 
 def main():
+    if core.platform_os.WINDOWS:
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('N3ruk.UMSControl')
     app=QApplication(sys.argv);app.setApplicationName('UMS Control');app.setOrganizationName('N3ruk');app.setDesktopFileName('ums-control')
+    app.setWindowIcon(QIcon(str(RESOURCE_ROOT/'assets/ums-control.png')))
     try:preferences=load_with_recovery(appearance.load,lambda:dict(theme='current',language='es'))
     except StartupCancelled:return 1
     if not (core.CONFIG/'ui.json').exists():appearance.save(preferences['theme'],preferences['language'])
@@ -695,6 +699,10 @@ def main():
                 Path(sys.argv[sys.argv.index('--report')+1]).write_text(json.dumps(dict(passed=True,language=w.preferences['language'],platform=sys.platform,visible=w.isVisible())),encoding='utf-8')
             w.dirty=False;w.close();app.quit()
         QTimer.singleShot(1500,finish_smoke)
-    return app.exec()
+    exit_code=app.exec()
+    # Keep the application, window and worker signals alive until QRunnables
+    # finish; native Windows otherwise aborts during signal-owner teardown.
+    QThreadPool.globalInstance().waitForDone()
+    return exit_code
 
 if __name__=='__main__':sys.exit(main())

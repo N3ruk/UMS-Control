@@ -17,3 +17,9 @@ El menú **Instrucciones** contiene la guía traducida. Consultar los [límites 
 **DEB:** instalar mediante APT y responder la pregunta de idioma, presentada en inglés. **ZIP:** extraer y ejecutar `./install.sh` como usuario del escritorio; `--language es` permite una instalación no interactiva. **Windows:** ejecutar el instalador EXE sin derechos de administrador y seleccionar el idioma inicial. Las preferencias existentes se conservan; el idioma puede cambiarse posteriormente desde el menú **Idioma**.
 
 Si los binarios del servidor UMS ya no se necesitan, retirarlos primero desde **Resumen**. El panel se retira mediante APT en sistemas Debian, `~/.local/share/ums-control/uninstall.sh` en la instalación ZIP o **Configuración → Aplicaciones** en Windows. Se conservan ajustes, perfiles y medios. La retirada del panel Windows/ZIP detiene su servidor gestionado y desactiva su autoinicio, pero conserva los binarios del servidor.
+
+En Windows, el selector de red del servidor solo muestra adaptadores Ethernet/Wi-Fi físicos conectados con una dirección IPv4 válida. Excluye interfaces virtuales, VPN, Bluetooth y adaptadores desconectados. Una LAN directa no requiere puerta de enlace ni acceso a Internet. Si la red guardada ya no está disponible, se indica expresamente; nunca se sustituye sin avisar.
+
+### Identidad después de reiniciar la TV
+
+Algunas TV regeneran su UUID UPnP tras apagarlas por completo. Si ese UUID no tiene perfil, UMS Control aplica el perfil guardado explícitamente para la IP real que solicita el contenido antes de listar la biblioteca. Un UUID configurado conserva la prioridad. Otros clientes no heredan sus carpetas; reserva la dirección de la TV en el router si es necesario.

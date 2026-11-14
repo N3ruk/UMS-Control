@@ -81,5 +81,7 @@
   "server-support/runtime-manifest.json": "server-support/runtime-manifest.json",
   "server-support/update-windows.jar": "server-support/update-windows.jar",
   "server-support/update.jar": "server-support/update.jar",
-  "server-support/upstream.json": "server-support/upstream.json"
+  "server-support/upstream.json": "server-support/upstream.json",
+  "assets/windows/ums-control.ico": "assets/windows/ums-control.ico",
+  "patches/net/pms/renderers/ConnectedRenderers.java": "patches/net/pms/renderers/ConnectedRenderers.java"
 }
