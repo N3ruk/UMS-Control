@@ -2,12 +2,40 @@
 # Copyright (C) 2026 N3ruk
 """Independent appearance preferences; never apply server settings."""
 import json
+import sys
 from first_run import initial_language
 import baul_core as c
 from PyQt6.QtGui import QPalette,QColor
+from PyQt6.QtCore import QObject,QEvent
+from PyQt6.QtWidgets import QWidget
 LANGUAGES={'es':'Español','en':'English','fr':'Français','de':'Deutsch','it':'Italiano','zh':'中文','ja':'日本語'}
 THEMES={'current':'Azul','ugm':'UGM','classic':'Windows clásico','contrast':'Alto contraste','green':'Verde/amarillo','anime':'Anime'}
 WALLPAPER_THEMES={'current','green','ugm','anime'}
+class LinuxWindowChrome(QObject):
+ """Keep native decoration black without changing any content theme."""
+ def eventFilter(self,window,event):
+  if event.type()==QEvent.Type.Show and isinstance(window,QWidget) and window.isWindow():
+   self.apply_window(window)
+  return False
+
+ def apply_window(self,window):
+  window.setPalette(self.content_palette)
+  if self.parent().platformName()!='xcb':return
+  # Ask the X11 window manager for its dark native decoration. Wayland's Qt
+  # decoration reads the application palette instead of this local palette.
+  try:
+   import ctypes,ctypes.util
+   x11=ctypes.CDLL(ctypes.util.find_library('X11') or 'libX11.so.6')
+   x11.XOpenDisplay.argtypes=[ctypes.c_char_p];x11.XOpenDisplay.restype=ctypes.c_void_p
+   x11.XInternAtom.argtypes=[ctypes.c_void_p,ctypes.c_char_p,ctypes.c_int];x11.XInternAtom.restype=ctypes.c_ulong
+   x11.XChangeProperty.argtypes=[ctypes.c_void_p,ctypes.c_ulong,ctypes.c_ulong,ctypes.c_ulong,ctypes.c_int,ctypes.c_int,ctypes.c_char_p,ctypes.c_int]
+   x11.XCloseDisplay.argtypes=[ctypes.c_void_p]
+   display=x11.XOpenDisplay(None)
+   if display:
+    try:x11.XChangeProperty(display,int(window.winId()),x11.XInternAtom(display,b'_GTK_THEME_VARIANT',0),x11.XInternAtom(display,b'UTF8_STRING',0),8,0,b'dark',4)
+    finally:x11.XCloseDisplay(display)
+  except (OSError,AttributeError):pass
+
 # background, surface, text, muted, input, border, accent, button, highlight, heading
 COLORS={
  'current':('#101521','#171e2d','#e9ecf5','#a8b5c9','#101725','#39465d','#82d5ff','#2b3b55','#35547d','#a9dcff'),
@@ -42,7 +70,12 @@ def apply(app,style,theme='current'):
  palette=QPalette()
  for role,color in {'Window':bg,'WindowText':text,'Base':base,'AlternateBase':surface,'Text':text,'Button':btn,'ButtonText':text,'Highlight':highlight,'HighlightedText':'#000000' if theme=='contrast' else '#ffffff','ToolTipBase':surface,'ToolTipText':text,'Link':accent,'Light':border,'Mid':border,'Dark':border}.items():palette.setColor(getattr(QPalette.ColorRole,role),QColor(color))
  for role in ['Text','WindowText','ButtonText']:palette.setColor(QPalette.ColorGroup.Disabled,getattr(QPalette.ColorRole,role),QColor(muted))
- app.setPalette(palette)
+ chrome=None
+ if sys.platform.startswith('linux'):
+  chrome=getattr(app,'ums_window_chrome',None)
+  if chrome is None:
+   chrome=LinuxWindowChrome(app);app.installEventFilter(chrome);app.ums_window_chrome=chrome
+  chrome.content_palette=QPalette(palette)
  styled+='QScrollArea > QWidget, QWidget#scrollBody {background:'+surface+';} QScrollBar {background:'+surface+';} QScrollBar::handle {background:'+border+';min-height:20px;min-width:20px;} QCheckBox::indicator:unchecked {background:'+base+';border:1px solid '+border+';} QCheckBox::indicator:checked {background:'+highlight+';border:2px solid '+accent+';}'
  if theme in {'current','green'}:
   panel='16,21,33' if theme=='current' else '16,27,16'
@@ -54,4 +87,8 @@ def apply(app,style,theme='current'):
  if theme=='anime':
   styled+='QWidget#appBackdrop {background:transparent;} QTabWidget::pane {background:transparent;border-color:#60738f;} QWidget#tabBody,QWidget#scrollBody {background:rgba(27,37,50,175);} QScrollArea > QWidget {background:transparent;} QGroupBox {background:rgba(27,37,50,165);} QLabel#explanation {background:rgba(59,72,95,215);} QPushButton#primary {background:#805342;border-color:#f4b967;} QPushButton#primary:hover {background:#a0643e;}'
  app.setStyleSheet(styled)
+ if chrome:
+  decoration=QPalette(palette);decoration.setColor(QPalette.ColorRole.Window,QColor('#000000'));decoration.setColor(QPalette.ColorRole.WindowText,QColor('#ffffff'));app.setPalette(decoration)
+  for window in app.topLevelWidgets():chrome.apply_window(window)
+ else:app.setPalette(palette)
  for window in app.topLevelWidgets():window.update()

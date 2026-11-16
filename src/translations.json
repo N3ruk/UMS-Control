@@ -2734,5 +2734,13 @@
     "it": "Copia di ripristino conservata in:",
     "zh": "恢复副本保存在：",
     "ja": "復旧用コピーの保存先："
+  },
+  "Licencias de terceros": {
+    "de": "Drittanbieterlizenzen",
+    "en": "Third-party licenses",
+    "fr": "Licences tierces",
+    "it": "Licenze di terze parti",
+    "ja": "サードパーティーライセンス",
+    "zh": "第三方许可证"
   }
 }

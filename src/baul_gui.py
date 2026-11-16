@@ -211,13 +211,23 @@ class Window(QMainWindow):
         d=QDialog(self);d.setWindowTitle(tr('Acerca de UMS Control'));d.resize(620,480);v=QVBoxLayout(d)
         v.addWidget(label(tr('UMS Control · versión 1.0')))
         v.addWidget(label(tr('Aplicación creada por N3ruk.')))
-        link=QLabel('<a href="https://github.com/N3ruk">GitHub · N3ruk ↗</a>');link.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction);link.setOpenExternalLinks(True);v.addWidget(link)
+        link=QLabel('<a href="https://github.com/N3ruk/UMS-Control">GitHub · UMS Control ↗</a>');link.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction);link.setOpenExternalLinks(False);link.linkActivated.connect(self.open_external_url);v.addWidget(link)
         v.addWidget(label(tr('Licencia del frontend: GNU GPL v3.0 o posterior (GPL-3.0-or-later).')))
         v.addWidget(label(tr('UMS Control es una capa de gestión o frontend independiente. No desarrollamos el código de Universal Media Server ni somos una aplicación oficial del proyecto.')))
         v.addWidget(label(tr('El servidor es Universal Media Server (GPL-2.0), basado en PS3 Media Server. Incluye correcciones locales de integración con sus fuentes y licencia; no se presenta como código propio ni como una versión oficial. FFmpeg, Java y MediaInfo conservan sus respectivos créditos y licencias.')))
-        v.addWidget(button(tr('Licencia del frontend'),lambda:QDesktopServices.openUrl(QUrl.fromLocalFile(str((RESOURCE_ROOT/'LICENSE'))))))
-        v.addWidget(button(tr('Proyecto Universal Media Server ↗'),lambda:QDesktopServices.openUrl(QUrl('https://github.com/UniversalMediaServer/UniversalMediaServer'))))
+        v.addWidget(button(tr('Licencia del frontend'),lambda:self.show_license('LICENSE',tr('Licencia del frontend'))))
+        v.addWidget(button(tr('Licencias de terceros'),lambda:self.show_license('THIRD_PARTY_NOTICES.md',tr('Licencias de terceros'))))
+        v.addWidget(button('Universal Media Server · GPL-2.0',lambda:self.show_license('patches/LICENSE.UMS.txt','Universal Media Server · GPL-2.0')))
+        v.addWidget(button(tr('Proyecto Universal Media Server ↗'),lambda:self.open_external_url('https://github.com/UniversalMediaServer/UniversalMediaServer')))
         bb=QDialogButtonBox(QDialogButtonBox.StandardButton.Close);bb.rejected.connect(d.reject);v.addWidget(bb);d.exec()
+
+    def show_license(self,name,title):
+        try:text=(RESOURCE_ROOT/name).read_text(encoding='utf-8')
+        except (OSError,UnicodeError) as error:
+            QMessageBox.warning(self,'UMS Control',tr('No se pudo completar la operación')+'\n'+str(error));return
+        dialog=QDialog(self);dialog.setWindowTitle(title);dialog.resize(760,580);layout=QVBoxLayout(dialog)
+        viewer=QTextBrowser();viewer.setObjectName('guideText');viewer.setOpenExternalLinks(False);viewer.setPlainText(text);layout.addWidget(viewer)
+        buttons=QDialogButtonBox(QDialogButtonBox.StandardButton.Close);buttons.rejected.connect(dialog.reject);layout.addWidget(buttons);dialog.exec()
 
     def update_server_buttons(self,report):
         self.server_report=report;present=report['present']
@@ -609,18 +619,20 @@ class Window(QMainWindow):
         self.task(lambda:manager.control(action),done)
 
     def open_web(self):
-        try:
-            url=core.web_url()
-            # Prefer the session's registered browser independently of Qt portal appID.
-            opener=shutil.which('gio') or shutil.which('xdg-open')
-            if opener:
-                args=[opener,'open',url] if Path(opener).name=='gio' else [opener,url]
-                def opened(result):
-                    if result.returncode and not QDesktopServices.openUrl(QUrl(url)):
-                        QMessageBox.warning(self,'UMS Control',result.stderr or result.stdout or tr('No se pudo completar la operación'))
-                self.task(lambda:core.run(args,check=False,timeout=15),opened,busy=False)
-            elif not QDesktopServices.openUrl(QUrl(url)):raise RuntimeError(tr('No se pudo completar la operación'))
+        try:self.open_external_url(core.web_url())
         except Exception as e:QMessageBox.warning(self,'UMS Control',tr(str(e)))
+
+    def open_external_url(self,url):
+        # Desktop helpers must not inherit the bundled Qt shared libraries.
+        opener=None if core.platform_os.WINDOWS else (shutil.which('gio') or shutil.which('xdg-open'))
+        if opener:
+            args=[opener,'open',url] if Path(opener).name=='gio' else [opener,url]
+            def opened(result):
+                if result.returncode and not QDesktopServices.openUrl(QUrl(url)):
+                    QMessageBox.warning(self,'UMS Control',result.stderr or result.stdout or tr('No se pudo completar la operación'))
+            self.task(lambda:core.run(args,check=False,timeout=15),opened,busy=False)
+        elif not QDesktopServices.openUrl(QUrl(url)):
+            QMessageBox.warning(self,'UMS Control',tr('No se pudo completar la operación'))
 
     def toggle_autostart(self,checked):self.task(lambda:manager.control('enable' if checked else 'disable'),lambda _:(self.message.setText(tr('Inicio automático ')+(tr('activado') if checked else tr('desactivado'))),self.refresh()))
 
